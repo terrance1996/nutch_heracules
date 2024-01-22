@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="jakarta.platform"
+		module="jakartaee-api-parent"
+		revision="9.1.0"
+		status="release"
+		publication="20210427151651"
+	>
+		<description homepage="">
+		Jakarta EE API parent
+		</description>
+		<m:properties__jakartaee.version>9.0.0</m:properties__jakartaee.version>
+		<m:properties__jakarta.enterprise.cdi-api.version>3.0.0</m:properties__jakarta.enterprise.cdi-api.version>
+		<m:properties__jakarta.validation-api.version>3.0.0</m:properties__jakarta.validation-api.version>
+		<m:properties__jakarta.json.bind-api.version>2.0.0</m:properties__jakarta.json.bind-api.version>
+		<m:properties__jakarta.ejb-api.version>4.0.0</m:properties__jakarta.ejb-api.version>
+		<m:properties__extra.excludes/>
+		<m:properties__jakarta.resource-api.version>2.0.0</m:properties__jakarta.resource-api.version>
+		<m:properties__jakarta.xml.soap-api.version>2.0.1</m:properties__jakarta.xml.soap-api.version>
+		<m:properties__jakarta.jws-api.version>3.0.0</m:properties__jakarta.jws-api.version>
+		<m:properties__jakarta.json-api.version>2.0.1</m:properties__jakarta.json-api.version>
+		<m:properties__jakarta.servlet-api.version>5.0.0</m:properties__jakarta.servlet-api.version>
+		<m:properties__copyright-plugin.version>1.50</m:properties__copyright-plugin.version>
+		<m:properties__jakarta.security.enterprise-api.version>2.0.0</m:properties__jakarta.security.enterprise-api.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__jakarta.authorization-api.version>2.0.0</m:properties__jakarta.authorization-api.version>
+		<m:properties__jakarta.batch-api.version>2.0.0</m:properties__jakarta.batch-api.version>
+		<m:properties__jakarta.authentication-api.version>2.0.0</m:properties__jakarta.authentication-api.version>
+		<m:properties__jakarta.persistence-api.version>3.0.0</m:properties__jakarta.persistence-api.version>
+		<m:properties__mojarra.version>3.0.0</m:properties__mojarra.version>
+		<m:properties__jakarta.enterprise.concurrent-api.version>2.0.0</m:properties__jakarta.enterprise.concurrent-api.version>
+		<m:properties__jakarta.xml.bind-api.version>3.0.1</m:properties__jakarta.xml.bind-api.version>
+		<m:properties__jakarta.servlet.jsp-api.version>3.0.0</m:properties__jakarta.servlet.jsp-api.version>
+		<m:properties__jakarta.websocket-api.version>2.0.0</m:properties__jakarta.websocket-api.version>
+		<m:properties__jakarta.el-api.version>4.0.0</m:properties__jakarta.el-api.version>
+		<m:properties__jakarta.servlet.jsp.jstl-api.version>2.0.0</m:properties__jakarta.servlet.jsp.jstl-api.version>
+		<m:properties__jakarta.jms-api.version>3.0.0</m:properties__jakarta.jms-api.version>
+		<m:properties__jakarta.faces-api.version>3.0.0</m:properties__jakarta.faces-api.version>
+		<m:properties__jakarta.xml.ws-api.version>3.0.1</m:properties__jakarta.xml.ws-api.version>
+		<m:properties__jakarta.ws.rs-api.version>3.0.0</m:properties__jakarta.ws.rs-api.version>
+		<m:properties__jakarta.activation-api.version>2.0.1</m:properties__jakarta.activation-api.version>
+		<m:properties__jakarta.mail-api.version>2.0.1</m:properties__jakarta.mail-api.version>
+		<m:properties__jakarta.interceptor-api.version>2.0.0</m:properties__jakarta.interceptor-api.version>
+		<m:properties__jakarta.annotation-api.version>2.0.0</m:properties__jakarta.annotation-api.version>
+		<m:properties__jakarta.transaction-api.version>2.0.0</m:properties__jakarta.transaction-api.version>
+		<m:properties__jakarta.inject.version>2.0.0</m:properties__jakarta.inject.version>
+		<m:properties__release.arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__sonatypeOssDistMgmtStagingUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/staging/</m:properties__sonatypeOssDistMgmtStagingUrl>
+		<m:properties__sonatypeOssDistMgmtNexusUrl>https://jakarta.oss.sonatype.org/</m:properties__sonatypeOssDistMgmtNexusUrl>
+		<m:properties__sonatypeOssDistMgmtReleasesUrl>${sonatypeOssDistMgmtNexusUrl}service/local/staging/deploy/maven2/</m:properties__sonatypeOssDistMgmtReleasesUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-resources-plugin__null|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-deploy-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

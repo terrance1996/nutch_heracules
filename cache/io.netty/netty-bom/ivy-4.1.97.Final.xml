@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.netty"
+		module="netty-bom"
+		revision="4.1.97.Final"
+		status="release"
+		publication="20230823020439"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="https://netty.io/">
+		Netty (Bill of Materials)
+		</description>
+		<m:properties__tcnative.version>2.0.61.Final</m:properties__tcnative.version>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.0|org.apache.maven.plugins__maven-enforcer-plugin__1.0|com.commsen.maven__bom-helper-maven-plugin__0.4.0</m:maven.plugins>
+		<m:dependency.management__io.netty__netty-buffer__version>4.1.97.Final</m:dependency.management__io.netty__netty-buffer__version>
+		<m:dependency.management__io.netty__netty-codec__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec__version>
+		<m:dependency.management__io.netty__netty-codec-dns__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-dns__version>
+		<m:dependency.management__io.netty__netty-codec-haproxy__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-haproxy__version>
+		<m:dependency.management__io.netty__netty-codec-http__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-http__version>
+		<m:dependency.management__io.netty__netty-codec-http2__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-http2__version>
+		<m:dependency.management__io.netty__netty-codec-memcache__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-memcache__version>
+		<m:dependency.management__io.netty__netty-codec-mqtt__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-mqtt__version>
+		<m:dependency.management__io.netty__netty-codec-redis__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-redis__version>
+		<m:dependency.management__io.netty__netty-codec-smtp__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-smtp__version>
+		<m:dependency.management__io.netty__netty-codec-socks__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-socks__version>
+		<m:dependency.management__io.netty__netty-codec-stomp__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-stomp__version>
+		<m:dependency.management__io.netty__netty-codec-xml__version>4.1.97.Final</m:dependency.management__io.netty__netty-codec-xml__version>
+		<m:dependency.management__io.netty__netty-common__version>4.1.97.Final</m:dependency.management__io.netty__netty-common__version>
+		<m:dependency.management__io.netty__netty-dev-tools__version>4.1.97.Final</m:dependency.management__io.netty__netty-dev-tools__version>
+		<m:dependency.management__io.netty__netty-handler__version>4.1.97.Final</m:dependency.management__io.netty__netty-handler__version>
+		<m:dependency.management__io.netty__netty-handler-proxy__version>4.1.97.Final</m:dependency.management__io.netty__netty-handler-proxy__version>
+		<m:dependency.management__io.netty__netty-handler-ssl-ocsp__version>4.1.97.Final</m:dependency.management__io.netty__netty-handler-ssl-ocsp__version>
+		<m:dependency.management__io.netty__netty-resolver__version>4.1.97.Final</m:dependency.management__io.netty__netty-resolver__version>
+		<m:dependency.management__io.netty__netty-resolver-dns__version>4.1.97.Final</m:dependency.management__io.netty__netty-resolver-dns__version>
+		<m:dependency.management__io.netty__netty-transport__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport__version>
+		<m:dependency.management__io.netty__netty-transport-rxtx__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-rxtx__version>
+		<m:dependency.management__io.netty__netty-transport-sctp__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-sctp__version>
+		<m:dependency.management__io.netty__netty-transport-udt__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-udt__version>
+		<m:dependency.management__io.netty__netty-example__version>4.1.97.Final</m:dependency.management__io.netty__netty-example__version>
+		<m:dependency.management__io.netty__netty-all__version>4.1.97.Final</m:dependency.management__io.netty__netty-all__version>
+		<m:dependency.management__io.netty__netty-resolver-dns-classes-macos__version>4.1.97.Final</m:dependency.management__io.netty__netty-resolver-dns-classes-macos__version>
+		<m:dependency.management__io.netty__netty-resolver-dns-native-macos__version>4.1.97.Final</m:dependency.management__io.netty__netty-resolver-dns-native-macos__version>
+		<m:dependency.management__io.netty__netty-transport-native-unix-common__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-native-unix-common__version>
+		<m:dependency.management__io.netty__netty-transport-classes-epoll__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-classes-epoll__version>
+		<m:dependency.management__io.netty__netty-transport-native-epoll__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-native-epoll__version>
+		<m:dependency.management__io.netty__netty-transport-classes-kqueue__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-classes-kqueue__version>
+		<m:dependency.management__io.netty__netty-transport-native-kqueue__version>4.1.97.Final</m:dependency.management__io.netty__netty-transport-native-kqueue__version>
+		<m:dependency.management__io.netty__netty-tcnative-classes__version>2.0.61.Final</m:dependency.management__io.netty__netty-tcnative-classes__version>
+		<m:dependency.management__io.netty__netty-tcnative__version>2.0.61.Final</m:dependency.management__io.netty__netty-tcnative__version>
+		<m:dependency.management__io.netty__netty-tcnative-boringssl-static__version>2.0.61.Final</m:dependency.management__io.netty__netty-tcnative-boringssl-static__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

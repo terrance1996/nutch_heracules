@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.logging"
+		module="logging-parent"
+		revision="10.1.1"
+		status="release"
+		publication="20231002015437"
+	>
+		<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="https://logging.apache.org/logging-parent">
+		Parent project internally used in Maven-based projects of the Apache Logging Services
+		</description>
+		<m:properties__maven.compiler.release>8</m:properties__maven.compiler.release>
+		<m:properties__xml-maven-plugin.version>1.1.0</m:properties__xml-maven-plugin.version>
+		<m:properties__spotbugs-annotations.version>4.7.3</m:properties__spotbugs-annotations.version>
+		<m:properties__bnd-maven-plugin.version>6.4.0</m:properties__bnd-maven-plugin.version>
+		<m:properties__bnd-extra-package-options/>
+		<m:properties__findsecbugs-plugin.version>1.12.0</m:properties__findsecbugs-plugin.version>
+		<m:properties__flatten-maven-plugin.version>1.5.0</m:properties__flatten-maven-plugin.version>
+		<m:properties__osgi.annotation.version>8.1.0</m:properties__osgi.annotation.version>
+		<m:properties__asciidoctor-maven-plugin.version>2.2.4</m:properties__asciidoctor-maven-plugin.version>
+		<m:properties__osgi.annotation.bundle.version>2.0.0</m:properties__osgi.annotation.bundle.version>
+		<m:properties__log4j-changelog-maven-plugin.version>0.4.0</m:properties__log4j-changelog-maven-plugin.version>
+		<m:properties__bnd.annotation.version>6.4.1</m:properties__bnd.annotation.version>
+		<m:properties__error-prone.version>2.22.0</m:properties__error-prone.version>
+		<m:properties__minimalJavaBuildVersion>[17,18)</m:properties__minimalJavaBuildVersion>
+		<m:properties__beanshell-maven-plugin.version>1.4</m:properties__beanshell-maven-plugin.version>
+		<m:properties__maven.compiler.source>8</m:properties__maven.compiler.source>
+		<m:properties__build-helper-maven-plugin.version>3.4.0</m:properties__build-helper-maven-plugin.version>
+		<m:properties__maven-artifact-plugin.version>3.4.1</m:properties__maven-artifact-plugin.version>
+		<m:properties__org.eclipse.jgit.version>6.7.0.202309050840-r</m:properties__org.eclipse.jgit.version>
+		<m:properties__bnd-module-name>$[Bundle-SymbolicName]</m:properties__bnd-module-name>
+		<m:properties__revision>10.1.1</m:properties__revision>
+		<m:properties__spotbugs-maven-plugin.version>4.7.3.6</m:properties__spotbugs-maven-plugin.version>
+		<m:properties__spotless-maven-plugin.version>2.40.0</m:properties__spotless-maven-plugin.version>
+		<m:properties__maven.compiler.target>8</m:properties__maven.compiler.target>
+		<m:properties__bnd-multi-release>false</m:properties__bnd-multi-release>
+		<m:properties__bnd-extra-module-options/>
+		<m:properties__sign-maven-plugin.version>1.0.1</m:properties__sign-maven-plugin.version>
+		<m:properties__version.apache-rat-plugin>0.15</m:properties__version.apache-rat-plugin>
+		<m:properties__version.maven-help-plugin>3.4.0</m:properties__version.maven-help-plugin>
+		<m:properties__version.maven-source-plugin>3.3.0</m:properties__version.maven-source-plugin>
+		<m:properties__distMgmtReleasesUrl>https://repository.apache.org/service/local/staging/deploy/maven2</m:properties__distMgmtReleasesUrl>
+		<m:properties__version.maven-plugin-tools>${maven.plugin.tools.version}</m:properties__version.maven-plugin-tools>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__version.maven-ear-plugin>3.3.0</m:properties__version.maven-ear-plugin>
+		<m:properties__version.maven-deploy-plugin>3.1.1</m:properties__version.maven-deploy-plugin>
+		<m:properties__surefire.version>3.1.2</m:properties__surefire.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide_2016.png</m:properties__organization.logo>
+		<m:properties__version.maven-compiler-plugin>3.11.0</m:properties__version.maven-compiler-plugin>
+		<m:properties__version.maven-shade-plugin>3.4.1</m:properties__version.maven-shade-plugin>
+		<m:properties__version.maven-gpg-plugin>3.1.0</m:properties__version.maven-gpg-plugin>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__version.maven-enforcer-plugin>3.3.0</m:properties__version.maven-enforcer-plugin>
+		<m:properties__version.maven-invoker-plugin>3.5.1</m:properties__version.maven-invoker-plugin>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__assembly.tarLongFileMode>posix</m:properties__assembly.tarLongFileMode>
+		<m:properties__version.maven-scm-publish-plugin>3.2.1</m:properties__version.maven-scm-publish-plugin>
+		<m:properties__version.maven-remote-resources-plugin>3.1.0</m:properties__version.maven-remote-resources-plugin>
+		<m:properties__version.maven-war-plugin>3.3.2</m:properties__version.maven-war-plugin>
+		<m:properties__version.apache-resource-bundles>1.5</m:properties__version.apache-resource-bundles>
+		<m:properties__distMgmtReleasesName>Apache Release Distribution Repository</m:properties__distMgmtReleasesName>
+		<m:properties__maven.plugin.tools.version>3.9.0</m:properties__maven.plugin.tools.version>
+		<m:properties__version.checksum-maven-plugin>1.11</m:properties__version.checksum-maven-plugin>
+		<m:properties__version.maven-fluido-skin>1.11.2</m:properties__version.maven-fluido-skin>
+		<m:properties__version.maven-assembly-plugin>3.6.0</m:properties__version.maven-assembly-plugin>
+		<m:properties__version.maven-resources-plugin>3.3.1</m:properties__version.maven-resources-plugin>
+		<m:properties__minimalMavenBuildVersion>3.2.5</m:properties__minimalMavenBuildVersion>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__version.maven-jar-plugin>3.3.0</m:properties__version.maven-jar-plugin>
+		<m:properties__version.maven-scm-plugin>2.0.1</m:properties__version.maven-scm-plugin>
+		<m:properties__version.maven-dependency-plugin>3.6.0</m:properties__version.maven-dependency-plugin>
+		<m:properties__version.maven-clean-plugin>3.2.0</m:properties__version.maven-clean-plugin>
+		<m:properties__version.maven-javadoc-plugin>3.5.0</m:properties__version.maven-javadoc-plugin>
+		<m:properties__version.maven-site-plugin>3.12.1</m:properties__version.maven-site-plugin>
+		<m:properties__project.build.outputTimestamp>2023-06-11T16:41:23Z</m:properties__project.build.outputTimestamp>
+		<m:properties__version.maven-release-plugin>3.0.1</m:properties__version.maven-release-plugin>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__version.maven-antrun-plugin>3.1.0</m:properties__version.maven-antrun-plugin>
+		<m:properties__version.maven-surefire>${surefire.version}</m:properties__version.maven-surefire>
+		<m:properties__version.maven-install-plugin>3.1.1</m:properties__version.maven-install-plugin>
+		<m:properties__version.maven-project-info-reports-plugin>3.4.5</m:properties__version.maven-project-info-reports-plugin>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>3.9.0</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.codehaus.mojo__flatten-maven-plugin__1.5.0|null__maven-compiler-plugin__null|null__maven-enforcer-plugin__null|com.github.spotbugs__spotbugs-maven-plugin__null|org.apache.rat__apache-rat-plugin__null|com.diffplug.spotless__spotless-maven-plugin__null|biz.aQute.bnd__bnd-maven-plugin__null</m:maven.plugins>
+		<m:dependency.management__biz.aQute.bnd__biz.aQute.bnd.annotation__version>6.4.1</m:dependency.management__biz.aQute.bnd__biz.aQute.bnd.annotation__version>
+		<m:dependency.management__com.github.spotbugs__spotbugs-annotations__version>4.7.3</m:dependency.management__com.github.spotbugs__spotbugs-annotations__version>
+		<m:dependency.management__org.osgi__osgi.annotation__version>8.1.0</m:dependency.management__org.osgi__osgi.annotation__version>
+		<m:dependency.management__org.osgi__org.osgi.annotation.bundle__version>2.0.0</m:dependency.management__org.osgi__org.osgi.annotation.bundle__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

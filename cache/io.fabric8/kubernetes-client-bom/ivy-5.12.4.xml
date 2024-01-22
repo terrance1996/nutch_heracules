@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.fabric8"
+		module="kubernetes-client-bom"
+		revision="5.12.4"
+		status="release"
+		publication="20220930032954"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://fabric8.io/">
+		Generated Bom
+		</description>
+		<m:dependency.management__io.fabric8__kubernetes-model-common__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-common__version>
+		<m:dependency.management__io.fabric8__model-annotator__version>5.12.4</m:dependency.management__io.fabric8__model-annotator__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-core__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-core__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-rbac__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-rbac__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-admissionregistration__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-admissionregistration__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-apps__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-apps__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-autoscaling__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-autoscaling__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-apiextensions__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-apiextensions__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-batch__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-batch__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-certificates__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-certificates__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-coordination__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-coordination__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-discovery__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-discovery__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-events__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-events__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-extensions__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-extensions__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-networking__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-networking__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-metrics__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-metrics__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-policy__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-policy__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-scheduling__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-scheduling__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-storageclass__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-storageclass__version>
+		<m:dependency.management__io.fabric8__openshift-model__version>5.12.4</m:dependency.management__io.fabric8__openshift-model__version>
+		<m:dependency.management__io.fabric8__kubernetes-model__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-jsonschema2pojo__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-jsonschema2pojo__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-flowcontrol__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-flowcontrol__version>
+		<m:dependency.management__io.fabric8__kubernetes-model-node__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-model-node__version>
+		<m:dependency.management__io.fabric8__openshift-model-clusterautoscaling__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-clusterautoscaling__version>
+		<m:dependency.management__io.fabric8__openshift-model-hive__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-hive__version>
+		<m:dependency.management__io.fabric8__openshift-model-installer__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-installer__version>
+		<m:dependency.management__io.fabric8__openshift-model-operator__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-operator__version>
+		<m:dependency.management__io.fabric8__openshift-model-operatorhub__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-operatorhub__version>
+		<m:dependency.management__io.fabric8__openshift-model-machine__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-machine__version>
+		<m:dependency.management__io.fabric8__openshift-model-monitoring__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-monitoring__version>
+		<m:dependency.management__io.fabric8__openshift-model-console__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-console__version>
+		<m:dependency.management__io.fabric8__openshift-model-machineconfig__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-machineconfig__version>
+		<m:dependency.management__io.fabric8__openshift-model-tuned__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-tuned__version>
+		<m:dependency.management__io.fabric8__openshift-model-whereabouts__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-whereabouts__version>
+		<m:dependency.management__io.fabric8__openshift-model-storageversionmigrator__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-storageversionmigrator__version>
+		<m:dependency.management__io.fabric8__openshift-model-miscellaneous__version>5.12.4</m:dependency.management__io.fabric8__openshift-model-miscellaneous__version>
+		<m:dependency.management__io.fabric8__kubernetes-client__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-client__version>
+		<m:dependency.management__io.fabric8__kubernetes-server-mock__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-server-mock__version>
+		<m:dependency.management__io.fabric8__openshift-client__version>5.12.4</m:dependency.management__io.fabric8__openshift-client__version>
+		<m:dependency.management__io.fabric8__knative-model__version>5.12.4</m:dependency.management__io.fabric8__knative-model__version>
+		<m:dependency.management__io.fabric8__knative-client__version>5.12.4</m:dependency.management__io.fabric8__knative-client__version>
+		<m:dependency.management__io.fabric8__knative-mock__version>5.12.4</m:dependency.management__io.fabric8__knative-mock__version>
+		<m:dependency.management__io.fabric8__knative-examples__version>5.12.4</m:dependency.management__io.fabric8__knative-examples__version>
+		<m:dependency.management__io.fabric8__knative-tests__version>5.12.4</m:dependency.management__io.fabric8__knative-tests__version>
+		<m:dependency.management__io.fabric8__tekton-model-v1alpha1__version>5.12.4</m:dependency.management__io.fabric8__tekton-model-v1alpha1__version>
+		<m:dependency.management__io.fabric8__tekton-model-v1beta1__version>5.12.4</m:dependency.management__io.fabric8__tekton-model-v1beta1__version>
+		<m:dependency.management__io.fabric8__tekton-model-triggers__version>5.12.4</m:dependency.management__io.fabric8__tekton-model-triggers__version>
+		<m:dependency.management__io.fabric8__tekton-client__version>5.12.4</m:dependency.management__io.fabric8__tekton-client__version>
+		<m:dependency.management__io.fabric8__tekton-mock__version>5.12.4</m:dependency.management__io.fabric8__tekton-mock__version>
+		<m:dependency.management__io.fabric8__tekton-examples__version>5.12.4</m:dependency.management__io.fabric8__tekton-examples__version>
+		<m:dependency.management__io.fabric8__tekton-tests__version>5.12.4</m:dependency.management__io.fabric8__tekton-tests__version>
+		<m:dependency.management__io.fabric8__servicecatalog-model__version>5.12.4</m:dependency.management__io.fabric8__servicecatalog-model__version>
+		<m:dependency.management__io.fabric8__servicecatalog-client__version>5.12.4</m:dependency.management__io.fabric8__servicecatalog-client__version>
+		<m:dependency.management__io.fabric8__servicecatalog-server-mock__version>5.12.4</m:dependency.management__io.fabric8__servicecatalog-server-mock__version>
+		<m:dependency.management__io.fabric8__service-catalog-examples__version>5.12.4</m:dependency.management__io.fabric8__service-catalog-examples__version>
+		<m:dependency.management__io.fabric8__servicecatalog-tests__version>5.12.4</m:dependency.management__io.fabric8__servicecatalog-tests__version>
+		<m:dependency.management__io.fabric8__volumesnapshot-model__version>5.12.4</m:dependency.management__io.fabric8__volumesnapshot-model__version>
+		<m:dependency.management__io.fabric8__volumesnapshot-client__version>5.12.4</m:dependency.management__io.fabric8__volumesnapshot-client__version>
+		<m:dependency.management__io.fabric8__volumesnapshot-server-mock__version>5.12.4</m:dependency.management__io.fabric8__volumesnapshot-server-mock__version>
+		<m:dependency.management__io.fabric8__volumesnapshot-examples__version>5.12.4</m:dependency.management__io.fabric8__volumesnapshot-examples__version>
+		<m:dependency.management__io.fabric8__volumesnapshot-tests__version>5.12.4</m:dependency.management__io.fabric8__volumesnapshot-tests__version>
+		<m:dependency.management__io.fabric8__chaosmesh-model__version>5.12.4</m:dependency.management__io.fabric8__chaosmesh-model__version>
+		<m:dependency.management__io.fabric8__chaosmesh-client__version>5.12.4</m:dependency.management__io.fabric8__chaosmesh-client__version>
+		<m:dependency.management__io.fabric8__chaosmesh-server-mock__version>5.12.4</m:dependency.management__io.fabric8__chaosmesh-server-mock__version>
+		<m:dependency.management__io.fabric8__chaosmesh-examples__version>5.12.4</m:dependency.management__io.fabric8__chaosmesh-examples__version>
+		<m:dependency.management__io.fabric8__chaosmesh-tests__version>5.12.4</m:dependency.management__io.fabric8__chaosmesh-tests__version>
+		<m:dependency.management__io.fabric8__camel-k-model-v1__version>5.12.4</m:dependency.management__io.fabric8__camel-k-model-v1__version>
+		<m:dependency.management__io.fabric8__camel-k-model-v1alpha1__version>5.12.4</m:dependency.management__io.fabric8__camel-k-model-v1alpha1__version>
+		<m:dependency.management__io.fabric8__camel-k-client__version>5.12.4</m:dependency.management__io.fabric8__camel-k-client__version>
+		<m:dependency.management__io.fabric8__camel-k-mock__version>5.12.4</m:dependency.management__io.fabric8__camel-k-mock__version>
+		<m:dependency.management__io.fabric8__camel-k-tests__version>5.12.4</m:dependency.management__io.fabric8__camel-k-tests__version>
+		<m:dependency.management__io.fabric8__certmanager-model-v1alpha2__version>5.12.4</m:dependency.management__io.fabric8__certmanager-model-v1alpha2__version>
+		<m:dependency.management__io.fabric8__certmanager-model-v1alpha3__version>5.12.4</m:dependency.management__io.fabric8__certmanager-model-v1alpha3__version>
+		<m:dependency.management__io.fabric8__certmanager-model-v1beta1__version>5.12.4</m:dependency.management__io.fabric8__certmanager-model-v1beta1__version>
+		<m:dependency.management__io.fabric8__certmanager-model-v1__version>5.12.4</m:dependency.management__io.fabric8__certmanager-model-v1__version>
+		<m:dependency.management__io.fabric8__certmanager-client__version>5.12.4</m:dependency.management__io.fabric8__certmanager-client__version>
+		<m:dependency.management__io.fabric8__certmanager-server-mock__version>5.12.4</m:dependency.management__io.fabric8__certmanager-server-mock__version>
+		<m:dependency.management__io.fabric8__certmanager-examples__version>5.12.4</m:dependency.management__io.fabric8__certmanager-examples__version>
+		<m:dependency.management__io.fabric8__certmanager-tests__version>5.12.4</m:dependency.management__io.fabric8__certmanager-tests__version>
+		<m:dependency.management__io.fabric8__verticalpodautoscaler-model-v1__version>5.12.4</m:dependency.management__io.fabric8__verticalpodautoscaler-model-v1__version>
+		<m:dependency.management__io.fabric8__verticalpodautoscaler-client__version>5.12.4</m:dependency.management__io.fabric8__verticalpodautoscaler-client__version>
+		<m:dependency.management__io.fabric8__verticalpodautoscaler-server-mock__version>5.12.4</m:dependency.management__io.fabric8__verticalpodautoscaler-server-mock__version>
+		<m:dependency.management__io.fabric8__verticalpodautoscaler-examples__version>5.12.4</m:dependency.management__io.fabric8__verticalpodautoscaler-examples__version>
+		<m:dependency.management__io.fabric8__verticalpodautoscaler-tests__version>5.12.4</m:dependency.management__io.fabric8__verticalpodautoscaler-tests__version>
+		<m:dependency.management__io.fabric8__volcano-model-v1beta1__version>5.12.4</m:dependency.management__io.fabric8__volcano-model-v1beta1__version>
+		<m:dependency.management__io.fabric8__volcano-client__version>5.12.4</m:dependency.management__io.fabric8__volcano-client__version>
+		<m:dependency.management__io.fabric8__volcano-examples__version>5.12.4</m:dependency.management__io.fabric8__volcano-examples__version>
+		<m:dependency.management__io.fabric8__volcano-server-mock__version>5.12.4</m:dependency.management__io.fabric8__volcano-server-mock__version>
+		<m:dependency.management__io.fabric8__volcano-tests__version>5.12.4</m:dependency.management__io.fabric8__volcano-tests__version>
+		<m:dependency.management__io.fabric8__istio-model-v1alpha3__version>5.12.4</m:dependency.management__io.fabric8__istio-model-v1alpha3__version>
+		<m:dependency.management__io.fabric8__istio-model-v1beta1__version>5.12.4</m:dependency.management__io.fabric8__istio-model-v1beta1__version>
+		<m:dependency.management__io.fabric8__istio-client__version>5.12.4</m:dependency.management__io.fabric8__istio-client__version>
+		<m:dependency.management__io.fabric8__istio-server-mock__version>5.12.4</m:dependency.management__io.fabric8__istio-server-mock__version>
+		<m:dependency.management__io.fabric8__istio-examples__version>5.12.4</m:dependency.management__io.fabric8__istio-examples__version>
+		<m:dependency.management__io.fabric8__istio-tests__version>5.12.4</m:dependency.management__io.fabric8__istio-tests__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-apps-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-apps-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-agent-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-agent-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-cluster-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-cluster-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-discovery-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-discovery-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-observability-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-observability-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-operator-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-operator-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-placementruleapps-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-placementruleapps-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-policy-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-policy-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-search-model__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-search-model__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-client__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-client__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-server-mock__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-server-mock__version>
+		<m:dependency.management__io.fabric8__open-cluster-management-tests__version>5.12.4</m:dependency.management__io.fabric8__open-cluster-management-tests__version>
+		<m:dependency.management__io.fabric8__openclustermanagement-examples__version>5.12.4</m:dependency.management__io.fabric8__openclustermanagement-examples__version>
+		<m:dependency.management__io.fabric8__openshift-server-mock__version>5.12.4</m:dependency.management__io.fabric8__openshift-server-mock__version>
+		<m:dependency.management__io.fabric8__kubernetes-examples__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-examples__version>
+		<m:dependency.management__io.fabric8.kubernetes__kubernetes-karaf__version>5.12.4</m:dependency.management__io.fabric8.kubernetes__kubernetes-karaf__version>
+		<m:dependency.management__io.fabric8.kubernetes__kubernetes-karaf-itests__version>5.12.4</m:dependency.management__io.fabric8.kubernetes__kubernetes-karaf-itests__version>
+		<m:dependency.management__io.fabric8__crd-generator-api__version>5.12.4</m:dependency.management__io.fabric8__crd-generator-api__version>
+		<m:dependency.management__io.fabric8__crd-generator-apt__version>5.12.4</m:dependency.management__io.fabric8__crd-generator-apt__version>
+		<m:dependency.management__io.fabric8__kubernetes-test__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-test__version>
+		<m:dependency.management__io.fabric8__kubernetes-openshift-uberjar__version>5.12.4</m:dependency.management__io.fabric8__kubernetes-openshift-uberjar__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

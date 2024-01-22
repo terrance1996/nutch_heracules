@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.eclipse.jetty"
+		module="jetty-bom"
+		revision="9.4.53.v20231009"
+		status="release"
+		publication="20231009053646"
+	>
+		<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<license name="Eclipse Public License - Version 1.0" url="https://www.eclipse.org/org/documents/epl-v10.php" />
+		<description homepage="https://eclipse.org/jetty">
+		Jetty BOM artifact
+		</description>
+		<m:dependency.management__org.eclipse.jetty__apache-jsp__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__apache-jsp__version>
+		<m:dependency.management__org.eclipse.jetty__apache-jstl__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__apache-jstl__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-client__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-java-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-java-client__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-java-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-java-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-openjdk8-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-openjdk8-client__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-openjdk8-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-openjdk8-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-conscrypt-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-conscrypt-client__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-conscrypt-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-conscrypt-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-alpn-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-alpn-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-annotations__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-annotations__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-ant__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-ant__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-client__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-continuation__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-continuation__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-deploy__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-deploy__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-distribution__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-distribution__version>
+		<m:dependency.management__org.eclipse.jetty.fcgi__fcgi-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.fcgi__fcgi-client__version>
+		<m:dependency.management__org.eclipse.jetty.fcgi__fcgi-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.fcgi__fcgi-server__version>
+		<m:dependency.management__org.eclipse.jetty.gcloud__jetty-gcloud-session-manager__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.gcloud__jetty-gcloud-session-manager__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-home__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-home__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-http__version>
+		<m:dependency.management__org.eclipse.jetty.http2__http2-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.http2__http2-client__version>
+		<m:dependency.management__org.eclipse.jetty.http2__http2-common__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.http2__http2-common__version>
+		<m:dependency.management__org.eclipse.jetty.http2__http2-hpack__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.http2__http2-hpack__version>
+		<m:dependency.management__org.eclipse.jetty.http2__http2-http-client-transport__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.http2__http2-http-client-transport__version>
+		<m:dependency.management__org.eclipse.jetty.http2__http2-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.http2__http2-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http-spi__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-http-spi__version>
+		<m:dependency.management__org.eclipse.jetty__infinispan-common__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__infinispan-common__version>
+		<m:dependency.management__org.eclipse.jetty__infinispan-remote-query__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__infinispan-remote-query__version>
+		<m:dependency.management__org.eclipse.jetty__infinispan-embedded-query__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__infinispan-embedded-query__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-hazelcast__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-hazelcast__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jaas__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-jaas__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jaspi__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-jaspi__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jmx__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-jmx__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-jndi__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-jndi__version>
+		<m:dependency.management__org.eclipse.jetty.memcached__jetty-memcached-sessions__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.memcached__jetty-memcached-sessions__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-nosql__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-nosql__version>
+		<m:dependency.management__org.eclipse.jetty.osgi__jetty-osgi-boot__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.osgi__jetty-osgi-boot__version>
+		<m:dependency.management__org.eclipse.jetty.osgi__jetty-osgi-boot-jsp__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.osgi__jetty-osgi-boot-jsp__version>
+		<m:dependency.management__org.eclipse.jetty.osgi__jetty-osgi-boot-warurl__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.osgi__jetty-osgi-boot-warurl__version>
+		<m:dependency.management__org.eclipse.jetty.osgi__jetty-httpservice__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.osgi__jetty-httpservice__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-plus__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-plus__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-proxy__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-proxy__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-quickstart__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-quickstart__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-rewrite__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-rewrite__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-security__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-security__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-openid__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-openid__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlets__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-servlets__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-spring__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-spring__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-unixsocket__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-unixsocket__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util-ajax__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-util-ajax__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-webapp__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-webapp__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__javax-websocket-client-impl__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__javax-websocket-client-impl__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__javax-websocket-server-impl__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__javax-websocket-server-impl__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-api__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__websocket-api__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-client__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__websocket-client__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-common__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__websocket-common__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-server__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__websocket-server__version>
+		<m:dependency.management__org.eclipse.jetty.websocket__websocket-servlet__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty.websocket__websocket-servlet__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-xml__version>9.4.53.v20231009</m:dependency.management__org.eclipse.jetty__jetty-xml__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

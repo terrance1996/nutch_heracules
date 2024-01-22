@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.testcontainers"
+		module="testcontainers-bom"
+		revision="1.16.1"
+		status="release"
+		publication="20211018045756"
+	>
+		<license name="MIT" url="http://opensource.org/licenses/MIT" />
+		<description homepage="https://testcontainers.org">
+		Isolated container management for Java code testing
+		</description>
+		<m:dependency.management__org.testcontainers__azure__version>1.16.1</m:dependency.management__org.testcontainers__azure__version>
+		<m:dependency.management__org.testcontainers__cassandra__version>1.16.1</m:dependency.management__org.testcontainers__cassandra__version>
+		<m:dependency.management__org.testcontainers__clickhouse__version>1.16.1</m:dependency.management__org.testcontainers__clickhouse__version>
+		<m:dependency.management__org.testcontainers__cockroachdb__version>1.16.1</m:dependency.management__org.testcontainers__cockroachdb__version>
+		<m:dependency.management__org.testcontainers__couchbase__version>1.16.1</m:dependency.management__org.testcontainers__couchbase__version>
+		<m:dependency.management__org.testcontainers__database-commons__version>1.16.1</m:dependency.management__org.testcontainers__database-commons__version>
+		<m:dependency.management__org.testcontainers__db2__version>1.16.1</m:dependency.management__org.testcontainers__db2__version>
+		<m:dependency.management__org.testcontainers__dynalite__version>1.16.1</m:dependency.management__org.testcontainers__dynalite__version>
+		<m:dependency.management__org.testcontainers__elasticsearch__version>1.16.1</m:dependency.management__org.testcontainers__elasticsearch__version>
+		<m:dependency.management__org.testcontainers__gcloud__version>1.16.1</m:dependency.management__org.testcontainers__gcloud__version>
+		<m:dependency.management__org.testcontainers__influxdb__version>1.16.1</m:dependency.management__org.testcontainers__influxdb__version>
+		<m:dependency.management__org.testcontainers__jdbc__version>1.16.1</m:dependency.management__org.testcontainers__jdbc__version>
+		<m:dependency.management__org.testcontainers__junit-jupiter__version>1.16.1</m:dependency.management__org.testcontainers__junit-jupiter__version>
+		<m:dependency.management__org.testcontainers__kafka__version>1.16.1</m:dependency.management__org.testcontainers__kafka__version>
+		<m:dependency.management__org.testcontainers__localstack__version>1.16.1</m:dependency.management__org.testcontainers__localstack__version>
+		<m:dependency.management__org.testcontainers__mariadb__version>1.16.1</m:dependency.management__org.testcontainers__mariadb__version>
+		<m:dependency.management__org.testcontainers__mockserver__version>1.16.1</m:dependency.management__org.testcontainers__mockserver__version>
+		<m:dependency.management__org.testcontainers__mongodb__version>1.16.1</m:dependency.management__org.testcontainers__mongodb__version>
+		<m:dependency.management__org.testcontainers__mssqlserver__version>1.16.1</m:dependency.management__org.testcontainers__mssqlserver__version>
+		<m:dependency.management__org.testcontainers__mysql__version>1.16.1</m:dependency.management__org.testcontainers__mysql__version>
+		<m:dependency.management__org.testcontainers__neo4j__version>1.16.1</m:dependency.management__org.testcontainers__neo4j__version>
+		<m:dependency.management__org.testcontainers__nginx__version>1.16.1</m:dependency.management__org.testcontainers__nginx__version>
+		<m:dependency.management__org.testcontainers__oracle-xe__version>1.16.1</m:dependency.management__org.testcontainers__oracle-xe__version>
+		<m:dependency.management__org.testcontainers__orientdb__version>1.16.1</m:dependency.management__org.testcontainers__orientdb__version>
+		<m:dependency.management__org.testcontainers__postgresql__version>1.16.1</m:dependency.management__org.testcontainers__postgresql__version>
+		<m:dependency.management__org.testcontainers__presto__version>1.16.1</m:dependency.management__org.testcontainers__presto__version>
+		<m:dependency.management__org.testcontainers__pulsar__version>1.16.1</m:dependency.management__org.testcontainers__pulsar__version>
+		<m:dependency.management__org.testcontainers__r2dbc__version>1.16.1</m:dependency.management__org.testcontainers__r2dbc__version>
+		<m:dependency.management__org.testcontainers__rabbitmq__version>1.16.1</m:dependency.management__org.testcontainers__rabbitmq__version>
+		<m:dependency.management__org.testcontainers__selenium__version>1.16.1</m:dependency.management__org.testcontainers__selenium__version>
+		<m:dependency.management__org.testcontainers__solr__version>1.16.1</m:dependency.management__org.testcontainers__solr__version>
+		<m:dependency.management__org.testcontainers__spock__version>1.16.1</m:dependency.management__org.testcontainers__spock__version>
+		<m:dependency.management__org.testcontainers__testcontainers__version>1.16.1</m:dependency.management__org.testcontainers__testcontainers__version>
+		<m:dependency.management__org.testcontainers__toxiproxy__version>1.16.1</m:dependency.management__org.testcontainers__toxiproxy__version>
+		<m:dependency.management__org.testcontainers__trino__version>1.16.1</m:dependency.management__org.testcontainers__trino__version>
+		<m:dependency.management__org.testcontainers__vault__version>1.16.1</m:dependency.management__org.testcontainers__vault__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.codehaus.groovy"
+		module="groovy-bom"
+		revision="3.0.19"
+		status="release"
+		publication="20230821223046"
+	>
+		<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="https://groovy-lang.org">
+		Groovy: A powerful, dynamic language for the JVM
+		</description>
+		<m:dependency.management__org.codehaus.groovy__groovy__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-ant__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-ant__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-astbuilder__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-astbuilder__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-bsf__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-bsf__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-cli-commons__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-cli-commons__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-cli-picocli__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-cli-picocli__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-console__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-console__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-datetime__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-datetime__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-dateutil__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-dateutil__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-docgenerator__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-docgenerator__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-groovydoc__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-groovydoc__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-groovysh__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-groovysh__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-jaxb__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-jaxb__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-jmx__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-jmx__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-json__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-json__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-jsr223__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-jsr223__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-macro__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-macro__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-nio__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-nio__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-servlet__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-servlet__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-sql__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-sql__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-swing__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-swing__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-templates__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-templates__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-test__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-test__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-test-junit5__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-test-junit5__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-testng__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-testng__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-xml__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-xml__version>
+		<m:dependency.management__org.codehaus.groovy__groovy-yaml__version>3.0.19</m:dependency.management__org.codehaus.groovy__groovy-yaml__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

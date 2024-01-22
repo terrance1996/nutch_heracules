@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.springframework"
+		module="spring-framework-bom"
+		revision="5.3.29"
+		status="release"
+		publication="20230713011508"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="https://github.com/spring-projects/spring-framework">
+		Spring Framework (Bill of Materials)
+		</description>
+		<m:dependency.management__org.springframework__spring-aop__version>5.3.29</m:dependency.management__org.springframework__spring-aop__version>
+		<m:dependency.management__org.springframework__spring-aspects__version>5.3.29</m:dependency.management__org.springframework__spring-aspects__version>
+		<m:dependency.management__org.springframework__spring-beans__version>5.3.29</m:dependency.management__org.springframework__spring-beans__version>
+		<m:dependency.management__org.springframework__spring-context__version>5.3.29</m:dependency.management__org.springframework__spring-context__version>
+		<m:dependency.management__org.springframework__spring-context-indexer__version>5.3.29</m:dependency.management__org.springframework__spring-context-indexer__version>
+		<m:dependency.management__org.springframework__spring-context-support__version>5.3.29</m:dependency.management__org.springframework__spring-context-support__version>
+		<m:dependency.management__org.springframework__spring-core__version>5.3.29</m:dependency.management__org.springframework__spring-core__version>
+		<m:dependency.management__org.springframework__spring-expression__version>5.3.29</m:dependency.management__org.springframework__spring-expression__version>
+		<m:dependency.management__org.springframework__spring-instrument__version>5.3.29</m:dependency.management__org.springframework__spring-instrument__version>
+		<m:dependency.management__org.springframework__spring-jcl__version>5.3.29</m:dependency.management__org.springframework__spring-jcl__version>
+		<m:dependency.management__org.springframework__spring-jdbc__version>5.3.29</m:dependency.management__org.springframework__spring-jdbc__version>
+		<m:dependency.management__org.springframework__spring-jms__version>5.3.29</m:dependency.management__org.springframework__spring-jms__version>
+		<m:dependency.management__org.springframework__spring-messaging__version>5.3.29</m:dependency.management__org.springframework__spring-messaging__version>
+		<m:dependency.management__org.springframework__spring-orm__version>5.3.29</m:dependency.management__org.springframework__spring-orm__version>
+		<m:dependency.management__org.springframework__spring-oxm__version>5.3.29</m:dependency.management__org.springframework__spring-oxm__version>
+		<m:dependency.management__org.springframework__spring-r2dbc__version>5.3.29</m:dependency.management__org.springframework__spring-r2dbc__version>
+		<m:dependency.management__org.springframework__spring-test__version>5.3.29</m:dependency.management__org.springframework__spring-test__version>
+		<m:dependency.management__org.springframework__spring-tx__version>5.3.29</m:dependency.management__org.springframework__spring-tx__version>
+		<m:dependency.management__org.springframework__spring-web__version>5.3.29</m:dependency.management__org.springframework__spring-web__version>
+		<m:dependency.management__org.springframework__spring-webflux__version>5.3.29</m:dependency.management__org.springframework__spring-webflux__version>
+		<m:dependency.management__org.springframework__spring-webmvc__version>5.3.29</m:dependency.management__org.springframework__spring-webmvc__version>
+		<m:dependency.management__org.springframework__spring-websocket__version>5.3.29</m:dependency.management__org.springframework__spring-websocket__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>
