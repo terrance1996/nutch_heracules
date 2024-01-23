@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.martinkl.warc</groupId>
+  <artifactId>warc-hadoop</artifactId>
+  <version>0.1.0</version>
+  <name>WARC Input and Output Formats for Hadoop</name>
+  <description>Java library for working with WARC (Web Archive) files in Hadoop MapReduce</description>
+  <url>https://github.com/ept/warc-hadoop</url>
+  <licenses>
+    <license>
+      <name>The MIT License</name>
+      <url>http://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>martinkl</id>
+      <name>Martin Kleppmann</name>
+      <email>martin@kleppmann.com</email>
+      <url>http://martin.kleppmann.com</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:https://github.com/ept/warc-hadoop.git</connection>
+    <developerConnection>scm:git@github.com:ept/warc-hadoop.git</developerConnection>
+    <url>https://github.com/ept/warc-hadoop</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.7</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-client</artifactId>
+      <version>2.2.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.7</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

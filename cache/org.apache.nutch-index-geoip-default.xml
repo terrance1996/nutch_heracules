@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="index-geoip"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123005407"/>
+	<dependencies>
+		<module organisation="com.maxmind.geoip2" name="geoip2">
+			<revision name="3.0.1" status="release" pubdate="20220329085923" resolver="maven2" artresolver="default" homepage="https://dev.maxmind.com/geoip?lang=en" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="9391" time="1207" location="C:\Users\Administrator\.ivy2\cache\com.maxmind.geoip2\geoip2\ivy-3.0.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.maxmind.geoip2\geoip2\ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/maxmind/geoip2/geoip2/3.0.1/geoip2-3.0.1.pom"/>
+				<caller organisation="org.apache.nutch" name="index-geoip" conf="default, master" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="geoip2" type="jar" ext="jar" status="successful" details="" size="56189" time="1241" location="C:\Users\Administrator\.ivy2\cache\com.maxmind.geoip2\geoip2\jars\geoip2-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/maxmind/geoip2/geoip2/3.0.1/geoip2-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.13.2.2" status="release" pubdate="20220328190051" resolver="maven2" artresolver="default" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="16544" time="1219" location="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.13.2.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.13.2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.pom"/>
+				<caller organisation="com.maxmind.geoip2" name="geoip2" conf="default, compile, runtime, master" rev="2.13.2.2" rev-constraint-default="2.13.2.2" rev-constraint-dynamic="2.13.2.2" callerrev="3.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.13.2" status="release" pubdate="20220306112756" resolver="maven2" artresolver="default" homepage="https://github.com/FasterXML/jackson-core" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5533" time="1215" location="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.13.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.13.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.pom"/>
+				<caller organisation="com.maxmind.geoip2" name="geoip2" conf="default, compile, runtime, master" rev="2.13.2" rev-constraint-default="2.13.2" rev-constraint-dynamic="2.13.2" callerrev="3.0.1"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.13.2" rev-constraint-default="2.13.2" rev-constraint-dynamic="2.13.2" callerrev="2.13.2.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.13.2" status="release" pubdate="20220306112043" resolver="maven2" artresolver="default" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6080" time="1214" location="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.13.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.13.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.pom"/>
+				<caller organisation="com.maxmind.geoip2" name="geoip2" conf="default, compile, runtime, master" rev="2.13.2" rev-constraint-default="2.13.2" rev-constraint-dynamic="2.13.2" callerrev="3.0.1"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.13.2" rev-constraint-default="2.13.2" rev-constraint-dynamic="2.13.2" callerrev="2.13.2.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.maxmind.db" name="maxmind-db">
+			<revision name="2.0.0" status="release" pubdate="20201013134240" resolver="maven2" artresolver="default" homepage="http://dev.maxmind.com/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="5583" time="1247" location="C:\Users\Administrator\.ivy2\cache\com.maxmind.db\maxmind-db\ivy-2.0.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.maxmind.db\maxmind-db\ivy-2.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/maxmind/db/maxmind-db/2.0.0/maxmind-db-2.0.0.pom"/>
+				<caller organisation="com.maxmind.geoip2" name="geoip2" conf="default, compile, runtime, master" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="3.0.1"/>
+				<artifacts>
+					<artifact name="maxmind-db" type="jar" ext="jar" status="successful" details="" size="30891" time="1564" location="C:\Users\Administrator\.ivy2\cache\com.maxmind.db\maxmind-db\jars\maxmind-db-2.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/maxmind/db/maxmind-db/2.0.0/maxmind-db-2.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

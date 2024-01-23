@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="urlfilter-validator"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123011539"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>

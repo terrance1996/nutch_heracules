@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="com.sun.xml.messaging.saaj"
+		module="metro-saaj"
+		revision="1.5.3"
+		status="release"
+		publication="20210411234654"
+	>
+		<license name="Eclipse Distribution License - v 1.0" url="http://www.eclipse.org/org/documents/edl-v10.php" />
+		<description homepage="">
+		Implementation of Jakarta SOAP with Attachments Specification
+		</description>
+		<m:properties__spotbugs.version>4.2.2</m:properties__spotbugs.version>
+		<m:properties__spotbugs.skip>false</m:properties__spotbugs.skip>
+		<m:properties__legal.doc.source>../</m:properties__legal.doc.source>
+		<m:properties__spotbugs.threshold>Low</m:properties__spotbugs.threshold>
+		<m:properties__copyright.ignoreyear>false</m:properties__copyright.ignoreyear>
+		<m:properties__copyright.exclude>${config.dir}/copyright-exclude</m:properties__copyright.exclude>
+		<m:properties__copyright.template>${config.dir}/edl-copyright.txt</m:properties__copyright.template>
+		<m:properties__copyright.scmonly>true</m:properties__copyright.scmonly>
+		<m:properties__copyright.update>false</m:properties__copyright.update>
+		<m:properties__spotbugs.exclude>${config.dir}/exclude.xml</m:properties__spotbugs.exclude>
+		<m:properties__config.dir>etc/config</m:properties__config.dir>
+		<m:properties__release.arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__sonatypeOssDistMgmtStagingUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/staging/</m:properties__sonatypeOssDistMgmtStagingUrl>
+		<m:properties__sonatypeOssDistMgmtNexusUrl>https://jakarta.oss.sonatype.org/</m:properties__sonatypeOssDistMgmtNexusUrl>
+		<m:properties__sonatypeOssDistMgmtReleasesUrl>${sonatypeOssDistMgmtNexusUrl}service/local/staging/deploy/maven2/</m:properties__sonatypeOssDistMgmtReleasesUrl>
+		<m:dependency.management__jakarta.activation__jakarta.activation-api__version>1.2.2</m:dependency.management__jakarta.activation__jakarta.activation-api__version>
+		<m:dependency.management__jakarta.xml.bind__jakarta.xml.bind-api__version>2.3.3</m:dependency.management__jakarta.xml.bind__jakarta.xml.bind-api__version>
+		<m:dependency.management__jakarta.xml.soap__jakarta.xml.soap-api__version>1.4.2</m:dependency.management__jakarta.xml.soap__jakarta.xml.soap-api__version>
+		<m:dependency.management__org.jvnet.mimepull__mimepull__version>1.9.14</m:dependency.management__org.jvnet.mimepull__mimepull__version>
+		<m:dependency.management__org.jvnet.staxex__stax-ex__version>1.8.3</m:dependency.management__org.jvnet.staxex__stax-ex__version>
+		<m:dependency.management__junit__junit__version>4.13.2</m:dependency.management__junit__junit__version>
+		<m:dependency.management__com.sun.activation__jakarta.activation__version>1.2.2</m:dependency.management__com.sun.activation__jakarta.activation__version>
+		<m:dependency.management__com.sun.xml.fastinfoset__FastInfoset__version>1.2.18</m:dependency.management__com.sun.xml.fastinfoset__FastInfoset__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|com.github.spotbugs__spotbugs-maven-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

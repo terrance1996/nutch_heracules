@@ -6,6 +6,7 @@
 		status="release"
 		publication="20220208053351"
 	>
+		<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php" />
 		<description homepage="http://www.slf4j.org">
 		The slf4j API
 		</description>
@@ -38,7 +39,7 @@
 		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
 		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
 		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
-		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
 		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
 		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
 		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
@@ -51,9 +52,9 @@
 	</publications>
 	<dependencies>
 		<dependency org="junit" name="junit" rev="4.13" force="true" conf="test->runtime(*),master(*)"/>
-		<override org="ch.qos.cal10n" module="cal10n-api" matcher="exact" rev="0.8.1"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.36"/>
 		<override org="org.slf4j" module="slf4j-jdk14" matcher="exact" rev="1.7.36"/>
 		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.19"/>
-		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.36"/>
+		<override org="ch.qos.cal10n" module="cal10n-api" matcher="exact" rev="0.8.1"/>
 	</dependencies>
 </ivy-module>

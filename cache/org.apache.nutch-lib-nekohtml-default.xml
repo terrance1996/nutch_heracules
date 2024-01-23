@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="lib-nekohtml"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123010829"/>
+	<dependencies>
+		<module organisation="net.sourceforge.nekohtml" name="nekohtml">
+			<revision name="1.9.19" status="release" pubdate="20131009065450" resolver="maven2" artresolver="default" homepage="http://nekohtml.sourceforge.net/" downloaded="false" searched="false" default="false" conf="master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2780" time="0" location="C:\Users\Administrator\.ivy2\cache\net.sourceforge.nekohtml\nekohtml\ivy-1.9.19.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\net.sourceforge.nekohtml\nekohtml\ivy-1.9.19.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.19/nekohtml-1.9.19.pom"/>
+				<caller organisation="org.apache.nutch" name="lib-nekohtml" conf="default, master" rev="1.9.19" rev-constraint-default="1.9.19" rev-constraint-dynamic="1.9.19" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="nekohtml" type="jar" ext="jar" status="no" details="" size="124915" time="0" location="C:\Users\Administrator\.ivy2\cache\net.sourceforge.nekohtml\nekohtml\jars\nekohtml-1.9.19.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sourceforge/nekohtml/nekohtml/1.9.19/nekohtml-1.9.19.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.eclipse.jetty"
+		module="jetty-alpn-parent"
+		revision="9.4.44.v20210927"
+		status="release"
+		publication="20210927160608"
+	>
+		<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<license name="Eclipse Public License - Version 1.0" url="https://www.eclipse.org/org/documents/epl-v10.php" />
+		<description homepage="" />
+		<m:properties__javax.servlet.api.version>3.1.0</m:properties__javax.servlet.api.version>
+		<m:properties__bndlib.version>5.3.0</m:properties__bndlib.version>
+		<m:properties__maven.plugin.plugin.version>3.6.1</m:properties__maven.plugin.plugin.version>
+		<m:properties__license.plugin.version>4.1</m:properties__license.plugin.version>
+		<m:properties__maven.javadoc.plugin.version>3.3.1</m:properties__maven.javadoc.plugin.version>
+		<m:properties__hawtio.version>2.14.0</m:properties__hawtio.version>
+		<m:properties__it.debug>false</m:properties__it.debug>
+		<m:properties__osgi.annotation.version>8.0.0</m:properties__osgi.annotation.version>
+		<m:properties__alpn.agent.version>2.0.10</m:properties__alpn.agent.version>
+		<m:properties__slf4j.version>1.7.32</m:properties__slf4j.version>
+		<m:properties__maven.antrun.plugin.version>3.0.0</m:properties__maven.antrun.plugin.version>
+		<m:properties__findbugs.jsr305.version>3.0.2</m:properties__findbugs.jsr305.version>
+		<m:properties__jna.version>5.9.0</m:properties__jna.version>
+		<m:properties__jetty.testtracker.log>false</m:properties__jetty.testtracker.log>
+		<m:properties__asciidoctor.plugin.version>2.2.1</m:properties__asciidoctor.plugin.version>
+		<m:properties__maven.version>3.8.2</m:properties__maven.version>
+		<m:properties__versions.plugin.version>2.8.1</m:properties__versions.plugin.version>
+		<m:properties__javax.transaction.api.version>1.3</m:properties__javax.transaction.api.version>
+		<m:properties__javax.activation.version>1.1.0.v201105071233</m:properties__javax.activation.version>
+		<m:properties__taglibs-standard-spec.version>1.2.5</m:properties__taglibs-standard-spec.version>
+		<m:properties__testcontainers.version>1.16.0</m:properties__testcontainers.version>
+		<m:properties__unix.socket.tmp/>
+		<m:properties__jsp.version>8.5.70</m:properties__jsp.version>
+		<m:properties__plexus-utils.version>3.4.1</m:properties__plexus-utils.version>
+		<m:properties__maven.invoker.plugin.version>3.2.2</m:properties__maven.invoker.plugin.version>
+		<m:properties__docbkx.plugin.version>2.0.17</m:properties__docbkx.plugin.version>
+		<m:properties__maven.enforcer.plugin.version>3.0.0</m:properties__maven.enforcer.plugin.version>
+		<m:properties__settingsPath>src/it/settings.xml</m:properties__settingsPath>
+		<m:properties__guice.version>5.0.1</m:properties__guice.version>
+		<m:properties__jmh.version>1.33</m:properties__jmh.version>
+		<m:properties__weld.version>3.1.5.Final</m:properties__weld.version>
+		<m:properties__jboss.logging.version>3.4.2.Final</m:properties__jboss.logging.version>
+		<m:properties__jolokia.version>1.3.3</m:properties__jolokia.version>
+		<m:properties__osgi.core.version>6.0.0</m:properties__osgi.core.version>
+		<m:properties__jnr-enxio.version>0.32.9</m:properties__jnr-enxio.version>
+		<m:properties__maven.eclipse.plugin.version>2.10</m:properties__maven.eclipse.plugin.version>
+		<m:properties__spring-boot.version>2.1.1.RELEASE</m:properties__spring-boot.version>
+		<m:properties__hazelcast.version>3.12.12</m:properties__hazelcast.version>
+		<m:properties__gson.version>2.8.8</m:properties__gson.version>
+		<m:properties__asm.version>9.2</m:properties__asm.version>
+		<m:properties__maven.compiler.plugin.version>3.8.1</m:properties__maven.compiler.plugin.version>
+		<m:properties__maven.release.plugin.version>2.5.3</m:properties__maven.release.plugin.version>
+		<m:properties__grpc.version>1.41.0</m:properties__grpc.version>
+		<m:properties__jetty-version-txt.plugin.version>2.7</m:properties__jetty-version-txt.plugin.version>
+		<m:properties__infinispan.version>9.4.8.Final</m:properties__infinispan.version>
+		<m:properties__jnr-ffi.version>2.2.7</m:properties__jnr-ffi.version>
+		<m:properties__maven.checkstyle.plugin.version>3.1.0</m:properties__maven.checkstyle.plugin.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__jetty.url>https://eclipse.org/jetty</m:properties__jetty.url>
+		<m:properties__maven.assembly.plugin.version>3.3.0</m:properties__maven.assembly.plugin.version>
+		<m:properties__build-support.version>1.5</m:properties__build-support.version>
+		<m:properties__maven.compiler.target>8</m:properties__maven.compiler.target>
+		<m:properties__ant.version>1.10.11</m:properties__ant.version>
+		<m:properties__javax.annotation.api.version>1.3.2</m:properties__javax.annotation.api.version>
+		<m:properties__awaitility.version>4.1.0</m:properties__awaitility.version>
+		<m:properties__maven.dependency.plugin.version>3.2.0</m:properties__maven.dependency.plugin.version>
+		<m:properties__build-helper.plugin.version>3.2.0</m:properties__build-helper.plugin.version>
+		<m:properties__xmemcached.version>2.4.7</m:properties__xmemcached.version>
+		<m:properties__conscrypt.version>2.5.2</m:properties__conscrypt.version>
+		<m:properties__jmhjar.name>benchmarks</m:properties__jmhjar.name>
+		<m:properties__jpms-module-name>${bundle-symbolic-name}</m:properties__jpms-module-name>
+		<m:properties__localRepoPath>${project.build.directory}/local-repo</m:properties__localRepoPath>
+		<m:properties__mongodb.version>2.13.2</m:properties__mongodb.version>
+		<m:properties__maria.version>2.7.4</m:properties__maria.version>
+		<m:properties__maven.shade.plugin.version>3.2.4</m:properties__maven.shade.plugin.version>
+		<m:properties__maven.resources.plugin.version>3.2.0</m:properties__maven.resources.plugin.version>
+		<m:properties__javax.mail.glassfish.version>1.4.1.v201005082020</m:properties__javax.mail.glassfish.version>
+		<m:properties__javax.websocket.api.version>1.0</m:properties__javax.websocket.api.version>
+		<m:properties__junit.version>5.8.1</m:properties__junit.version>
+		<m:properties__jsr250-api.version>1.0</m:properties__jsr250-api.version>
+		<m:properties__logback.version>1.2.6</m:properties__logback.version>
+		<m:properties__maven.site.plugin.version>3.9.1</m:properties__maven.site.plugin.version>
+		<m:properties__maven.deploy.plugin.version>3.0.0-M1</m:properties__maven.deploy.plugin.version>
+		<m:properties__jetty-test-policy.version>1.2</m:properties__jetty-test-policy.version>
+		<m:properties__alpn.api.version>1.1.3.v20160715</m:properties__alpn.api.version>
+		<m:properties__maven.compiler.source>8</m:properties__maven.compiler.source>
+		<m:properties__maven.jar.plugin.version>3.2.0</m:properties__maven.jar.plugin.version>
+		<m:properties__buildnumber.plugin.version>1.4</m:properties__buildnumber.plugin.version>
+		<m:properties__maven.war.plugin.version>3.3.2</m:properties__maven.war.plugin.version>
+		<m:properties__plexus-container.version>2.1.0</m:properties__plexus-container.version>
+		<m:properties__maven.surefire.plugin.version>3.0.0-M5</m:properties__maven.surefire.plugin.version>
+		<m:properties__maven.remote-resources.plugin.version>1.7.0</m:properties__maven.remote-resources.plugin.version>
+		<m:properties__maven.plugin-tools.version>3.6.1</m:properties__maven.plugin-tools.version>
+		<m:properties__maven.source.plugin.version>3.2.1</m:properties__maven.source.plugin.version>
+		<m:properties__jacoco.plugin.version>0.8.7</m:properties__jacoco.plugin.version>
+		<m:properties__jamon.version>2.82</m:properties__jamon.version>
+		<m:properties__servicemix-depends.plugin.version>1.4.0</m:properties__servicemix-depends.plugin.version>
+		<m:properties__h2spec.plugin.version>1.0.7</m:properties__h2spec.plugin.version>
+		<m:properties__guava.version>30.1.1-jre</m:properties__guava.version>
+		<m:properties__jetty.perf-helper.version>1.0.7</m:properties__jetty.perf-helper.version>
+		<m:properties__infinispan.protostream.version>4.3.4.Final</m:properties__infinispan.protostream.version>
+		<m:properties__jetty.schemas.version>3.1.2</m:properties__jetty.schemas.version>
+		<m:properties__appassembler.plugin.version>2.1.0</m:properties__appassembler.plugin.version>
+		<m:properties__maven.install.plugin.version>3.0.0-M1</m:properties__maven.install.plugin.version>
+		<m:properties__google.errorprone.version>2.9.0</m:properties__google.errorprone.version>
+		<m:properties__maven.jxr.plugin.version>3.3.1</m:properties__maven.jxr.plugin.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__felix-bundle.plugin.version>3.5.1</m:properties__felix-bundle.plugin.version>
+		<m:properties__maven.project-info-reports.plugin.version>3.1.2</m:properties__maven.project-info-reports.plugin.version>
+		<m:properties__disruptor.version>3.4.2</m:properties__disruptor.version>
+		<m:properties__log4j2.version>2.14.0</m:properties__log4j2.version>
+		<m:properties__surefire.rerunFailingTestsCount>0</m:properties__surefire.rerunFailingTestsCount>
+		<m:properties__maven.clean.plugin.version>3.1.0</m:properties__maven.clean.plugin.version>
+		<m:properties__jnr-posix.version>3.1.10</m:properties__jnr-posix.version>
+		<m:properties__taglibs-standard-impl.version>1.2.5</m:properties__taglibs-standard-impl.version>
+		<m:properties__maven.resolver.version>1.7.2</m:properties__maven.resolver.version>
+		<m:properties__exec.plugin.version>3.0.0</m:properties__exec.plugin.version>
+		<m:properties__checkstyle.version>9.0</m:properties__checkstyle.version>
+		<m:properties__jnr-unixsocket.version>0.38.11</m:properties__jnr-unixsocket.version>
+		<m:properties__javax.security.auth.message.version>1.0.0.v201108011116</m:properties__javax.security.auth.message.version>
+		<m:properties__jetty.test.version>5.9</m:properties__jetty.test.version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.4.44.v20210927</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:dependency.management__javax.servlet__javax.servlet-api__version>3.1.0</m:dependency.management__javax.servlet__javax.servlet-api__version>
+		<m:dependency.management__javax.websocket__javax.websocket-api__version>1.0</m:dependency.management__javax.websocket__javax.websocket-api__version>
+		<m:dependency.management__javax.websocket__javax.websocket-client-api__version>1.0</m:dependency.management__javax.websocket__javax.websocket-client-api__version>
+		<m:dependency.management__javax.annotation__javax.annotation-api__version>1.3.2</m:dependency.management__javax.annotation__javax.annotation-api__version>
+		<m:dependency.management__org.ow2.asm__asm__version>9.2</m:dependency.management__org.ow2.asm__asm__version>
+		<m:dependency.management__org.ow2.asm__asm-commons__version>9.2</m:dependency.management__org.ow2.asm__asm-commons__version>
+		<m:dependency.management__org.ow2.asm__asm-tree__version>9.2</m:dependency.management__org.ow2.asm__asm-tree__version>
+		<m:dependency.management__org.ow2.asm__asm-analysis__version>9.2</m:dependency.management__org.ow2.asm__asm-analysis__version>
+		<m:dependency.management__org.eclipse.jetty.orbit__javax.security.auth.message__version>1.0.0.v201108011116</m:dependency.management__org.eclipse.jetty.orbit__javax.security.auth.message__version>
+		<m:dependency.management__org.eclipse.jetty.toolchain__jetty-schemas__version>3.1.2</m:dependency.management__org.eclipse.jetty.toolchain__jetty-schemas__version>
+		<m:dependency.management__org.mortbay.jasper__apache-jsp__version>8.5.70</m:dependency.management__org.mortbay.jasper__apache-jsp__version>
+		<m:dependency.management__org.apache.taglibs__taglibs-standard-impl__version>1.2.5</m:dependency.management__org.apache.taglibs__taglibs-standard-impl__version>
+		<m:dependency.management__org.apache.taglibs__taglibs-standard-spec__version>1.2.5</m:dependency.management__org.apache.taglibs__taglibs-standard-spec__version>
+		<m:dependency.management__org.eclipse.jetty.orbit__javax.activation__version>1.1.0.v201105071233</m:dependency.management__org.eclipse.jetty.orbit__javax.activation__version>
+		<m:dependency.management__org.eclipse.jetty.orbit__javax.activation__scope>provided</m:dependency.management__org.eclipse.jetty.orbit__javax.activation__scope>
+		<m:dependency.management__org.eclipse.jetty.orbit__javax.mail.glassfish__version>1.4.1.v201005082020</m:dependency.management__org.eclipse.jetty.orbit__javax.mail.glassfish__version>
+		<m:dependency.management__javax.transaction__javax.transaction-api__version>1.3</m:dependency.management__javax.transaction__javax.transaction-api__version>
+		<m:dependency.management__javax.transaction__javax.transaction-api__scope>provided</m:dependency.management__javax.transaction__javax.transaction-api__scope>
+		<m:dependency.management__org.codehaus.plexus__plexus-component-annotations__version>2.1.0</m:dependency.management__org.codehaus.plexus__plexus-component-annotations__version>
+		<m:dependency.management__org.codehaus.plexus__plexus-utils__version>3.4.1</m:dependency.management__org.codehaus.plexus__plexus-utils__version>
+		<m:dependency.management__org.apache.maven__maven-plugin-api__version>3.8.2</m:dependency.management__org.apache.maven__maven-plugin-api__version>
+		<m:dependency.management__org.apache.maven__maven-artifact__version>3.8.2</m:dependency.management__org.apache.maven__maven-artifact__version>
+		<m:dependency.management__org.apache.maven__maven-core__version>3.8.2</m:dependency.management__org.apache.maven__maven-core__version>
+		<m:dependency.management__org.apache.maven__maven-settings__version>3.8.2</m:dependency.management__org.apache.maven__maven-settings__version>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-tools-api__version>3.6.1</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-tools-api__version>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>3.6.1</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__version>
+		<m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__scope>provided</m:dependency.management__org.apache.maven.plugin-tools__maven-plugin-annotations__scope>
+		<m:dependency.management__org.codehaus.plexus__plexus-container-default__version>2.1.0</m:dependency.management__org.codehaus.plexus__plexus-container-default__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter__version>5.8.1</m:dependency.management__org.junit.jupiter__junit-jupiter__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-api__version>5.8.1</m:dependency.management__org.junit.jupiter__junit-jupiter-api__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-engine__version>5.8.1</m:dependency.management__org.junit.jupiter__junit-jupiter-engine__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-migrationsupport__version>5.8.1</m:dependency.management__org.junit.jupiter__junit-jupiter-migrationsupport__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-params__version>5.8.1</m:dependency.management__org.junit.jupiter__junit-jupiter-params__version>
+		<m:dependency.management__org.junit.platform__junit-platform-commons__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-commons__version>
+		<m:dependency.management__org.junit.platform__junit-platform-console__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-console__version>
+		<m:dependency.management__org.junit.platform__junit-platform-engine__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-engine__version>
+		<m:dependency.management__org.junit.platform__junit-platform-jfr__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-jfr__version>
+		<m:dependency.management__org.junit.platform__junit-platform-launcher__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-launcher__version>
+		<m:dependency.management__org.junit.platform__junit-platform-reporting__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-reporting__version>
+		<m:dependency.management__org.junit.platform__junit-platform-runner__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-runner__version>
+		<m:dependency.management__org.junit.platform__junit-platform-suite__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-suite__version>
+		<m:dependency.management__org.junit.platform__junit-platform-suite-api__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-suite-api__version>
+		<m:dependency.management__org.junit.platform__junit-platform-suite-commons__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-suite-commons__version>
+		<m:dependency.management__org.junit.platform__junit-platform-suite-engine__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-suite-engine__version>
+		<m:dependency.management__org.junit.platform__junit-platform-testkit__version>1.8.1</m:dependency.management__org.junit.platform__junit-platform-testkit__version>
+		<m:dependency.management__org.junit.vintage__junit-vintage-engine__version>5.8.1</m:dependency.management__org.junit.vintage__junit-vintage-engine__version>
+		<m:dependency.management__org.awaitility__awaitility__version>4.1.0</m:dependency.management__org.awaitility__awaitility__version>
+		<m:dependency.management__org.awaitility__awaitility__scope>test</m:dependency.management__org.awaitility__awaitility__scope>
+		<m:dependency.management__org.testcontainers__testcontainers__version>1.16.0</m:dependency.management__org.testcontainers__testcontainers__version>
+		<m:dependency.management__org.testcontainers__junit-jupiter__version>1.16.0</m:dependency.management__org.testcontainers__junit-jupiter__version>
+		<m:dependency.management__net.java.dev.jna__jna__version>5.9.0</m:dependency.management__net.java.dev.jna__jna__version>
+		<m:dependency.management__org.eclipse.jetty.toolchain__jetty-test-helper__version>5.9</m:dependency.management__org.eclipse.jetty.toolchain__jetty-test-helper__version>
+		<m:dependency.management__org.eclipse.jetty.toolchain__jetty-perf-helper__version>1.0.7</m:dependency.management__org.eclipse.jetty.toolchain__jetty-perf-helper__version>
+		<m:dependency.management__org.slf4j__jcl104-over-slf4j__version>1.7.32</m:dependency.management__org.slf4j__jcl104-over-slf4j__version>
+		<m:dependency.management__org.slf4j__log4j-over-slf4j__version>1.7.32</m:dependency.management__org.slf4j__log4j-over-slf4j__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.32</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-simple__version>1.7.32</m:dependency.management__org.slf4j__slf4j-simple__version>
+		<m:dependency.management__org.jboss.logging__jboss-logging__version>3.4.2.Final</m:dependency.management__org.jboss.logging__jboss-logging__version>
+		<m:dependency.management__com.github.jnr__jnr-enxio__version>0.32.9</m:dependency.management__com.github.jnr__jnr-enxio__version>
+		<m:dependency.management__com.github.jnr__jnr-ffi__version>2.2.7</m:dependency.management__com.github.jnr__jnr-ffi__version>
+		<m:dependency.management__com.github.jnr__jnr-posix__version>3.1.10</m:dependency.management__com.github.jnr__jnr-posix__version>
+		<m:dependency.management__com.github.jnr__jnr-unixsocket__version>0.38.11</m:dependency.management__com.github.jnr__jnr-unixsocket__version>
+		<m:dependency.management__org.osgi__org.osgi.core__version>6.0.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__osgi.annotation__version>8.0.0</m:dependency.management__org.osgi__osgi.annotation__version>
+		<m:dependency.management__biz.aQute.bnd__biz.aQute.bndlib__version>5.3.0</m:dependency.management__biz.aQute.bnd__biz.aQute.bndlib__version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.2</m:dependency.management__com.google.code.findbugs__jsr305__version>
+		<m:dependency.management__com.google.guava__guava__version>30.1.1-jre</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__com.google.inject__guice__version>5.0.1</m:dependency.management__com.google.inject__guice__version>
+		<m:dependency.management__com.google.errorprone__error_prone_annotations__version>2.9.0</m:dependency.management__com.google.errorprone__error_prone_annotations__version>
+		<m:dependency.management__io.grpc__grpc-core__version>1.41.0</m:dependency.management__io.grpc__grpc-core__version>
+		<m:dependency.management__org.apache.ant__ant__version>1.10.11</m:dependency.management__org.apache.ant__ant__version>
+		<m:dependency.management__org.apache.ant__ant-launcher__version>1.10.11</m:dependency.management__org.apache.ant__ant-launcher__version>
+		<m:dependency.management__io.hawt__hawtio-default__version>2.14.0</m:dependency.management__io.hawt__hawtio-default__version>
+		<m:dependency.management__com.jamonapi__jamon__version>2.82</m:dependency.management__com.jamonapi__jamon__version>
+		<m:dependency.management__com.jamonapi__jamon__exclusion_0>javax.servlet__servlet-api</m:dependency.management__com.jamonapi__jamon__exclusion_0>
+		<m:dependency.management__com.jamonapi__jamon_war__version>2.82</m:dependency.management__com.jamonapi__jamon_war__version>
+		<m:dependency.management__com.jamonapi__jamon_war__exclusion_0>javax.servlet__servlet-api</m:dependency.management__com.jamonapi__jamon_war__exclusion_0>
+		<m:dependency.management__org.jolokia__jolokia-war__version>1.3.3</m:dependency.management__org.jolokia__jolokia-war__version>
+		<m:maven.plugins>null__maven-enforcer-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|com.mycila__license-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.eclipse.jetty.toolchain__jetty-version-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|null__maven-compiler-plugin__null|null__maven-enforcer-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|com.mycila__license-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.eclipse.jetty.toolchain__jetty-version-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|null__maven-compiler-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+	<dependencies>
+		<dependency org="org.eclipse.jetty.toolchain" name="jetty-test-helper" rev="5.9" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter" rev="5.8.1" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.4.44.v20210927"/>
+		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
+		<override org="javax.websocket" module="javax.websocket-api" matcher="exact" rev="1.0"/>
+		<override org="javax.websocket" module="javax.websocket-client-api" matcher="exact" rev="1.0"/>
+		<override org="javax.annotation" module="javax.annotation-api" matcher="exact" rev="1.3.2"/>
+		<override org="org.ow2.asm" module="asm" matcher="exact" rev="9.2"/>
+		<override org="org.ow2.asm" module="asm-commons" matcher="exact" rev="9.2"/>
+		<override org="org.ow2.asm" module="asm-tree" matcher="exact" rev="9.2"/>
+		<override org="org.ow2.asm" module="asm-analysis" matcher="exact" rev="9.2"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.security.auth.message" matcher="exact" rev="1.0.0.v201108011116"/>
+		<override org="org.eclipse.jetty.toolchain" module="jetty-schemas" matcher="exact" rev="3.1.2"/>
+		<override org="org.mortbay.jasper" module="apache-jsp" matcher="exact" rev="8.5.70"/>
+		<override org="org.apache.taglibs" module="taglibs-standard-impl" matcher="exact" rev="1.2.5"/>
+		<override org="org.apache.taglibs" module="taglibs-standard-spec" matcher="exact" rev="1.2.5"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.activation" matcher="exact" rev="1.1.0.v201105071233"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.mail.glassfish" matcher="exact" rev="1.4.1.v201005082020"/>
+		<override org="javax.transaction" module="javax.transaction-api" matcher="exact" rev="1.3"/>
+		<override org="org.codehaus.plexus" module="plexus-component-annotations" matcher="exact" rev="2.1.0"/>
+		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.4.1"/>
+		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="3.8.2"/>
+		<override org="org.apache.maven" module="maven-artifact" matcher="exact" rev="3.8.2"/>
+		<override org="org.apache.maven" module="maven-core" matcher="exact" rev="3.8.2"/>
+		<override org="org.apache.maven" module="maven-settings" matcher="exact" rev="3.8.2"/>
+		<override org="org.apache.maven.plugin-tools" module="maven-plugin-tools-api" matcher="exact" rev="3.6.1"/>
+		<override org="org.apache.maven.plugin-tools" module="maven-plugin-annotations" matcher="exact" rev="3.6.1"/>
+		<override org="org.codehaus.plexus" module="plexus-container-default" matcher="exact" rev="2.1.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter" matcher="exact" rev="5.8.1"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-api" matcher="exact" rev="5.8.1"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-engine" matcher="exact" rev="5.8.1"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-migrationsupport" matcher="exact" rev="5.8.1"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-params" matcher="exact" rev="5.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-commons" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-console" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-engine" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-jfr" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-launcher" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-reporting" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-runner" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-suite" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-suite-api" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-suite-commons" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-suite-engine" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.platform" module="junit-platform-testkit" matcher="exact" rev="1.8.1"/>
+		<override org="org.junit.vintage" module="junit-vintage-engine" matcher="exact" rev="5.8.1"/>
+		<override org="org.awaitility" module="awaitility" matcher="exact" rev="4.1.0"/>
+		<override org="org.testcontainers" module="testcontainers" matcher="exact" rev="1.16.0"/>
+		<override org="org.testcontainers" module="junit-jupiter" matcher="exact" rev="1.16.0"/>
+		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="5.9.0"/>
+		<override org="org.eclipse.jetty.toolchain" module="jetty-test-helper" matcher="exact" rev="5.9"/>
+		<override org="org.eclipse.jetty.toolchain" module="jetty-perf-helper" matcher="exact" rev="1.0.7"/>
+		<override org="org.slf4j" module="jcl104-over-slf4j" matcher="exact" rev="1.7.32"/>
+		<override org="org.slf4j" module="log4j-over-slf4j" matcher="exact" rev="1.7.32"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.32"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.32"/>
+		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.4.2.Final"/>
+		<override org="com.github.jnr" module="jnr-enxio" matcher="exact" rev="0.32.9"/>
+		<override org="com.github.jnr" module="jnr-ffi" matcher="exact" rev="2.2.7"/>
+		<override org="com.github.jnr" module="jnr-posix" matcher="exact" rev="3.1.10"/>
+		<override org="com.github.jnr" module="jnr-unixsocket" matcher="exact" rev="0.38.11"/>
+		<override org="org.osgi" module="org.osgi.core" matcher="exact" rev="6.0.0"/>
+		<override org="org.osgi" module="osgi.annotation" matcher="exact" rev="8.0.0"/>
+		<override org="biz.aQute.bnd" module="biz.aQute.bndlib" matcher="exact" rev="5.3.0"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.2"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="30.1.1-jre"/>
+		<override org="com.google.inject" module="guice" matcher="exact" rev="5.0.1"/>
+		<override org="com.google.errorprone" module="error_prone_annotations" matcher="exact" rev="2.9.0"/>
+		<override org="io.grpc" module="grpc-core" matcher="exact" rev="1.41.0"/>
+		<override org="org.apache.ant" module="ant" matcher="exact" rev="1.10.11"/>
+		<override org="org.apache.ant" module="ant-launcher" matcher="exact" rev="1.10.11"/>
+		<override org="io.hawt" module="hawtio-default" matcher="exact" rev="2.14.0"/>
+		<override org="com.jamonapi" module="jamon" matcher="exact" rev="2.82"/>
+		<override org="com.jamonapi" module="jamon_war" matcher="exact" rev="2.82"/>
+		<override org="org.jolokia" module="jolokia-war" matcher="exact" rev="1.3.3"/>
+	</dependencies>
+</ivy-module>

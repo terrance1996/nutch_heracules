@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.pdfbox"
+		module="fontbox"
+		revision="2.0.25"
+		status="release"
+		publication="20211213105039"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://pdfbox.apache.org/">
+		The Apache FontBox library is an open source Java tool to obtain low level information
+    from font files. FontBox is a subproject of Apache PDFBox.
+		</description>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__jdk.path>${env.JAVA_HOME}</m:properties__jdk.path>
+		<m:properties__bouncycastle.version>1.64</m:properties__bouncycastle.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__maven.compiler.source>1.6</m:properties__maven.compiler.source>
+		<m:properties__surefire.version>2.20.1</m:properties__surefire.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:properties__maven.compiler.target>1.6</m:properties__maven.compiler.target>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__arguments/>
+		<m:properties__assembly.tarLongFileMode>posix</m:properties__assembly.tarLongFileMode>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|null__maven-compiler-plugin__null|null__maven-javadoc-plugin__null|null__maven-release-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__1.17|com.googlecode.maven-download-plugin__download-maven-plugin__1.5.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|null__maven-compiler-plugin__null|null__maven-javadoc-plugin__null|null__maven-release-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.codehaus.mojo__animal-sniffer-maven-plugin__1.17|com.googlecode.maven-download-plugin__download-maven-plugin__1.5.1|null__maven-compiler-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|com.googlecode.maven-download-plugin__download-maven-plugin__null</m:maven.plugins>
+		<m:dependency.management__junit__junit__version>4.13.2</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__commons-logging__commons-logging__version>1.2</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__commons-io__commons-io__version>2.11.0</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__commons-io__commons-io__scope>test</m:dependency.management__commons-io__commons-io__scope>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.64</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcmail-jdk15on__version>1.64</m:dependency.management__org.bouncycastle__bcmail-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.64</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.apache.pdfbox__jbig2-imageio__version>3.0.3</m:dependency.management__org.apache.pdfbox__jbig2-imageio__version>
+		<m:dependency.management__org.apache.pdfbox__jbig2-imageio__scope>test</m:dependency.management__org.apache.pdfbox__jbig2-imageio__scope>
+		<m:dependency.management__com.github.jai-imageio__jai-imageio-core__version>1.4.0</m:dependency.management__com.github.jai-imageio__jai-imageio-core__version>
+		<m:dependency.management__com.github.jai-imageio__jai-imageio-core__scope>test</m:dependency.management__com.github.jai-imageio__jai-imageio-core__scope>
+		<m:dependency.management__com.github.jai-imageio__jai-imageio-jpeg2000__version>1.4.0</m:dependency.management__com.github.jai-imageio__jai-imageio-jpeg2000__version>
+		<m:dependency.management__com.github.jai-imageio__jai-imageio-jpeg2000__scope>test</m:dependency.management__com.github.jai-imageio__jai-imageio-jpeg2000__scope>
+		<m:dependency.management__javax.xml.bind__jaxb-api__version>2.3.1</m:dependency.management__javax.xml.bind__jaxb-api__version>
+		<m:dependency.management__javax.activation__activation__version>1.1.1</m:dependency.management__javax.activation__activation__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="fontbox" type="bundle" ext="jar" conf="master"/>
+		<artifact name="fontbox" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+	</publications>
+	<dependencies>
+		<dependency org="commons-logging" name="commons-logging" rev="1.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.13.2" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.2"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.11.0"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.64"/>
+		<override org="org.bouncycastle" module="bcmail-jdk15on" matcher="exact" rev="1.64"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.64"/>
+		<override org="org.apache.pdfbox" module="jbig2-imageio" matcher="exact" rev="3.0.3"/>
+		<override org="com.github.jai-imageio" module="jai-imageio-core" matcher="exact" rev="1.4.0"/>
+		<override org="com.github.jai-imageio" module="jai-imageio-jpeg2000" matcher="exact" rev="1.4.0"/>
+		<override org="javax.xml.bind" module="jaxb-api" matcher="exact" rev="2.3.1"/>
+		<override org="javax.activation" module="activation" matcher="exact" rev="1.1.1"/>
+	</dependencies>
+</ivy-module>

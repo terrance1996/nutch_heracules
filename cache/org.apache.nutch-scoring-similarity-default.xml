@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="scoring-similarity"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123011454"/>
+	<dependencies>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="6.4.1" status="release" pubdate="20170204103500" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3279" time="1222" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\ivy-6.4.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\ivy-6.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/6.4.1/lucene-analyzers-common-6.4.1.pom"/>
+				<caller organisation="org.apache.nutch" name="scoring-similarity" conf="default, master" rev="6.4.1" rev-constraint-default="6.4.1" rev-constraint-dynamic="6.4.1" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="jar" ext="jar" status="successful" details="" size="1493435" time="4153" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\jars\lucene-analyzers-common-6.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/6.4.1/lucene-analyzers-common-6.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="6.4.1" status="release" pubdate="20170204104108" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3035" time="1261" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-core\ivy-6.4.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-core\ivy-6.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/6.4.1/lucene-core-6.4.1.pom"/>
+				<caller organisation="org.apache.lucene" name="lucene-analyzers-common" conf="default, compile, runtime, master" rev="6.4.1" rev-constraint-default="6.4.1" rev-constraint-dynamic="6.4.1" callerrev="6.4.1"/>
+				<artifacts>
+					<artifact name="lucene-core" type="jar" ext="jar" status="successful" details="" size="2648855" time="4045" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-core\jars\lucene-core-6.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/6.4.1/lucene-core-6.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

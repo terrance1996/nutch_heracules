@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="parse-html"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123010829"/>
+	<dependencies>
+		<module organisation="org.ccil.cowan.tagsoup" name="tagsoup">
+			<revision name="1.2.1" status="release" pubdate="20110822100503" resolver="maven2" artresolver="default" homepage="http://home.ccil.org/~cowan/XML/tagsoup/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3138" time="0" location="C:\Users\Administrator\.ivy2\cache\org.ccil.cowan.tagsoup\tagsoup\ivy-1.2.1.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.ccil.cowan.tagsoup\tagsoup\ivy-1.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.pom"/>
+				<caller organisation="org.apache.nutch" name="parse-html" conf="default, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="tagsoup" type="jar" ext="jar" status="no" details="" size="90722" time="0" location="C:\Users\Administrator\.ivy2\cache\org.ccil.cowan.tagsoup\tagsoup\jars\tagsoup-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

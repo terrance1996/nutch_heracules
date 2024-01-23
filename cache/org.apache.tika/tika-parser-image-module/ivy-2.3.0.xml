@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.tika"
+		module="tika-parser-image-module"
+		revision="2.3.0"
+		status="release"
+		publication="20220202133004"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="" />
+		<m:properties__commons.exec.version>1.3</m:properties__commons.exec.version>
+		<m:properties__jackson.version>2.13.1</m:properties__jackson.version>
+		<m:properties__jaxb.version>2.3.5</m:properties__jaxb.version>
+		<m:properties__slf4j.version>1.7.35</m:properties__slf4j.version>
+		<m:properties__maven.antrun.version>1.8</m:properties__maven.antrun.version>
+		<m:properties__maven.failsafe.version>3.0.0-M5</m:properties__maven.failsafe.version>
+		<m:properties__rat.version>0.13</m:properties__rat.version>
+		<m:properties__jempbox.version>1.8.16</m:properties__jempbox.version>
+		<m:properties__fakeload.version>0.4.0</m:properties__fakeload.version>
+		<m:properties__openjson.version>1.0.12</m:properties__openjson.version>
+		<m:properties__opennlp.version>1.9.4</m:properties__opennlp.version>
+		<m:properties__jna.version>5.10.0</m:properties__jna.version>
+		<m:properties__sqlite.version>3.36.0.3</m:properties__sqlite.version>
+		<m:properties__ctakes.version>4.0.0.1</m:properties__ctakes.version>
+		<m:properties__ops4j.version>1.5.1</m:properties__ops4j.version>
+		<m:properties__google.cloud.version>2.3.0</m:properties__google.cloud.version>
+		<m:properties__boilerpipe.version>1.1.0</m:properties__boilerpipe.version>
+		<m:properties__parso.version>2.0.14</m:properties__parso.version>
+		<m:properties__geoapi.version>3.0.1</m:properties__geoapi.version>
+		<m:properties__h2.version>2.1.210</m:properties__h2.version>
+		<m:properties__json.simple.version>1.1.1</m:properties__json.simple.version>
+		<m:properties__junrar.version>7.4.1</m:properties__junrar.version>
+		<m:properties__maven.javadoc.version>3.3.1</m:properties__maven.javadoc.version>
+		<m:properties__brotli.version>0.1.2</m:properties__brotli.version>
+		<m:properties__jackcess.encrypt.version>4.0.1</m:properties__jackcess.encrypt.version>
+		<m:properties__tukaani.version>1.9</m:properties__tukaani.version>
+		<m:properties__osgi.core.version>6.0.0</m:properties__osgi.core.version>
+		<m:properties__junit5.version>5.8.2</m:properties__junit5.version>
+		<m:properties__aws.transcribe.version>1.12.150</m:properties__aws.transcribe.version>
+		<m:properties__maven.scr.version>1.26.4</m:properties__maven.scr.version>
+		<m:properties__gson.version>2.8.9</m:properties__gson.version>
+		<m:properties__twelvemonkeys.version>3.8.1</m:properties__twelvemonkeys.version>
+		<m:properties__asm.version>9.2</m:properties__asm.version>
+		<m:properties__imageio.version>1.4.0</m:properties__imageio.version>
+		<m:properties__poi.version>5.2.0</m:properties__poi.version>
+		<m:properties__maven.compiler.plugin.version>3.9.0</m:properties__maven.compiler.plugin.version>
+		<m:properties__jdom2.version>2.0.6.1</m:properties__jdom2.version>
+		<m:properties__forbiddenapis.version>3.2</m:properties__forbiddenapis.version>
+		<m:properties__commons.lang3.version>3.12.0</m:properties__commons.lang3.version>
+		<m:properties__maven.surefire.version>3.0.0-M5</m:properties__maven.surefire.version>
+		<m:properties__juniversalchardet.version>1.0.3</m:properties__juniversalchardet.version>
+		<m:properties__pdfbox.version>2.0.25</m:properties__pdfbox.version>
+		<m:properties__solrj.version>8.11.1</m:properties__solrj.version>
+		<m:properties__mime4j.version>0.8.4</m:properties__mime4j.version>
+		<m:properties__objenesis.version>3.2</m:properties__objenesis.version>
+		<m:properties__maven.shade.version>3.2.4</m:properties__maven.shade.version>
+		<m:properties__mockito.version>4.3.1</m:properties__mockito.version>
+		<m:properties__tagsoup.version>1.2.1</m:properties__tagsoup.version>
+		<m:properties__project.reporting.outputEncoding>${project.build.sourceEncoding}</m:properties__project.reporting.outputEncoding>
+		<m:properties__httpcore.version>4.4.15</m:properties__httpcore.version>
+		<m:properties__lombok.version>1.18.20</m:properties__lombok.version>
+		<m:properties__javax.rest.version>2.1.1</m:properties__javax.rest.version>
+		<m:properties__maven.compiler.target>1.8</m:properties__maven.compiler.target>
+		<m:properties__project.build.outputTimestamp>1643835495</m:properties__project.build.outputTimestamp>
+		<m:properties__joda.time.version>2.10.10</m:properties__joda.time.version>
+		<m:properties__checkstyle.plugin.version>3.1.2</m:properties__checkstyle.plugin.version>
+		<m:properties__httpcomponents.version>4.5.13</m:properties__httpcomponents.version>
+		<m:properties__aws.s3.version>1.12.150</m:properties__aws.s3.version>
+		<m:properties__jhighlight.version>1.0.3</m:properties__jhighlight.version>
+		<m:properties__maven.bundle.version>5.1.2</m:properties__maven.bundle.version>
+		<m:properties__microsoft.translator.version>0.6.2</m:properties__microsoft.translator.version>
+		<m:properties__zstd.version>1.5.2-1</m:properties__zstd.version>
+		<m:properties__junit4.version>4.13.2</m:properties__junit4.version>
+		<m:properties__vorbis.version>0.8</m:properties__vorbis.version>
+		<m:properties__rome.version>1.18.0</m:properties__rome.version>
+		<m:properties__uima.version>3.2.0</m:properties__uima.version>
+		<m:properties__groovy.maven.version>2.1.1</m:properties__groovy.maven.version>
+		<m:properties__test.containers.version>1.16.3</m:properties__test.containers.version>
+		<m:properties__xerces.version>2.12.2</m:properties__xerces.version>
+		<m:properties__metadata.extractor.version>2.16.0</m:properties__metadata.extractor.version>
+		<m:properties__dl4j.version>1.0.0-beta6</m:properties__dl4j.version>
+		<m:properties__bouncycastle.version>1.70</m:properties__bouncycastle.version>
+		<m:properties__maven.compiler.source>1.8</m:properties__maven.compiler.source>
+		<m:properties__spring.version>5.3.15</m:properties__spring.version>
+		<m:properties__ddplist.version>1.23</m:properties__ddplist.version>
+		<m:properties__jackcess.version>4.0.1</m:properties__jackcess.version>
+		<m:properties__commons.cli.version>1.5.0</m:properties__commons.cli.version>
+		<m:properties__xmpcore.version>6.1.11</m:properties__xmpcore.version>
+		<m:properties__scm.version>1.12.2</m:properties__scm.version>
+		<m:properties__quartz.version>2.3.2</m:properties__quartz.version>
+		<m:properties__commons.logging.version>1.2</m:properties__commons.logging.version>
+		<m:properties__javax.annotation.version>1.3.2</m:properties__javax.annotation.version>
+		<m:properties__sis.version>1.1</m:properties__sis.version>
+		<m:properties__jackrabbit.version>2.21.9</m:properties__jackrabbit.version>
+		<m:properties__puppycrawl.version>9.3</m:properties__puppycrawl.version>
+		<m:properties__jetty.version>9.4.44.v20210927</m:properties__jetty.version>
+		<m:properties__guava.version>31.0.1-jre</m:properties__guava.version>
+		<m:properties__pax.exam.version>4.13.1</m:properties__pax.exam.version>
+		<m:properties__commons.math3.version>3.6.1</m:properties__commons.math3.version>
+		<m:properties__lucene.version>8.11.1</m:properties__lucene.version>
+		<m:properties__maven.assembly.version>3.3.0</m:properties__maven.assembly.version>
+		<m:properties__uimafit.version>3.2.0</m:properties__uimafit.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__commons.csv.version>1.9.0</m:properties__commons.csv.version>
+		<m:properties__libpst.version>0.9.3</m:properties__libpst.version>
+		<m:properties__jbig2.version>3.0.3</m:properties__jbig2.version>
+		<m:properties__log4j2.version>2.17.1</m:properties__log4j2.version>
+		<m:properties__commons.collections4.version>4.4</m:properties__commons.collections4.version>
+		<m:properties__commons.codec.version>1.15</m:properties__commons.codec.version>
+		<m:properties__javax.jcr.version>2.0</m:properties__javax.jcr.version>
+		<m:properties__opencsv.version>2.3</m:properties__opencsv.version>
+		<m:properties__commons.compress.version>1.21</m:properties__commons.compress.version>
+		<m:properties__cxf.version>3.5.0</m:properties__cxf.version>
+		<m:properties__optimaize.version>0.6</m:properties__optimaize.version>
+		<m:properties__commons.io.version>2.11.0</m:properties__commons.io.version>
+		<m:properties__netcdf-java.version>4.5.5</m:properties__netcdf-java.version>
+		<m:properties__maven.jar.version>3.2.2</m:properties__maven.jar.version>
+		<m:properties__minimalJavaBuildVersion>1.8</m:properties__minimalJavaBuildVersion>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__minimalMavenBuildVersion>3.1.1</m:properties__minimalMavenBuildVersion>
+		<m:properties__surefire.version>2.22.2</m:properties__surefire.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide_2016.png</m:properties__organization.logo>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__assembly.tarLongFileMode>posix</m:properties__assembly.tarLongFileMode>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__3.9.0|org.codehaus.mojo__versions-maven-plugin__2.8.1|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.1.0|de.thetaphi__forbiddenapis__3.2|org.apache.felix__maven-bundle-plugin__5.1.2|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|org.apache.maven.plugins__maven-shade-plugin__3.2.4|org.apache.maven.plugins__maven-assembly-plugin__3.3.0|org.apache.maven.plugins__maven-release-plugin__3.0.0-M5|org.apache.maven.plugins__maven-enforcer-plugin__3.0.0-M3|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.2|org.apache.maven.plugins__maven-jar-plugin__null</m:maven.plugins>
+		<m:dependency.management__biz.aQute__bndlib__version>1.50.0</m:dependency.management__biz.aQute__bndlib__version>
+		<m:dependency.management__c3p0__c3p0__version>0.9.1.2</m:dependency.management__c3p0__c3p0__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>2.13.1</m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>2.13.1</m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>2.13.1</m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>
+		<m:dependency.management__com.github.jai-imageio__jai-imageio-core__version>1.4.0</m:dependency.management__com.github.jai-imageio__jai-imageio-core__version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.2</m:dependency.management__com.google.code.findbugs__jsr305__version>
+		<m:dependency.management__com.google.guava__guava__version>31.0.1-jre</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.apache.commons__commons-compress__version>1.21</m:dependency.management__org.apache.commons__commons-compress__version>
+		<m:dependency.management__commons-io__commons-io__version>2.11.0</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.glassfish.jaxb__jaxb-runtime__version>2.3.5</m:dependency.management__org.glassfish.jaxb__jaxb-runtime__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.12.0</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.4.15</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpmime__version>
+		<m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>8.11.1</m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>
+		<m:dependency.management__org.apache.lucene__lucene-analyzers-icu__version>8.11.1</m:dependency.management__org.apache.lucene__lucene-analyzers-icu__version>
+		<m:dependency.management__org.apache.lucene__lucene-core__version>8.11.1</m:dependency.management__org.apache.lucene__lucene-core__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.15</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.2</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-http__version>9.4.44.v20210927</m:dependency.management__org.eclipse.jetty__jetty-http__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-io__version>9.4.44.v20210927</m:dependency.management__org.eclipse.jetty__jetty-io__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.4.44.v20210927</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-util__version>9.4.44.v20210927</m:dependency.management__org.eclipse.jetty__jetty-util__version>
+		<m:dependency.management__org.jdom__jdom2__version>2.0.6.1</m:dependency.management__org.jdom__jdom2__version>
+		<m:dependency.management__net.java.dev.jna__jna__version>5.10.0</m:dependency.management__net.java.dev.jna__jna__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-lang__version>1.5.1</m:dependency.management__org.ops4j.base__ops4j-base-lang__version>
+		<m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>1.5.1</m:dependency.management__org.ops4j.base__ops4j-base-util-property__version>
+		<m:dependency.management__org.quartz-scheduler__quartz__version>2.3.2</m:dependency.management__org.quartz-scheduler__quartz__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.scr.annotations__version>1.12.0</m:dependency.management__org.apache.felix__org.apache.felix.scr.annotations__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.35</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__version>2.17.1</m:dependency.management__org.apache.logging.log4j__log4j-core__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-api__version>2.17.1</m:dependency.management__org.apache.logging.log4j__log4j-api__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>2.17.1</m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>
+		<m:dependency.management__org.bouncycastle__bcmail-jdk15on__version>1.70</m:dependency.management__org.bouncycastle__bcmail-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.70</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.70</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.35</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__javax.annotation__javax.annotation-api__version>1.3.2</m:dependency.management__javax.annotation__javax.annotation-api__version>
+		<m:dependency.management__javax.xml.soap__javax.xml.soap-api__version>1.4.0</m:dependency.management__javax.xml.soap__javax.xml.soap-api__version>
+		<m:dependency.management__org.jvnet.staxex__stax-ex__version>2.0.1</m:dependency.management__org.jvnet.staxex__stax-ex__version>
+		<m:dependency.management__xerces__xercesImpl__version>2.12.2</m:dependency.management__xerces__xercesImpl__version>
+		<m:dependency.management__junit__junit__version>4.13.2</m:dependency.management__junit__junit__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="tika-parser-image-module" type="jar" ext="jar" conf="master"/>
+		<artifact name="tika-parser-image-module" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="tika-parser-image-module" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="com.drewnoakes" name="metadata-extractor" rev="2.16.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.tika" name="tika-parser-xmp-commons" rev="2.3.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*);test->runtime(*),master(*)">
+			<artifact name="tika-parser-xmp-commons" type="test-jar" ext="jar" conf="test" m:classifier="tests"/>
+		</dependency>
+		<dependency org="com.github.jai-imageio" name="jai-imageio-core" rev="1.4.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="com.github.jai-imageio" name="jai-imageio-jpeg2000" rev="1.4.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.pdfbox" name="jbig2-imageio" rev="3.0.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.mockito" name="mockito-core" rev="4.3.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.tika" name="tika-core" rev="2.3.0" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-api" rev="5.8.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-engine" rev="5.8.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.apache.tika" name="tika-core" rev="2.3.0" force="true" conf="test->runtime(*),master(*)">
+			<artifact name="tika-core" type="test-jar" ext="jar" conf="test" m:classifier="tests"/>
+		</dependency>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-api" rev="5.8.2" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-engine" rev="5.8.2" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="biz.aQute" module="bndlib" matcher="exact" rev="1.50.0"/>
+		<override org="c3p0" module="c3p0" matcher="exact" rev="0.9.1.2"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-annotations" matcher="exact" rev="2.13.1"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-core" matcher="exact" rev="2.13.1"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.13.1"/>
+		<override org="com.github.jai-imageio" module="jai-imageio-core" matcher="exact" rev="1.4.0"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.2"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="31.0.1-jre"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.21"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.11.0"/>
+		<override org="org.glassfish.jaxb" module="jaxb-runtime" matcher="exact" rev="2.3.5"/>
+		<override org="org.apache.commons" module="commons-lang3" matcher="exact" rev="3.12.0"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5.13"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.15"/>
+		<override org="org.apache.httpcomponents" module="httpmime" matcher="exact" rev="4.5.13"/>
+		<override org="org.apache.lucene" module="lucene-analyzers-common" matcher="exact" rev="8.11.1"/>
+		<override org="org.apache.lucene" module="lucene-analyzers-icu" matcher="exact" rev="8.11.1"/>
+		<override org="org.apache.lucene" module="lucene-core" matcher="exact" rev="8.11.1"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.15"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.2"/>
+		<override org="org.eclipse.jetty" module="jetty-http" matcher="exact" rev="9.4.44.v20210927"/>
+		<override org="org.eclipse.jetty" module="jetty-io" matcher="exact" rev="9.4.44.v20210927"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.4.44.v20210927"/>
+		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="9.4.44.v20210927"/>
+		<override org="org.jdom" module="jdom2" matcher="exact" rev="2.0.6.1"/>
+		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="5.10.0"/>
+		<override org="org.ops4j.base" module="ops4j-base-lang" matcher="exact" rev="1.5.1"/>
+		<override org="org.ops4j.base" module="ops4j-base-util-property" matcher="exact" rev="1.5.1"/>
+		<override org="org.quartz-scheduler" module="quartz" matcher="exact" rev="2.3.2"/>
+		<override org="org.apache.felix" module="org.apache.felix.scr.annotations" matcher="exact" rev="1.12.0"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.35"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.17.1"/>
+		<override org="org.apache.logging.log4j" module="log4j-api" matcher="exact" rev="2.17.1"/>
+		<override org="org.apache.logging.log4j" module="log4j-slf4j-impl" matcher="exact" rev="2.17.1"/>
+		<override org="org.bouncycastle" module="bcmail-jdk15on" matcher="exact" rev="1.70"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.70"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.70"/>
+		<override org="org.slf4j" module="jcl-over-slf4j" matcher="exact" rev="1.7.35"/>
+		<override org="javax.annotation" module="javax.annotation-api" matcher="exact" rev="1.3.2"/>
+		<override org="javax.xml.soap" module="javax.xml.soap-api" matcher="exact" rev="1.4.0"/>
+		<override org="org.jvnet.staxex" module="stax-ex" matcher="exact" rev="2.0.1"/>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.12.2"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
+	</dependencies>
+</ivy-module>

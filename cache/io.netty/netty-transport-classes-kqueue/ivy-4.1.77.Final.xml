@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.netty"
+		module="netty-transport-classes-kqueue"
+		revision="4.1.77.Final"
+		status="release"
+		publication="20220506004927"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="" />
+		<m:properties__javaModuleName>io.netty.transport.classes.kqueue</m:properties__javaModuleName>
+		<m:properties__conscrypt.version>2.5.2</m:properties__conscrypt.version>
+		<m:properties__logging.logLevel>debug</m:properties__logging.logLevel>
+		<m:properties__osmaven.version>1.7.0</m:properties__osmaven.version>
+		<m:properties__tcnative.artifactId>netty-tcnative</m:properties__tcnative.artifactId>
+		<m:properties__skipAutobahnTestsuite>false</m:properties__skipAutobahnTestsuite>
+		<m:properties__argLine.leak>-D_</m:properties__argLine.leak>
+		<m:properties__tcnative.version>2.0.52.Final</m:properties__tcnative.version>
+		<m:properties__graalvm.version>19.3.6</m:properties__graalvm.version>
+		<m:properties__argLine.alpnAgent>-javaagent:${jetty.alpnAgent.path}=${jetty.alpnAgent.option}</m:properties__argLine.alpnAgent>
+		<m:properties__jboss.marshalling.version>1.4.11.Final</m:properties__jboss.marshalling.version>
+		<m:properties__skipNativeImageTestsuite>true</m:properties__skipNativeImageTestsuite>
+		<m:properties__skipHttp2Testsuite>false</m:properties__skipHttp2Testsuite>
+		<m:properties__os.detection.classifierWithLikes>fedora,suse,arch</m:properties__os.detection.classifierWithLikes>
+		<m:properties__brotli4j.version>1.7.1</m:properties__brotli4j.version>
+		<m:properties__argLine.common>
+      -server
+      -dsa -da -ea:io.netty...
+      -XX:+HeapDumpOnOutOfMemoryError
+    </m:properties__argLine.common>
+		<m:properties__argLine.javaProperties>-D_</m:properties__argLine.javaProperties>
+		<m:properties__conscrypt.artifactId>conscrypt-openjdk-uber</m:properties__conscrypt.artifactId>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__tcnative.classifier>${os.detected.classifier}</m:properties__tcnative.classifier>
+		<m:properties__testJvm>${testJavaHome}/bin/java</m:properties__testJvm>
+		<m:properties__jni.classifier>${os.detected.name}-${os.detected.arch}</m:properties__jni.classifier>
+		<m:properties__junit.version>5.7.0</m:properties__junit.version>
+		<m:properties__skipTests>false</m:properties__skipTests>
+		<m:properties__conscrypt.classifier/>
+		<m:properties__jetty.alpnAgent.path>&quot;${settings.localRepository}&quot;/org/mortbay/jetty/alpn/jetty-alpn-agent/${jetty.alpnAgent.version}/jetty-alpn-agent-${jetty.alpnAgent.version}.jar</m:properties__jetty.alpnAgent.path>
+		<m:properties__argLine.coverage>-D_</m:properties__argLine.coverage>
+		<m:properties__netty.build.version>30</m:properties__netty.build.version>
+		<m:properties__skipShadingTestsuite>false</m:properties__skipShadingTestsuite>
+		<m:properties__log4j2.version>2.17.2</m:properties__log4j2.version>
+		<m:properties__netty.dev.tools.directory>${project.build.directory}/dev-tools</m:properties__netty.dev.tools.directory>
+		<m:properties__jetty.alpnAgent.version>2.0.10</m:properties__jetty.alpnAgent.version>
+		<m:properties__argLine.noUnsafe>-D_</m:properties__argLine.noUnsafe>
+		<m:properties__skipOsgiTestsuite>false</m:properties__skipOsgiTestsuite>
+		<m:properties__maven.compiler.source>1.6</m:properties__maven.compiler.source>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__logging.config>${project.basedir}/../common/src/test/resources/logback-test.xml</m:properties__logging.config>
+		<m:properties__argLine.printGC>-XX:+PrintGCDetails</m:properties__argLine.printGC>
+		<m:properties__argLine.java9/>
+		<m:properties__enforcer.plugin.version>3.0.0</m:properties__enforcer.plugin.version>
+		<m:properties__testJavaHome>${java.home}</m:properties__testJavaHome>
+		<m:properties__maven.compiler.target>1.6</m:properties__maven.compiler.target>
+		<m:properties__conscrypt.groupId>org.conscrypt</m:properties__conscrypt.groupId>
+		<m:properties__skipDeploy>false</m:properties__skipDeploy>
+		<m:properties__forbiddenapis.skip>true</m:properties__forbiddenapis.skip>
+		<m:properties__argLine.java9.extras/>
+		<m:properties__maven.javadoc.failOnError>false</m:properties__maven.javadoc.failOnError>
+		<m:properties__arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.revapi__revapi-maven-plugin__0.14.6|com.github.siom79.japicmp__japicmp-maven-plugin__0.15.4|null__maven-enforcer-plugin__3.0.0|null__maven-compiler-plugin__3.8.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.16|null__maven-checkstyle-plugin__3.1.0|org.codehaus.mojo__xml-maven-plugin__1.0.1|null__maven-dependency-plugin__null|null__maven-surefire-plugin__null|org.apache.felix__maven-bundle-plugin__2.5.4|org.codehaus.mojo__build-helper-maven-plugin__1.10|null__maven-source-plugin__3.2.0|null__maven-javadoc-plugin__2.10.4|null__maven-deploy-plugin__2.8.2|null__maven-release-plugin__2.5.3|null__maven-antrun-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.5|de.thetaphi__forbiddenapis__2.2|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.revapi__revapi-maven-plugin__0.14.6|com.github.siom79.japicmp__japicmp-maven-plugin__0.15.4|null__maven-enforcer-plugin__3.0.0|null__maven-compiler-plugin__3.8.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.16|null__maven-checkstyle-plugin__3.1.0|org.codehaus.mojo__xml-maven-plugin__1.0.1|null__maven-dependency-plugin__null|null__maven-surefire-plugin__null|org.apache.felix__maven-bundle-plugin__2.5.4|org.codehaus.mojo__build-helper-maven-plugin__1.10|null__maven-source-plugin__3.2.0|null__maven-javadoc-plugin__2.10.4|null__maven-deploy-plugin__2.8.2|null__maven-release-plugin__2.5.3|null__maven-antrun-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__1.5|de.thetaphi__forbiddenapis__2.2|null__maven-jar-plugin__null</m:maven.plugins>
+		<m:dependency.management__io.netty__netty-jni-util__version>0.0.6.Final</m:dependency.management__io.netty__netty-jni-util__version>
+		<m:dependency.management__io.netty__netty-dev-tools__version>4.1.77.Final</m:dependency.management__io.netty__netty-dev-tools__version>
+		<m:dependency.management__com.sun.activation__javax.activation__version>1.2.0</m:dependency.management__com.sun.activation__javax.activation__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling__version>1.4.11.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling__scope>compile</m:dependency.management__org.jboss.marshalling__jboss-marshalling__scope>
+		<m:dependency.management__org.eclipse.jetty.npn__npn-api__version>1.1.1.v20141010</m:dependency.management__org.eclipse.jetty.npn__npn-api__version>
+		<m:dependency.management__org.eclipse.jetty.npn__npn-api__scope>provided</m:dependency.management__org.eclipse.jetty.npn__npn-api__scope>
+		<m:dependency.management__org.eclipse.jetty.alpn__alpn-api__version>1.1.2.v20150522</m:dependency.management__org.eclipse.jetty.alpn__alpn-api__version>
+		<m:dependency.management__org.eclipse.jetty.alpn__alpn-api__scope>provided</m:dependency.management__org.eclipse.jetty.alpn__alpn-api__scope>
+		<m:dependency.management__com.google.protobuf__protobuf-java__version>2.6.1</m:dependency.management__com.google.protobuf__protobuf-java__version>
+		<m:dependency.management__com.google.protobuf.nano__protobuf-javanano__version>3.0.0-alpha-5</m:dependency.management__com.google.protobuf.nano__protobuf-javanano__version>
+		<m:dependency.management__io.netty__netty-tcnative-classes__version>2.0.52.Final</m:dependency.management__io.netty__netty-tcnative-classes__version>
+		<m:dependency.management__io.netty__netty-tcnative-classes__scope>compile</m:dependency.management__io.netty__netty-tcnative-classes__scope>
+		<m:dependency.management__io.netty__netty-tcnative__version>2.0.52.Final</m:dependency.management__io.netty__netty-tcnative__version>
+		<m:dependency.management__io.netty__netty-tcnative__scope>runtime</m:dependency.management__io.netty__netty-tcnative__scope>
+		<m:dependency.management__org.conscrypt__conscrypt-openjdk-uber__version>2.5.2</m:dependency.management__org.conscrypt__conscrypt-openjdk-uber__version>
+		<m:dependency.management__org.conscrypt__conscrypt-openjdk-uber__scope>compile</m:dependency.management__org.conscrypt__conscrypt-openjdk-uber__scope>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.69</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__scope>compile</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__scope>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.69</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__scope>compile</m:dependency.management__org.bouncycastle__bcprov-jdk15on__scope>
+		<m:dependency.management__com.fasterxml__aalto-xml__version>1.0.0</m:dependency.management__com.fasterxml__aalto-xml__version>
+		<m:dependency.management__com.jcraft__jzlib__version>1.1.3</m:dependency.management__com.jcraft__jzlib__version>
+		<m:dependency.management__com.ning__compress-lzf__version>1.0.3</m:dependency.management__com.ning__compress-lzf__version>
+		<m:dependency.management__net.jpountz.lz4__lz4__version>1.3.0</m:dependency.management__net.jpountz.lz4__lz4__version>
+		<m:dependency.management__com.github.jponge__lzma-java__version>1.3</m:dependency.management__com.github.jponge__lzma-java__version>
+		<m:dependency.management__com.github.luben__zstd-jni__version>1.5.0-2</m:dependency.management__com.github.luben__zstd-jni__version>
+		<m:dependency.management__com.aayushatharva.brotli4j__brotli4j__version>1.7.1</m:dependency.management__com.aayushatharva.brotli4j__brotli4j__version>
+		<m:dependency.management__com.aayushatharva.brotli4j__native-linux-x86_64__version>1.7.1</m:dependency.management__com.aayushatharva.brotli4j__native-linux-x86_64__version>
+		<m:dependency.management__com.aayushatharva.brotli4j__native-osx-x86_64__version>1.7.1</m:dependency.management__com.aayushatharva.brotli4j__native-osx-x86_64__version>
+		<m:dependency.management__com.aayushatharva.brotli4j__native-windows-x86_64__version>1.7.1</m:dependency.management__com.aayushatharva.brotli4j__native-windows-x86_64__version>
+		<m:dependency.management__org.jctools__jctools-core__version>3.1.0</m:dependency.management__org.jctools__jctools-core__version>
+		<m:dependency.management__org.jetbrains__annotations-java5__version>23.0.0</m:dependency.management__org.jetbrains__annotations-java5__version>
+		<m:dependency.management__org.jetbrains__annotations-java5__scope>provided</m:dependency.management__org.jetbrains__annotations-java5__scope>
+		<m:dependency.management__org.rxtx__rxtx__version>2.1.7</m:dependency.management__org.rxtx__rxtx__version>
+		<m:dependency.management__com.barchart.udt__barchart-udt-bundle__version>2.3.0</m:dependency.management__com.barchart.udt__barchart-udt-bundle__version>
+		<m:dependency.management__javax.servlet__servlet-api__version>2.5</m:dependency.management__javax.servlet__servlet-api__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.30</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.2</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-api__version>2.17.2</m:dependency.management__org.apache.logging.log4j__log4j-api__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__version>2.17.2</m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_0>javax.mail__mail</m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_0>
+		<m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_1>javax.jms__jms</m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_1>
+		<m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_2>com.sun.jdmk__jmxtools</m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_2>
+		<m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_3>com.sun.jmx__jmxri</m:dependency.management__org.apache.logging.log4j__log4j-1.2-api__exclusion_3>
+		<m:dependency.management__com.yammer.metrics__metrics-core__version>2.2.0</m:dependency.management__com.yammer.metrics__metrics-core__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-api__version>5.7.0</m:dependency.management__org.junit.jupiter__junit-jupiter-api__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-api__scope>test</m:dependency.management__org.junit.jupiter__junit-jupiter-api__scope>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-engine__version>5.7.0</m:dependency.management__org.junit.jupiter__junit-jupiter-engine__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-engine__scope>test</m:dependency.management__org.junit.jupiter__junit-jupiter-engine__scope>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-params__version>5.7.0</m:dependency.management__org.junit.jupiter__junit-jupiter-params__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-params__scope>test</m:dependency.management__org.junit.jupiter__junit-jupiter-params__scope>
+		<m:dependency.management__org.junit.vintage__junit-vintage-engine__version>5.7.0</m:dependency.management__org.junit.vintage__junit-vintage-engine__version>
+		<m:dependency.management__org.junit.vintage__junit-vintage-engine__scope>test</m:dependency.management__org.junit.vintage__junit-vintage-engine__scope>
+		<m:dependency.management__junit__junit__version>4.13.1</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__io.netty__netty-build-common__version>30</m:dependency.management__io.netty__netty-build-common__version>
+		<m:dependency.management__io.netty__netty-build-common__scope>test</m:dependency.management__io.netty__netty-build-common__scope>
+		<m:dependency.management__org.hamcrest__hamcrest-library__version>1.3</m:dependency.management__org.hamcrest__hamcrest-library__version>
+		<m:dependency.management__org.hamcrest__hamcrest-library__scope>test</m:dependency.management__org.hamcrest__hamcrest-library__scope>
+		<m:dependency.management__org.assertj__assertj-core__version>3.18.0</m:dependency.management__org.assertj__assertj-core__version>
+		<m:dependency.management__org.assertj__assertj-core__scope>test</m:dependency.management__org.assertj__assertj-core__scope>
+		<m:dependency.management__org.mockito__mockito-core__version>2.18.3</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.mockito__mockito-core__scope>test</m:dependency.management__org.mockito__mockito-core__scope>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.2.3</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__scope>test</m:dependency.management__ch.qos.logback__logback-classic__scope>
+		<m:dependency.management__io.github.artsok__rerunner-jupiter__version>2.1.6</m:dependency.management__io.github.artsok__rerunner-jupiter__version>
+		<m:dependency.management__io.github.artsok__rerunner-jupiter__scope>test</m:dependency.management__io.github.artsok__rerunner-jupiter__scope>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-serial__version>1.4.11.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling-serial__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-serial__scope>test</m:dependency.management__org.jboss.marshalling__jboss-marshalling-serial__scope>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-river__version>1.4.11.Final</m:dependency.management__org.jboss.marshalling__jboss-marshalling-river__version>
+		<m:dependency.management__org.jboss.marshalling__jboss-marshalling-river__scope>test</m:dependency.management__org.jboss.marshalling__jboss-marshalling-river__scope>
+		<m:dependency.management__com.google.caliper__caliper__version>0.5-rc1</m:dependency.management__com.google.caliper__caliper__version>
+		<m:dependency.management__com.google.caliper__caliper__scope>test</m:dependency.management__com.google.caliper__caliper__scope>
+		<m:dependency.management__org.apache.commons__commons-compress__version>1.21</m:dependency.management__org.apache.commons__commons-compress__version>
+		<m:dependency.management__org.apache.commons__commons-compress__scope>test</m:dependency.management__org.apache.commons__commons-compress__scope>
+		<m:dependency.management__commons-io__commons-io__version>2.8.0</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__commons-io__commons-io__scope>test</m:dependency.management__commons-io__commons-io__scope>
+		<m:dependency.management__com.google.code.gson__gson__version>2.7</m:dependency.management__com.google.code.gson__gson__version>
+		<m:dependency.management__com.google.code.gson__gson__scope>test</m:dependency.management__com.google.code.gson__gson__scope>
+		<m:dependency.management__org.tukaani__xz__version>1.5</m:dependency.management__org.tukaani__xz__version>
+		<m:dependency.management__org.apache.directory.server__apacheds-protocol-dns__version>1.5.7</m:dependency.management__org.apache.directory.server__apacheds-protocol-dns__version>
+		<m:dependency.management__org.apache.directory.server__apacheds-protocol-dns__scope>test</m:dependency.management__org.apache.directory.server__apacheds-protocol-dns__scope>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__version>2.17.2</m:dependency.management__org.apache.logging.log4j__log4j-core__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__scope>test</m:dependency.management__org.apache.logging.log4j__log4j-core__scope>
+		<m:dependency.management__io.projectreactor.tools__blockhound__version>1.0.6.RELEASE</m:dependency.management__io.projectreactor.tools__blockhound__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="netty-transport-classes-kqueue" type="jar" ext="jar" conf="master"/>
+		<artifact name="netty-transport-classes-kqueue" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="netty-transport-classes-kqueue" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="io.netty" name="netty-common" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.netty" name="netty-buffer" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.netty" name="netty-transport" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.netty" name="netty-transport-native-unix-common" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-api" rev="5.7.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-engine" rev="5.7.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.junit.jupiter" name="junit-jupiter-params" rev="5.7.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.junit.vintage" name="junit-vintage-engine" rev="5.7.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.13.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="io.netty" name="netty-build-common" rev="30" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.hamcrest" name="hamcrest-library" rev="1.3" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.assertj" name="assertj-core" rev="3.18.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="io.netty" module="netty-jni-util" matcher="exact" rev="0.0.6.Final"/>
+		<override org="io.netty" module="netty-dev-tools" matcher="exact" rev="4.1.77.Final"/>
+		<override org="com.sun.activation" module="javax.activation" matcher="exact" rev="1.2.0"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling" matcher="exact" rev="1.4.11.Final"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling" matcher="exact" rev="1.4.11.Final"/>
+		<override org="org.eclipse.jetty.npn" module="npn-api" matcher="exact" rev="1.1.1.v20141010"/>
+		<override org="org.eclipse.jetty.npn" module="npn-api" matcher="exact" rev="1.1.1.v20141010"/>
+		<override org="org.eclipse.jetty.alpn" module="alpn-api" matcher="exact" rev="1.1.2.v20150522"/>
+		<override org="org.eclipse.jetty.alpn" module="alpn-api" matcher="exact" rev="1.1.2.v20150522"/>
+		<override org="com.google.protobuf" module="protobuf-java" matcher="exact" rev="2.6.1"/>
+		<override org="com.google.protobuf.nano" module="protobuf-javanano" matcher="exact" rev="3.0.0-alpha-5"/>
+		<override org="io.netty" module="netty-tcnative-classes" matcher="exact" rev="2.0.52.Final"/>
+		<override org="io.netty" module="netty-tcnative-classes" matcher="exact" rev="2.0.52.Final"/>
+		<override org="io.netty" module="netty-tcnative" matcher="exact" rev="2.0.52.Final"/>
+		<override org="io.netty" module="netty-tcnative" matcher="exact" rev="2.0.52.Final"/>
+		<override org="org.conscrypt" module="conscrypt-openjdk-uber" matcher="exact" rev="2.5.2"/>
+		<override org="org.conscrypt" module="conscrypt-openjdk-uber" matcher="exact" rev="2.5.2"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.69"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.69"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.69"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.69"/>
+		<override org="com.fasterxml" module="aalto-xml" matcher="exact" rev="1.0.0"/>
+		<override org="com.jcraft" module="jzlib" matcher="exact" rev="1.1.3"/>
+		<override org="com.ning" module="compress-lzf" matcher="exact" rev="1.0.3"/>
+		<override org="net.jpountz.lz4" module="lz4" matcher="exact" rev="1.3.0"/>
+		<override org="com.github.jponge" module="lzma-java" matcher="exact" rev="1.3"/>
+		<override org="com.github.luben" module="zstd-jni" matcher="exact" rev="1.5.0-2"/>
+		<override org="com.aayushatharva.brotli4j" module="brotli4j" matcher="exact" rev="1.7.1"/>
+		<override org="com.aayushatharva.brotli4j" module="native-linux-x86_64" matcher="exact" rev="1.7.1"/>
+		<override org="com.aayushatharva.brotli4j" module="native-osx-x86_64" matcher="exact" rev="1.7.1"/>
+		<override org="com.aayushatharva.brotli4j" module="native-windows-x86_64" matcher="exact" rev="1.7.1"/>
+		<override org="org.jctools" module="jctools-core" matcher="exact" rev="3.1.0"/>
+		<override org="org.jetbrains" module="annotations-java5" matcher="exact" rev="23.0.0"/>
+		<override org="org.jetbrains" module="annotations-java5" matcher="exact" rev="23.0.0"/>
+		<override org="org.rxtx" module="rxtx" matcher="exact" rev="2.1.7"/>
+		<override org="com.barchart.udt" module="barchart-udt-bundle" matcher="exact" rev="2.3.0"/>
+		<override org="javax.servlet" module="servlet-api" matcher="exact" rev="2.5"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.30"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-api" matcher="exact" rev="2.17.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-1.2-api" matcher="exact" rev="2.17.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-1.2-api" matcher="exact" rev="2.17.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-1.2-api" matcher="exact" rev="2.17.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-1.2-api" matcher="exact" rev="2.17.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-1.2-api" matcher="exact" rev="2.17.2"/>
+		<override org="com.yammer.metrics" module="metrics-core" matcher="exact" rev="2.2.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-api" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-api" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-engine" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-engine" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-params" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-params" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.vintage" module="junit-vintage-engine" matcher="exact" rev="5.7.0"/>
+		<override org="org.junit.vintage" module="junit-vintage-engine" matcher="exact" rev="5.7.0"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.1"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.1"/>
+		<override org="io.netty" module="netty-build-common" matcher="exact" rev="30"/>
+		<override org="io.netty" module="netty-build-common" matcher="exact" rev="30"/>
+		<override org="org.hamcrest" module="hamcrest-library" matcher="exact" rev="1.3"/>
+		<override org="org.hamcrest" module="hamcrest-library" matcher="exact" rev="1.3"/>
+		<override org="org.assertj" module="assertj-core" matcher="exact" rev="3.18.0"/>
+		<override org="org.assertj" module="assertj-core" matcher="exact" rev="3.18.0"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="2.18.3"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="2.18.3"/>
+		<override org="ch.qos.logback" module="logback-classic" matcher="exact" rev="1.2.3"/>
+		<override org="ch.qos.logback" module="logback-classic" matcher="exact" rev="1.2.3"/>
+		<override org="io.github.artsok" module="rerunner-jupiter" matcher="exact" rev="2.1.6"/>
+		<override org="io.github.artsok" module="rerunner-jupiter" matcher="exact" rev="2.1.6"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling-serial" matcher="exact" rev="1.4.11.Final"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling-serial" matcher="exact" rev="1.4.11.Final"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling-river" matcher="exact" rev="1.4.11.Final"/>
+		<override org="org.jboss.marshalling" module="jboss-marshalling-river" matcher="exact" rev="1.4.11.Final"/>
+		<override org="com.google.caliper" module="caliper" matcher="exact" rev="0.5-rc1"/>
+		<override org="com.google.caliper" module="caliper" matcher="exact" rev="0.5-rc1"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.21"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.21"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.8.0"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.8.0"/>
+		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.7"/>
+		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.7"/>
+		<override org="org.tukaani" module="xz" matcher="exact" rev="1.5"/>
+		<override org="org.apache.directory.server" module="apacheds-protocol-dns" matcher="exact" rev="1.5.7"/>
+		<override org="org.apache.directory.server" module="apacheds-protocol-dns" matcher="exact" rev="1.5.7"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.17.2"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.17.2"/>
+		<override org="io.projectreactor.tools" module="blockhound" matcher="exact" rev="1.0.6.RELEASE"/>
+	</dependencies>
+</ivy-module>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.any23"
+		module="apache-any23-encoding"
+		revision="2.7"
+		status="release"
+		publication="20220221103634"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="">
+		Encoding detection library.
+		</description>
+		<m:properties__maven-checkstyle-plugin.version>3.1.2</m:properties__maven-checkstyle-plugin.version>
+		<m:properties__maven.compiler.showWarnings>true</m:properties__maven.compiler.showWarnings>
+		<m:properties__implementation.build.tstamp>${maven.build.timestamp}</m:properties__implementation.build.tstamp>
+		<m:properties__surefire-extra-args/>
+		<m:properties__maven-gpg-plugin.version>3.0.1</m:properties__maven-gpg-plugin.version>
+		<m:properties__sonar.host.url>https://sonarcloud.io</m:properties__sonar.host.url>
+		<m:properties__jackson.version>2.13.1</m:properties__jackson.version>
+		<m:properties__maven-invoker-plugin.version>3.2.2</m:properties__maven-invoker-plugin.version>
+		<m:properties__ossindex-maven-plugin.version>3.2.0</m:properties__ossindex-maven-plugin.version>
+		<m:properties__project.build.resourceEncoding>UTF-8</m:properties__project.build.resourceEncoding>
+		<m:properties__maven-javadoc-plugin.version>3.3.1</m:properties__maven-javadoc-plugin.version>
+		<m:properties__slf4j.version>1.7.35</m:properties__slf4j.version>
+		<m:properties__maven-changes-plugin.version>2.12.1</m:properties__maven-changes-plugin.version>
+		<m:properties__rdf4j.version>3.7.4</m:properties__rdf4j.version>
+		<m:properties__sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/target/site/jacoco/jacoco.xml</m:properties__sonar.coverage.jacoco.xmlReportPaths>
+		<m:properties__openie_2.11.version>4.2.6</m:properties__openie_2.11.version>
+		<m:properties__maven-jar-plugin.version>3.2.2</m:properties__maven-jar-plugin.version>
+		<m:properties__tika.version>2.3.0</m:properties__tika.version>
+		<m:properties__sonar.sourceEncoding>UTF-8</m:properties__sonar.sourceEncoding>
+		<m:properties__javac.target.version>11</m:properties__javac.target.version>
+		<m:properties__maven-compiler-plugin.version>3.10.0</m:properties__maven-compiler-plugin.version>
+		<m:properties__formatter-maven-plugin.version>2.17.1</m:properties__formatter-maven-plugin.version>
+		<m:properties__maven-clean-plugin.version>3.1.0</m:properties__maven-clean-plugin.version>
+		<m:properties__site.urlDeployment>file://${site.filePath}</m:properties__site.urlDeployment>
+		<m:properties__maven-enforcer-plugin.version>3.0.0</m:properties__maven-enforcer-plugin.version>
+		<m:properties__maven-surefire-plugin.version>3.0.0-M5</m:properties__maven-surefire-plugin.version>
+		<m:properties__maven-resources-plugin.version>3.2.0</m:properties__maven-resources-plugin.version>
+		<m:properties__buildnumber-maven-plugin.version>3.0.0</m:properties__buildnumber-maven-plugin.version>
+		<m:properties__maven-install-plugin.version>3.0.0-M1</m:properties__maven-install-plugin.version>
+		<m:properties__semargl.version>0.7</m:properties__semargl.version>
+		<m:properties__maven-release-plugin.version>2.5.3</m:properties__maven-release-plugin.version>
+		<m:properties__maven-project-info-reports-plugin.version>3.2.1</m:properties__maven-project-info-reports-plugin.version>
+		<m:properties__apache-rat-plugin.version>0.13</m:properties__apache-rat-plugin.version>
+		<m:properties__maven-source-plugin.version>3.2.1</m:properties__maven-source-plugin.version>
+		<m:properties__sonar.projectVersion>${project.version}</m:properties__sonar.projectVersion>
+		<m:properties__maven.compiler.showDeprecation>true</m:properties__maven.compiler.showDeprecation>
+		<m:properties__owlapi.version>5.1.20</m:properties__owlapi.version>
+		<m:properties__appassembler-maven-plugin.version>2.1.0</m:properties__appassembler-maven-plugin.version>
+		<m:properties__site.filePath>${project.basedir}/any23-site/</m:properties__site.filePath>
+		<m:properties__httpclient.version>4.5.13</m:properties__httpclient.version>
+		<m:properties__javac.src.version>11</m:properties__javac.src.version>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__forbiddenapis.version>3.2</m:properties__forbiddenapis.version>
+		<m:properties__form.tracker.id>UA-59636188-1</m:properties__form.tracker.id>
+		<m:properties__maven-jxr-plugin.version>3.1.1</m:properties__maven-jxr-plugin.version>
+		<m:properties__commons-io.version>2.11.0</m:properties__commons-io.version>
+		<m:properties__jacoco-maven-plugin.version>0.8.7</m:properties__jacoco-maven-plugin.version>
+		<m:properties__maven-deploy-plugin.version>3.0.0-M2</m:properties__maven-deploy-plugin.version>
+		<m:properties__assembly.skip>false</m:properties__assembly.skip>
+		<m:properties__log4j2.version>2.17.1</m:properties__log4j2.version>
+		<m:properties__openregex.version>1.1.1</m:properties__openregex.version>
+		<m:properties__sonar.organization>apache</m:properties__sonar.organization>
+		<m:properties__implementation.build>${scmBranch}@r${buildNumber}</m:properties__implementation.build>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__httpcore.version>4.4.15</m:properties__httpcore.version>
+		<m:properties__maven-assembly-plugin.version>3.3.0</m:properties__maven-assembly-plugin.version>
+		<m:properties__latestStableRelease>2.6</m:properties__latestStableRelease>
+		<m:properties__spotbugs-maven-plugin.version>4.5.3.0</m:properties__spotbugs-maven-plugin.version>
+		<m:properties__maven.compiler.target>11</m:properties__maven.compiler.target>
+		<m:properties__site.deploymentBaseUrl>scm:svn:https://svn.apache.org/repos/asf/any23/site</m:properties__site.deploymentBaseUrl>
+		<m:properties__site.scmPubCheckoutDirectory>${site.filePath}</m:properties__site.scmPubCheckoutDirectory>
+		<m:properties__project.build.outputTimestamp>1</m:properties__project.build.outputTimestamp>
+		<m:properties__velocity.version>1.7</m:properties__velocity.version>
+		<m:properties__maven-site-plugin.version>3.10.0</m:properties__maven-site-plugin.version>
+		<m:properties__minimalJavaBuildVersion>1.8</m:properties__minimalJavaBuildVersion>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__maven.compiler.source>${maven.compiler.target}</m:properties__maven.compiler.source>
+		<m:properties__minimalMavenBuildVersion>3.1.1</m:properties__minimalMavenBuildVersion>
+		<m:properties__surefire.version>2.22.2</m:properties__surefire.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide_2016.png</m:properties__organization.logo>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__assembly.tarLongFileMode>posix</m:properties__assembly.tarLongFileMode>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.2.0|de.thetaphi__forbiddenapis__3.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__3.0.0|org.apache.maven.plugins__maven-compiler-plugin__3.10.0|null__maven-jar-plugin__3.2.2|org.apache.maven.plugins__maven-assembly-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|com.github.spotbugs__spotbugs-maven-plugin__4.5.3.0|net.revelc.code.formatter__formatter-maven-plugin__2.17.1|org.jacoco__jacoco-maven-plugin__0.8.7|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.sonatype.ossindex.maven__ossindex-maven-plugin__3.2.0|de.thetaphi__forbiddenapis__3.2|org.apache.maven.plugins__maven-javadoc-plugin__3.3.1|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__3.0.0|org.apache.maven.plugins__maven-compiler-plugin__3.10.0|null__maven-jar-plugin__3.2.2|org.apache.maven.plugins__maven-assembly-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__3.0.0-M5|com.github.spotbugs__spotbugs-maven-plugin__4.5.3.0|net.revelc.code.formatter__formatter-maven-plugin__2.17.1|org.jacoco__jacoco-maven-plugin__0.8.7</m:maven.plugins>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.12.0</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient-cache__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpclient-cache__version>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpmime__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore__version>4.4.15</m:dependency.management__org.apache.httpcomponents__httpcore__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.15</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__org.apache.commons__commons-compress__version>1.21</m:dependency.management__org.apache.commons__commons-compress__version>
+		<m:dependency.management__xerces__xercesImpl__version>2.12.2</m:dependency.management__xerces__xercesImpl__version>
+		<m:dependency.management__org.jsoup__jsoup__version>1.14.3</m:dependency.management__org.jsoup__jsoup__version>
+		<m:dependency.management__net.sf.biweekly__biweekly__version>0.6.6</m:dependency.management__net.sf.biweekly__biweekly__version>
+		<m:dependency.management__org.apache.tika__tika-core__version>2.3.0</m:dependency.management__org.apache.tika__tika-core__version>
+		<m:dependency.management__org.apache.tika__tika-parsers-standard-package__version>2.3.0</m:dependency.management__org.apache.tika__tika-parsers-standard-package__version>
+		<m:dependency.management__org.apache.tika__tika-parsers-standard-package__exclusion_0>org.bouncycastle__bcprov-jdk15on</m:dependency.management__org.apache.tika__tika-parsers-standard-package__exclusion_0>
+		<m:dependency.management__org.apache.tika__tika-parsers-standard-package__exclusion_1>org.codehaus.plexus__plexus-utils</m:dependency.management__org.apache.tika__tika-parsers-standard-package__exclusion_1>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-model__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-model__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-api__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-api__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-languages__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-languages__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-datatypes__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-datatypes__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-binary__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-binary__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-turtle__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-turtle__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-rdfxml__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-rdfxml__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-ntriples__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-ntriples__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-nquads__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-nquads__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-n3__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-n3__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-trix__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-trix__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-rdfjson__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-rdfjson__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-rdfjson__exclusion_0>com.fasterxml.jackson.core__jackson-core</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-rdfjson__exclusion_0>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-trig__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-trig__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-jsonld__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-jsonld__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-jsonld__exclusion_0>com.fasterxml.jackson.core__jackson-core</m:dependency.management__org.eclipse.rdf4j__rdf4j-rio-jsonld__exclusion_0>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-sail__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-sail__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-sail__exclusion_0>com.fasterxml.jackson.core__jackson-core</m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-sail__exclusion_0>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-sail__exclusion_1>org.slf4j__jcl-over-slf4j</m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-sail__exclusion_1>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-sail-memory__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-sail-memory__version>
+		<m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-api__version>3.7.4</m:dependency.management__org.eclipse.rdf4j__rdf4j-repository-api__version>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__version>0.13.4</m:dependency.management__com.github.jsonld-java__jsonld-java__version>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_0>com.fasterxml.jackson.core__jackson-core</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_0>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_1>org.slf4j__jcl-over-slf4j</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_1>
+		<m:dependency.management__org.semarglproject__semargl-rdf4j__version>0.7</m:dependency.management__org.semarglproject__semargl-rdf4j__version>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-api__version>5.1.20</m:dependency.management__net.sourceforge.owlapi__owlapi-api__version>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-api__exclusion_0>com.google.guava__guava</m:dependency.management__net.sourceforge.owlapi__owlapi-api__exclusion_0>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-api__exclusion_1>org.tukaani__xz</m:dependency.management__net.sourceforge.owlapi__owlapi-api__exclusion_1>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-rio__version>5.1.20</m:dependency.management__net.sourceforge.owlapi__owlapi-rio__version>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-rio__exclusion_0>com.google.guava__guava</m:dependency.management__net.sourceforge.owlapi__owlapi-rio__exclusion_0>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-parsers__version>5.1.20</m:dependency.management__net.sourceforge.owlapi__owlapi-parsers__version>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-parsers__exclusion_0>com.google.guava__guava</m:dependency.management__net.sourceforge.owlapi__owlapi-parsers__exclusion_0>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-apibinding__version>5.1.20</m:dependency.management__net.sourceforge.owlapi__owlapi-apibinding__version>
+		<m:dependency.management__net.sourceforge.owlapi__owlapi-apibinding__exclusion_0>com.google.guava__guava</m:dependency.management__net.sourceforge.owlapi__owlapi-apibinding__exclusion_0>
+		<m:dependency.management__org.apache.commons__commons-csv__version>1.9.0</m:dependency.management__org.apache.commons__commons-csv__version>
+		<m:dependency.management__commons-io__commons-io__version>2.11.0</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__de.l3s.boilerpipe__boilerpipe__version>1.1.0</m:dependency.management__de.l3s.boilerpipe__boilerpipe__version>
+		<m:dependency.management__com.beust__jcommander__version>1.82</m:dependency.management__com.beust__jcommander__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.35</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__version>2.17.1</m:dependency.management__org.apache.logging.log4j__log4j-core__version>
+		<m:dependency.management__org.apache.logging.log4j__log4j-core__exclusion_0>org.osgi__org.osgi.core</m:dependency.management__org.apache.logging.log4j__log4j-core__exclusion_0>
+		<m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>2.17.1</m:dependency.management__org.apache.logging.log4j__log4j-slf4j-impl__version>
+		<m:dependency.management__org.yaml__snakeyaml__version>1.30</m:dependency.management__org.yaml__snakeyaml__version>
+		<m:dependency.management__junit__junit__version>4.13.2</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.mockito__mockito-core__version>4.3.1</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.mockito__mockito-core__scope>test</m:dependency.management__org.mockito__mockito-core__scope>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="apache-any23-encoding" type="jar" ext="jar" conf="master"/>
+		<artifact name="apache-any23-encoding" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="apache-any23-encoding" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.apache.any23" name="apache-any23-api" rev="2.7" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.any23" name="apache-any23-test-resources" rev="2.7" force="true" conf="test->runtime(*),master(*)">
+			<artifact name="apache-any23-test-resources" type="test-jar" ext="jar" conf="test" m:classifier="tests"/>
+		</dependency>
+		<dependency org="org.rypt" name="f8" rev="1.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.tika" name="tika-parsers-standard-package" rev="2.3.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="org.bouncycastle" module="bcprov-jdk15on" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.codehaus.plexus" module="plexus-utils" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.tika" name="tika-core" rev="2.3.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.11.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="commons-codec" name="commons-codec" rev="1.15" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.commons" name="commons-compress" rev="1.21" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.commons" name="commons-csv" rev="1.9.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.5.13" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.httpcomponents" name="httpcore" rev="4.4.15" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.httpcomponents" name="httpmime" rev="4.5.13" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.jsoup" name="jsoup" rev="1.14.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.35" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.17.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="org.osgi" module="org.osgi.core" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.apache.logging.log4j" name="log4j-slf4j-impl" rev="2.17.1" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="junit" name="junit" rev="4.13.2" force="true" conf="test->runtime(*),master(*)"/>
+		<override org="org.apache.commons" module="commons-lang3" matcher="exact" rev="3.12.0"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5.13"/>
+		<override org="org.apache.httpcomponents" module="httpclient-cache" matcher="exact" rev="4.5.13"/>
+		<override org="org.apache.httpcomponents" module="httpmime" matcher="exact" rev="4.5.13"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.15"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.15"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.21"/>
+		<override org="xerces" module="xercesImpl" matcher="exact" rev="2.12.2"/>
+		<override org="org.jsoup" module="jsoup" matcher="exact" rev="1.14.3"/>
+		<override org="net.sf.biweekly" module="biweekly" matcher="exact" rev="0.6.6"/>
+		<override org="org.apache.tika" module="tika-core" matcher="exact" rev="2.3.0"/>
+		<override org="org.apache.tika" module="tika-parsers-standard-package" matcher="exact" rev="2.3.0"/>
+		<override org="org.apache.tika" module="tika-parsers-standard-package" matcher="exact" rev="2.3.0"/>
+		<override org="org.apache.tika" module="tika-parsers-standard-package" matcher="exact" rev="2.3.0"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-model" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-api" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-languages" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-datatypes" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-binary" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-turtle" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-rdfxml" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-ntriples" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-nquads" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-n3" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-trix" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-rdfjson" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-rdfjson" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-trig" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-jsonld" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-rio-jsonld" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-repository-sail" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-repository-sail" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-repository-sail" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-sail-memory" matcher="exact" rev="3.7.4"/>
+		<override org="org.eclipse.rdf4j" module="rdf4j-repository-api" matcher="exact" rev="3.7.4"/>
+		<override org="com.github.jsonld-java" module="jsonld-java" matcher="exact" rev="0.13.4"/>
+		<override org="com.github.jsonld-java" module="jsonld-java" matcher="exact" rev="0.13.4"/>
+		<override org="com.github.jsonld-java" module="jsonld-java" matcher="exact" rev="0.13.4"/>
+		<override org="org.semarglproject" module="semargl-rdf4j" matcher="exact" rev="0.7"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-api" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-api" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-api" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-rio" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-rio" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-parsers" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-parsers" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-apibinding" matcher="exact" rev="5.1.20"/>
+		<override org="net.sourceforge.owlapi" module="owlapi-apibinding" matcher="exact" rev="5.1.20"/>
+		<override org="org.apache.commons" module="commons-csv" matcher="exact" rev="1.9.0"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.11.0"/>
+		<override org="de.l3s.boilerpipe" module="boilerpipe" matcher="exact" rev="1.1.0"/>
+		<override org="com.beust" module="jcommander" matcher="exact" rev="1.82"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.35"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.17.1"/>
+		<override org="org.apache.logging.log4j" module="log4j-core" matcher="exact" rev="2.17.1"/>
+		<override org="org.apache.logging.log4j" module="log4j-slf4j-impl" matcher="exact" rev="2.17.1"/>
+		<override org="org.yaml" module="snakeyaml" matcher="exact" rev="1.30"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="4.3.1"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="4.3.1"/>
+	</dependencies>
+</ivy-module>

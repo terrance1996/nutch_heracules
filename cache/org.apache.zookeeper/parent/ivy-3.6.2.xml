@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.zookeeper"
+		module="parent"
+		revision="3.6.2"
+		status="release"
+		publication="20200904054403"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://zookeeper.apache.org">
+		ZooKeeper is a centralized service for maintaining configuration information, naming,
+    providing distributed synchronization, and providing group services. All of these kinds
+    of services are used in some form or another by distributed applications. Each time they
+    are implemented there is a lot of work that goes into fixing the bugs and race conditions
+    that are inevitable. Because of the difficulty of implementing these kinds of services,
+    applications initially usually skimp on them ,which make them brittle in the presence of
+    change and difficult to manage. Even when done correctly, different implementations of
+    these services lead to management complexity when the applications are deployed.
+		</description>
+		<m:properties__netty.version>4.1.50.Final</m:properties__netty.version>
+		<m:properties__jetty.version>9.4.24.v20191120</m:properties__jetty.version>
+		<m:properties__jackson.version>2.10.3</m:properties__jackson.version>
+		<m:properties__kerby.version>2.0.0</m:properties__kerby.version>
+		<m:properties__hamcrest.version>1.3</m:properties__hamcrest.version>
+		<m:properties__snappy.version>1.1.7</m:properties__snappy.version>
+		<m:properties__c-client-openssl>yes</m:properties__c-client-openssl>
+		<m:properties__slf4j.version>1.7.25</m:properties__slf4j.version>
+		<m:properties__log4j.version>1.2.17</m:properties__log4j.version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:properties__commons-collections.version>3.2.2</m:properties__commons-collections.version>
+		<m:properties__dropwizard.version>3.2.5</m:properties__dropwizard.version>
+		<m:properties__bouncycastle.version>1.60</m:properties__bouncycastle.version>
+		<m:properties__maven.compiler.source>1.8</m:properties__maven.compiler.source>
+		<m:properties__jmockit.version>1.48</m:properties__jmockit.version>
+		<m:properties__commons-cli.version>1.2</m:properties__commons-cli.version>
+		<m:properties__spotbugsannotations.version>4.0.2</m:properties__spotbugsannotations.version>
+		<m:properties__json.version>1.1.1</m:properties__json.version>
+		<m:properties__mockito.version>2.27.0</m:properties__mockito.version>
+		<m:properties__dependency.locations.enabled>false</m:properties__dependency.locations.enabled>
+		<m:properties__commons-lang.version>2.6</m:properties__commons-lang.version>
+		<m:properties__jline.version>2.14.6</m:properties__jline.version>
+		<m:properties__maven.compiler.target>1.8</m:properties__maven.compiler.target>
+		<m:properties__checkstyle.version>8.17</m:properties__checkstyle.version>
+		<m:properties__audience-annotations.version>0.5.0</m:properties__audience-annotations.version>
+		<m:properties__surefire-forkcount>8</m:properties__surefire-forkcount>
+		<m:properties__maven.compiler.release>8</m:properties__maven.compiler.release>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__surefire.version>2.22.0</m:properties__surefire.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide_2016.png</m:properties__organization.logo>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__project.build.outputTimestamp>2020-01-22T15:10:15Z</m:properties__project.build.outputTimestamp>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__arguments/>
+		<m:properties__assembly.tarLongFileMode>posix</m:properties__assembly.tarLongFileMode>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|com.github.koraktor__mavanagaiata__null|org.openclover__clover-maven-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|net.nicoulaj.maven.plugins__checksum-maven-plugin__null|com.github.spotbugs__spotbugs-maven-plugin__null|org.owasp__dependency-check-maven__null|org.apache.rat__apache-rat-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-scm-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.hamcrest__hamcrest-all__version>1.3</m:dependency.management__org.hamcrest__hamcrest-all__version>
+		<m:dependency.management__commons-collections__commons-collections__version>3.2.2</m:dependency.management__commons-collections__commons-collections__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__org.apache.yetus__audience-annotations__version>0.5.0</m:dependency.management__org.apache.yetus__audience-annotations__version>
+		<m:dependency.management__commons-cli__commons-cli__version>1.2</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__org.apache.kerby__kerb-core__version>2.0.0</m:dependency.management__org.apache.kerby__kerb-core__version>
+		<m:dependency.management__org.apache.kerby__kerb-core__exclusion_0>org.slf4j__slf4j-api</m:dependency.management__org.apache.kerby__kerb-core__exclusion_0>
+		<m:dependency.management__org.apache.kerby__kerb-simplekdc__version>2.0.0</m:dependency.management__org.apache.kerby__kerb-simplekdc__version>
+		<m:dependency.management__org.apache.kerby__kerb-simplekdc__exclusion_0>org.slf4j__slf4j-api</m:dependency.management__org.apache.kerby__kerb-simplekdc__exclusion_0>
+		<m:dependency.management__org.apache.kerby__kerby-config__version>2.0.0</m:dependency.management__org.apache.kerby__kerby-config__version>
+		<m:dependency.management__org.apache.kerby__kerby-config__exclusion_0>org.slf4j__slf4j-api</m:dependency.management__org.apache.kerby__kerby-config__exclusion_0>
+		<m:dependency.management__org.apache.kerby__kerby-config__exclusion_1>org.slf4j__slf4j-log4j12</m:dependency.management__org.apache.kerby__kerby-config__exclusion_1>
+		<m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>1.60</m:dependency.management__org.bouncycastle__bcprov-jdk15on__version>
+		<m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>1.60</m:dependency.management__org.bouncycastle__bcpkix-jdk15on__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.25</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.25</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__exclusion_0>*__*</m:dependency.management__org.slf4j__slf4j-log4j12__exclusion_0>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__org.jmockit__jmockit__version>1.48</m:dependency.management__org.jmockit__jmockit__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__org.mockito__mockito-core__version>2.27.0</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__io.netty__netty-handler__version>4.1.50.Final</m:dependency.management__io.netty__netty-handler__version>
+		<m:dependency.management__io.netty__netty-transport-native-epoll__version>4.1.50.Final</m:dependency.management__io.netty__netty-transport-native-epoll__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-server__version>9.4.24.v20191120</m:dependency.management__org.eclipse.jetty__jetty-server__version>
+		<m:dependency.management__org.eclipse.jetty__jetty-servlet__version>9.4.24.v20191120</m:dependency.management__org.eclipse.jetty__jetty-servlet__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-core__version>3.2.5</m:dependency.management__io.dropwizard.metrics__metrics-core__version>
+		<m:dependency.management__io.dropwizard.metrics__metrics-core__exclusion_0>org.slf4j__slf4j-api</m:dependency.management__io.dropwizard.metrics__metrics-core__exclusion_0>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>2.10.3</m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>
+		<m:dependency.management__com.googlecode.json-simple__json-simple__version>1.1.1</m:dependency.management__com.googlecode.json-simple__json-simple__version>
+		<m:dependency.management__com.googlecode.json-simple__json-simple__exclusion_0>junit__junit</m:dependency.management__com.googlecode.json-simple__json-simple__exclusion_0>
+		<m:dependency.management__jline__jline__version>2.14.6</m:dependency.management__jline__jline__version>
+		<m:dependency.management__com.github.spotbugs__spotbugs-annotations__version>4.0.2</m:dependency.management__com.github.spotbugs__spotbugs-annotations__version>
+		<m:dependency.management__com.github.spotbugs__spotbugs-annotations__scope>provided</m:dependency.management__com.github.spotbugs__spotbugs-annotations__scope>
+		<m:dependency.management__org.xerial.snappy__snappy-java__version>1.1.7</m:dependency.management__org.xerial.snappy__snappy-java__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

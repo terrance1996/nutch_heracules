@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.eclipse.rdf4j"
+		module="rdf4j"
+		revision="3.7.4"
+		status="release"
+		publication="20211112172906"
+	>
+		<license name="Eclipse Distribution License v1.0" url="https://eclipse.org/org/documents/edl-v10.php" />
+		<description homepage="https://rdf4j.org/">
+		An extensible Java framework for RDF and SPARQL
+		</description>
+		<m:properties__servlet.version>3.1.0</m:properties__servlet.version>
+		<m:properties__jmhVersion>1.21</m:properties__jmhVersion>
+		<m:properties__spring.version>5.3.5</m:properties__spring.version>
+		<m:properties__jsonldjava.version>0.13.3</m:properties__jsonldjava.version>
+		<m:properties__jetty.version>9.4.43.v20210629</m:properties__jetty.version>
+		<m:properties__jackson.version>2.11.4</m:properties__jackson.version>
+		<m:properties__jaxb.version>2.3.1</m:properties__jaxb.version>
+		<m:properties__guava.version>30.1.1-jre</m:properties__guava.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__httpcore.version>4.4.14</m:properties__httpcore.version>
+		<m:properties__httpclient.version>4.5.13</m:properties__httpclient.version>
+		<m:properties__elasticsearch.version>6.8.18</m:properties__elasticsearch.version>
+		<m:properties__slf4j.version>1.7.31</m:properties__slf4j.version>
+		<m:properties__lucene.version>7.7.3</m:properties__lucene.version>
+		<m:properties__last.japicmp.compare.version>3.1.4</m:properties__last.japicmp.compare.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__junit.version>5.7.2</m:properties__junit.version>
+		<m:properties__solr.version>7.7.3</m:properties__solr.version>
+		<m:properties__logback.version>1.1.11</m:properties__logback.version>
+		<m:properties__additional.j.option>--no-module-directories</m:properties__additional.j.option>
+		<m:properties__javadoc.opts>-Xdoclint:none -html5</m:properties__javadoc.opts>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>2.11.4</m:dependency.management__com.fasterxml.jackson.core__jackson-annotations__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>2.11.4</m:dependency.management__com.fasterxml.jackson.core__jackson-core__version>
+		<m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>2.11.4</m:dependency.management__com.fasterxml.jackson.core__jackson-databind__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-avro__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-avro__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-cbor__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-cbor__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-csv__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-csv__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-ion__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-ion__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-properties__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-properties__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-protobuf__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-protobuf__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-smile__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-smile__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-xml__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-xml__version>
+		<m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-yaml__version>2.11.4</m:dependency.management__com.fasterxml.jackson.dataformat__jackson-dataformat-yaml__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-eclipse-collections__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-eclipse-collections__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-guava__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-guava__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hibernate3__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hibernate3__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hibernate4__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hibernate4__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hibernate5__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hibernate5__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hppc__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-hppc__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jaxrs__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jaxrs__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-joda__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-joda__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-joda-money__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-joda-money__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jdk8__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jdk8__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-json-org__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-json-org__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jsr310__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jsr310__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jsr353__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-jsr353__version>
+		<m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-pcollections__version>2.11.4</m:dependency.management__com.fasterxml.jackson.datatype__jackson-datatype-pcollections__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-base__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-base__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-cbor-provider__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-cbor-provider__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-json-provider__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-smile-provider__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-smile-provider__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-xml-provider__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-xml-provider__version>
+		<m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-yaml-provider__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jaxrs__jackson-jaxrs-yaml-provider__version>
+		<m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-all__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-all__version>
+		<m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-annotation-support__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-annotation-support__version>
+		<m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-objects__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-objects__version>
+		<m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-retrofit2__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-retrofit2__version>
+		<m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-stree__version>2.11.4</m:dependency.management__com.fasterxml.jackson.jr__jackson-jr-stree__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-afterburner__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-afterburner__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-guice__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-guice__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-jaxb-annotations__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-jaxb-annotations__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-jsonSchema__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-jsonSchema__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-kotlin__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-kotlin__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-mrbean__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-mrbean__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-osgi__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-osgi__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-parameter-names__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-parameter-names__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-paranamer__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-paranamer__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.10__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.10__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.11__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.11__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.12__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.12__version>
+		<m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.13__version>2.11.4</m:dependency.management__com.fasterxml.jackson.module__jackson-module-scala_2.13__version>
+		<m:dependency.management__com.opencsv__opencsv__version>4.6</m:dependency.management__com.opencsv__opencsv__version>
+		<m:dependency.management__commons-cli__commons-cli__version>1.4</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__commons-fileupload__commons-fileupload__version>1.3.3</m:dependency.management__commons-fileupload__commons-fileupload__version>
+		<m:dependency.management__commons-io__commons-io__version>2.8.0</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__commons-codec__commons-codec__version>1.13</m:dependency.management__commons-codec__commons-codec__version>
+		<m:dependency.management__org.apache.commons__commons-text__version>1.9</m:dependency.management__org.apache.commons__commons-text__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.12.0</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpclient__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_1>commons-codec__commons-codec</m:dependency.management__org.apache.httpcomponents__httpclient__exclusion_1>
+		<m:dependency.management__org.apache.httpcomponents__httpclient-cache__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpclient-cache__version>
+		<m:dependency.management__org.apache.httpcomponents__httpclient-cache__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpclient-cache__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__httpclient-cache__exclusion_1>commons-codec__commons-codec</m:dependency.management__org.apache.httpcomponents__httpclient-cache__exclusion_1>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__version>4.5.13</m:dependency.management__org.apache.httpcomponents__httpmime__version>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpmime__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__httpmime__exclusion_1>commons-codec__commons-codec</m:dependency.management__org.apache.httpcomponents__httpmime__exclusion_1>
+		<m:dependency.management__org.apache.httpcomponents__fluent-hc__version>4.5.13</m:dependency.management__org.apache.httpcomponents__fluent-hc__version>
+		<m:dependency.management__org.apache.httpcomponents__fluent-hc__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__fluent-hc__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__fluent-hc__exclusion_1>commons-codec__commons-codec</m:dependency.management__org.apache.httpcomponents__fluent-hc__exclusion_1>
+		<m:dependency.management__org.apache.httpcomponents__httpcore-nio__version>4.4.14</m:dependency.management__org.apache.httpcomponents__httpcore-nio__version>
+		<m:dependency.management__org.apache.httpcomponents__httpcore-nio__exclusion_0>commons-logging__commons-logging</m:dependency.management__org.apache.httpcomponents__httpcore-nio__exclusion_0>
+		<m:dependency.management__org.apache.httpcomponents__httpcore-nio__exclusion_1>commons-codec__commons-codec</m:dependency.management__org.apache.httpcomponents__httpcore-nio__exclusion_1>
+		<m:dependency.management__org.locationtech.spatial4j__spatial4j__version>0.8</m:dependency.management__org.locationtech.spatial4j__spatial4j__version>
+		<m:dependency.management__org.locationtech.jts__jts-core__version>1.17.1</m:dependency.management__org.locationtech.jts__jts-core__version>
+		<m:dependency.management__com.google.guava__guava__version>30.1.1-jre</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__com.google.guava__guava__exclusion_0>com.google.code.findbugs__jsr305</m:dependency.management__com.google.guava__guava__exclusion_0>
+		<m:dependency.management__com.google.guava__guava__exclusion_1>org.checkerframework__checker-qual</m:dependency.management__com.google.guava__guava__exclusion_1>
+		<m:dependency.management__com.google.guava__guava__exclusion_2>com.google.errorprone__error_prone_annotations</m:dependency.management__com.google.guava__guava__exclusion_2>
+		<m:dependency.management__com.google.guava__guava__exclusion_3>com.google.j2objc__j2objc-annotations</m:dependency.management__com.google.guava__guava__exclusion_3>
+		<m:dependency.management__com.google.guava__guava__exclusion_4>org.codehaus.mojo__animal-sniffer-annotations</m:dependency.management__com.google.guava__guava__exclusion_4>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.31</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.31</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.31</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__scope>runtime</m:dependency.management__org.slf4j__jcl-over-slf4j__scope>
+		<m:dependency.management__org.slf4j__log4j-over-slf4j__version>1.7.31</m:dependency.management__org.slf4j__log4j-over-slf4j__version>
+		<m:dependency.management__ch.qos.logback__logback-core__version>1.1.11</m:dependency.management__ch.qos.logback__logback-core__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>1.1.11</m:dependency.management__ch.qos.logback__logback-classic__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-engine__version>5.7.2</m:dependency.management__org.junit.jupiter__junit-jupiter-engine__version>
+		<m:dependency.management__org.junit.vintage__junit-vintage-engine__version>5.7.2</m:dependency.management__org.junit.vintage__junit-vintage-engine__version>
+		<m:dependency.management__org.junit.jupiter__junit-jupiter-params__version>5.7.2</m:dependency.management__org.junit.jupiter__junit-jupiter-params__version>
+		<m:dependency.management__org.mockito__mockito-core__version>3.8.0</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.mockito__mockito-junit-jupiter__version>3.8.0</m:dependency.management__org.mockito__mockito-junit-jupiter__version>
+		<m:dependency.management__org.mockito__mockito-junit-jupiter__scope>test</m:dependency.management__org.mockito__mockito-junit-jupiter__scope>
+		<m:dependency.management__com.github.tomakehurst__wiremock-jre8__version>2.27.2</m:dependency.management__com.github.tomakehurst__wiremock-jre8__version>
+		<m:dependency.management__org.assertj__assertj-core__version>3.19.0</m:dependency.management__org.assertj__assertj-core__version>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__version>0.13.3</m:dependency.management__com.github.jsonld-java__jsonld-java__version>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__scope>compile</m:dependency.management__com.github.jsonld-java__jsonld-java__scope>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_0>org.apache.httpcomponents__fluent-hc</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_0>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_1>org.apache.httpcomponents__httpcore-nio</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_1>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_2>org.apache.httpcomponents__httpcore-osgi</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_2>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_3>org.apache.httpcomponents__httpclient-osgi</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_3>
+		<m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_4>org.apache.httpcomponents__httpmime</m:dependency.management__com.github.jsonld-java__jsonld-java__exclusion_4>
+		<m:dependency.management__org.mapdb__mapdb__version>1.0.8</m:dependency.management__org.mapdb__mapdb__version>
+		<m:maven.plugins>org.codehaus.mojo__animal-sniffer-maven-plugin__1.20|net.revelc.code.formatter__formatter-maven-plugin__null|org.apache.maven.plugins__maven-failsafe-plugin__null|net.revelc.code.formatter__formatter-maven-plugin__null|net.revelc.code__impsort-maven-plugin__null|au.com.acegi__xml-format-maven-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

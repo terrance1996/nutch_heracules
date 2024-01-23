@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="io.netty"
+		module="netty-all"
+		revision="4.1.77.Final"
+		status="release"
+		publication="20220506004940"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0" />
+		<description homepage="https://netty.io/netty-all/">
+		Netty is an asynchronous event-driven network application framework for
+    rapid development of maintainable high performance protocol servers and
+    clients.
+		</description>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="netty-all" type="jar" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="io.netty" name="netty-buffer" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.google.protobuf" module="protobuf-java" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.google.protobuf.nano" module="protobuf-javanano" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jboss.marshalling" module="jboss-marshalling" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.jcraft" module="jzlib" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.ning" module="compress-lzf" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="net.jpountz.lz4" module="lz4" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.github.jponge" module="lzma-java" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.github.luben" module="zstd-jni" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.aayushatharva.brotli4j" module="brotli4j" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.aayushatharva.brotli4j" module="native-linux-x86_64" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.aayushatharva.brotli4j" module="native-osx-x86_64" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.aayushatharva.brotli4j" module="native-windows-x86_64" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-dns" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-haproxy" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-http" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-handler" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.jcraft" module="jzlib" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.aayushatharva.brotli4j" module="brotli4j" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.github.luben" module="zstd-jni" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-http2" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-handler" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec-http" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.jcraft" module="jzlib" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.aayushatharva.brotli4j" module="brotli4j" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.github.luben" module="zstd-jni" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-memcache" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-mqtt" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-redis" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-smtp" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-socks" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-stomp" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-codec-xml" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.fasterxml" module="aalto-xml" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-common" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="org.graalvm.nativeimage" module="svm" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.jetbrains" module="annotations-java5" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.slf4j" module="slf4j-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="commons-logging" module="commons-logging" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.apache.logging.log4j" module="log4j-1.2-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.apache.logging.log4j" module="log4j-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.projectreactor.tools" module="blockhound" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-handler" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-resolver" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-tcnative-classes" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-tcnative" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.bouncycastle" module="bcpkix-jdk15on" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.eclipse.jetty.npn" module="npn-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.eclipse.jetty.alpn" module="alpn-api" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.conscrypt" module="conscrypt-openjdk-uber" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-handler-proxy" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec-socks" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec-http" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-resolver" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-resolver-dns" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-resolver" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec-dns" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-handler" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-resolver" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-rxtx" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="org.rxtx" module="rxtx" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-sctp" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-codec" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-udt" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="com.barchart.udt" module="barchart-udt-bundle" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-classes-epoll" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-native-unix-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-native-unix-common" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-jni-util" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-classes-kqueue" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-native-unix-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-resolver-dns-classes-macos" rev="4.1.77.Final" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-resolver-dns" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-native-unix-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-native-epoll" rev="4.1.77.Final" force="true" conf="runtime->compile(*),runtime(*),master(*)">
+			<artifact name="netty-transport-native-epoll" type="jar" ext="jar" conf="runtime" m:classifier="linux-x86_64"/>
+			<artifact name="netty-transport-native-epoll" type="jar" ext="jar" conf="runtime" m:classifier="linux-aarch_64"/>
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-native-unix-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-classes-epoll" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-transport-native-kqueue" rev="4.1.77.Final" force="true" conf="runtime->compile(*),runtime(*),master(*)">
+			<artifact name="netty-transport-native-kqueue" type="jar" ext="jar" conf="runtime" m:classifier="osx-x86_64"/>
+			<artifact name="netty-transport-native-kqueue" type="jar" ext="jar" conf="runtime" m:classifier="osx-aarch_64"/>
+			<exclude org="io.netty" module="netty-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-buffer" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-native-unix-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-classes-kqueue" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="io.netty" name="netty-resolver-dns-native-macos" rev="4.1.77.Final" force="true" conf="runtime->compile(*),runtime(*),master(*)">
+			<artifact name="netty-resolver-dns-native-macos" type="jar" ext="jar" conf="runtime" m:classifier="osx-x86_64"/>
+			<artifact name="netty-resolver-dns-native-macos" type="jar" ext="jar" conf="runtime" m:classifier="osx-aarch_64"/>
+			<exclude org="io.netty" module="netty-resolver-dns-classes-macos" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="io.netty" module="netty-transport-native-unix-common" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+	</dependencies>
+</ivy-module>

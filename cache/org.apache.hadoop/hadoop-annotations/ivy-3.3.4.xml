@@ -6,6 +6,7 @@
 		status="release"
 		publication="20220729052555"
 	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
 		<description homepage="">
 		Apache Hadoop Annotations
 		</description>
@@ -137,6 +138,12 @@
 		<m:properties__protobuf-compile.version>3.5.1</m:properties__protobuf-compile.version>
 		<m:properties__nodejs.version>v12.22.1</m:properties__nodejs.version>
 		<m:properties__phantomjs-maven-plugin.version>0.7</m:properties__phantomjs-maven-plugin.version>
+		<m:properties__bundle.zstd.in.bin>true</m:properties__bundle.zstd.in.bin>
+		<m:properties__bundle.openssl.in.bin>true</m:properties__bundle.openssl.in.bin>
+		<m:properties__hbase-server-artifactid>hadoop-yarn-server-timelineservice-hbase-server-1</m:properties__hbase-server-artifactid>
+		<m:properties__hbase-compatible-hadoop.version>2.5.1</m:properties__hbase-compatible-hadoop.version>
+		<m:properties__hbase-compatible-guava.version>12.0.1</m:properties__hbase-compatible-guava.version>
+		<m:properties__hbase.version>${hbase.one.version}</m:properties__hbase.version>
 		<m:properties__maven-checkstyle-plugin.version>3.1.0</m:properties__maven-checkstyle-plugin.version>
 		<m:properties__maven-bundle-plugin.version>2.5.0</m:properties__maven-bundle-plugin.version>
 		<m:properties__lifecycle-mapping.version>1.0.0</m:properties__lifecycle-mapping.version>
@@ -169,7 +176,7 @@
 		<m:properties__shell-executable>bash</m:properties__shell-executable>
 		<m:properties__maven-site-plugin.version>3.6</m:properties__maven-site-plugin.version>
 		<m:dependency.management__com.cenqua.clover__clover__version>3.0.2</m:dependency.management__com.cenqua.clover__clover__version>
-		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|null__maven-clean-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-pdf-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|com.google.code.maven-replacer-plugin__replacer__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|null__maven-clean-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-pdf-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|com.google.code.maven-replacer-plugin__replacer__null</m:maven.plugins>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|null__maven-clean-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-pdf-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|com.google.code.maven-replacer-plugin__replacer__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-site-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.0|org.owasp__dependency-check-maven__1.4.3|com.github.spotbugs__spotbugs-maven-plugin__null|null__maven-clean-plugin__null|org.apache.maven.plugins__maven-antrun-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-pdf-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|com.google.code.maven-replacer-plugin__replacer__null|org.apache.maven.plugins__maven-surefire-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null|null__maven-compiler-plugin__null|null__maven-javadoc-plugin__null</m:maven.plugins>
 		<m:dependency.management__com.squareup.okhttp3__okhttp__version>4.9.3</m:dependency.management__com.squareup.okhttp3__okhttp__version>
 		<m:dependency.management__com.squareup.okhttp3__okhttp__exclusion_0>org.jetbrains.kotlin__kotlin-stdlib</m:dependency.management__com.squareup.okhttp3__okhttp__exclusion_0>
 		<m:dependency.management__com.squareup.okhttp3__okhttp__exclusion_1>org.jetbrains.kotlin__kotlin-stdlib-common</m:dependency.management__com.squareup.okhttp3__okhttp__exclusion_1>
@@ -436,17 +443,17 @@
 		<m:dependency.management__dnsjava__dnsjava__version>2.1.7</m:dependency.management__dnsjava__dnsjava__version>
 		<m:dependency.management__net.minidev__json-smart__version>2.4.7</m:dependency.management__net.minidev__json-smart__version>
 		<m:dependency.management__org.skyscreamer__jsonassert__version>1.3.0</m:dependency.management__org.skyscreamer__jsonassert__version>
-		<m:dependency.management__org.apache.hbase__hbase-common__version>${hbase.version}</m:dependency.management__org.apache.hbase__hbase-common__version>
+		<m:dependency.management__org.apache.hbase__hbase-common__version>1.4.8</m:dependency.management__org.apache.hbase__hbase-common__version>
 		<m:dependency.management__org.apache.hbase__hbase-common__exclusion_0>log4j__log4j</m:dependency.management__org.apache.hbase__hbase-common__exclusion_0>
 		<m:dependency.management__org.apache.hbase__hbase-common__exclusion_1>org.slf4j__slf4j-log4j12</m:dependency.management__org.apache.hbase__hbase-common__exclusion_1>
 		<m:dependency.management__org.apache.hbase__hbase-common__scope>test</m:dependency.management__org.apache.hbase__hbase-common__scope>
-		<m:dependency.management__org.apache.hbase__hbase-client__version>${hbase.version}</m:dependency.management__org.apache.hbase__hbase-client__version>
+		<m:dependency.management__org.apache.hbase__hbase-client__version>1.4.8</m:dependency.management__org.apache.hbase__hbase-client__version>
 		<m:dependency.management__org.apache.hbase__hbase-client__exclusion_0>jdk.tools__jdk.tools</m:dependency.management__org.apache.hbase__hbase-client__exclusion_0>
-		<m:dependency.management__org.apache.hbase__hbase-server__version>${hbase.version}</m:dependency.management__org.apache.hbase__hbase-server__version>
+		<m:dependency.management__org.apache.hbase__hbase-server__version>1.4.8</m:dependency.management__org.apache.hbase__hbase-server__version>
 		<m:dependency.management__org.apache.hbase__hbase-server__exclusion_0>log4j__log4j</m:dependency.management__org.apache.hbase__hbase-server__exclusion_0>
 		<m:dependency.management__org.apache.hbase__hbase-server__scope>test</m:dependency.management__org.apache.hbase__hbase-server__scope>
 		<m:dependency.management__org.apache.hbase__hbase-server__exclusion_1>org.slf4j__slf4j-log4j12</m:dependency.management__org.apache.hbase__hbase-server__exclusion_1>
-		<m:dependency.management__org.apache.hbase__hbase-testing-util__version>${hbase.version}</m:dependency.management__org.apache.hbase__hbase-testing-util__version>
+		<m:dependency.management__org.apache.hbase__hbase-testing-util__version>1.4.8</m:dependency.management__org.apache.hbase__hbase-testing-util__version>
 		<m:dependency.management__org.apache.hbase__hbase-testing-util__scope>test</m:dependency.management__org.apache.hbase__hbase-testing-util__scope>
 		<m:dependency.management__org.apache.hbase__hbase-testing-util__exclusion_0>org.jruby__jruby-complete</m:dependency.management__org.apache.hbase__hbase-testing-util__exclusion_0>
 		<m:dependency.management__org.apache.hbase__hbase-testing-util__exclusion_1>org.apache.hadoop__hadoop-hdfs</m:dependency.management__org.apache.hbase__hbase-testing-util__exclusion_1>
@@ -472,6 +479,7 @@
 		<m:dependency.management__net.java.dev.jna__jna__version>5.2.0</m:dependency.management__net.java.dev.jna__jna__version>
 		<m:dependency.management__org.xerial.snappy__snappy-java__version>1.1.8.2</m:dependency.management__org.xerial.snappy__snappy-java__version>
 		<m:dependency.management__org.lz4__lz4-java__version>1.7.1</m:dependency.management__org.lz4__lz4-java__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-yarn-server-timelineservice-hbase-server-1__version>3.3.4</m:dependency.management__org.apache.hadoop__hadoop-yarn-server-timelineservice-hbase-server-1__version>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -479,7 +487,7 @@
 		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
 		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
 		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
-		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
 		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
 		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
 		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
@@ -492,223 +500,309 @@
 	</publications>
 	<dependencies>
 		<dependency org="jdiff" name="jdiff" rev="1.0.9" force="true" conf="provided->compile(*),provided(*),runtime(*),master(*)"/>
-		<override org="org.apache.hadoop" module="hadoop-cloud-storage" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-streaming" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-hdfs" matcher="exact" rev="3.3.4"/>
-		<override org="org.eclipse.jetty" module="jetty-servlet" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="io.netty" module="netty-common" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.hadoop" module="hadoop-openstack" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-hs" matcher="exact" rev="3.3.4"/>
+		<override org="com.cenqua.clover" module="clover" matcher="exact" rev="3.0.2"/>
 		<override org="com.squareup.okhttp3" module="okhttp" matcher="exact" rev="4.9.3"/>
-		<override org="commons-daemon" module="commons-daemon" matcher="exact" rev="1.0.13"/>
-		<override org="javax.annotation" module="javax.annotation-api" matcher="exact" rev="1.3.2"/>
-		<override org="org.apache.hadoop" module="hadoop-assemblies" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-common" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.curator" module="curator-framework" matcher="exact" rev="4.2.0"/>
-		<override org="org.mock-server" module="mockserver-netty" matcher="exact" rev="5.10"/>
-		<override org="org.apache.hadoop.thirdparty" module="hadoop-shaded-protobuf_3_7" matcher="exact" rev="1.1.1"/>
-		<override org="org.apache.hbase" module="hbase-server" matcher="exact" rev="${hbase.version}"/>
-		<override org="joda-time" module="joda-time" matcher="exact" rev="2.9.9"/>
-		<override org="com.google.inject" module="guice" matcher="exact" rev="4.0"/>
-		<override org="org.skyscreamer" module="jsonassert" matcher="exact" rev="1.3.0"/>
-		<override org="net.sf.kosmosfs" module="kfs" matcher="exact" rev="0.3"/>
-		<override org="io.netty" module="netty-resolver" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.hadoop" module="hadoop-client-check-test-invariants" matcher="exact" rev="3.3.4"/>
-		<override org="io.netty" module="netty-handler-proxy" matcher="exact" rev="4.1.77.Final"/>
-		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.8.9"/>
-		<override org="org.apache.hadoop" module="hadoop-hdfs-client" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice-hbase-client" matcher="exact" rev="3.3.4"/>
-		<override org="com.googlecode.json-simple" module="json-simple" matcher="exact" rev="1.1.1"/>
-		<override org="org.glassfish.grizzly" module="grizzly-http-server" matcher="exact" rev="2.2.21"/>
-		<override org="org.assertj" module="assertj-core" matcher="exact" rev="3.12.2"/>
-		<override org="org.glassfish" module="javax.servlet" matcher="exact" rev="3.1"/>
-		<override org="org.eclipse.jetty.websocket" module="websocket-client" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="javax.xml.bind" module="jaxb-api" matcher="exact" rev="2.2.11"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-applications-distributedshell" matcher="exact" rev="3.3.4"/>
-		<override org="com.fasterxml.jackson.dataformat" module="jackson-dataformat-cbor" matcher="exact" rev="2.12.7"/>
-		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
-		<override org="com.amazonaws" module="aws-java-sdk-bundle" matcher="exact" rev="1.12.262"/>
-		<override org="org.apache.hadoop" module="hadoop-client" matcher="exact" rev="3.3.4"/>
-		<override org="com.sun.jersey" module="jersey-core" matcher="exact" rev="1.19"/>
-		<override org="org.slf4j" module="jul-to-slf4j" matcher="exact" rev="1.7.36"/>
-		<override org="org.apache.hadoop" module="hadoop-azure" matcher="exact" rev="3.3.4"/>
-		<override org="io.netty" module="netty-handler" matcher="exact" rev="4.1.77.Final"/>
-		<override org="com.jcraft" module="jsch" matcher="exact" rev="0.1.55"/>
-		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5.13"/>
-		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="org.codehaus.plexus" module="plexus-component-annotations" matcher="exact" rev="1.5.5"/>
-		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.36"/>
-		<override org="org.mockito" module="mockito-core" matcher="exact" rev="2.28.2"/>
-		<override org="org.ehcache" module="ehcache" matcher="exact" rev="3.3.1"/>
-		<override org="org.glassfish.grizzly" module="grizzly-http" matcher="exact" rev="2.2.21"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice-hbase-common" matcher="exact" rev="3.3.4"/>
-		<override org="com.google.inject.extensions" module="guice-servlet" matcher="exact" rev="4.0"/>
-		<override org="org.apache.curator" module="curator-recipes" matcher="exact" rev="4.2.0"/>
-		<override org="org.apache.ftpserver" module="ftpserver-core" matcher="exact" rev="1.0.0"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-services-api" matcher="exact" rev="3.3.4"/>
-		<override org="org.codehaus.jackson" module="jackson-mapper-asl" matcher="exact" rev="1.9.13"/>
-		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.60"/>
-		<override org="org.apache.hadoop" module="hadoop-azure-datalake" matcher="exact" rev="3.3.4"/>
-		<override org="commons-beanutils" module="commons-beanutils" matcher="exact" rev="1.9.4"/>
-		<override org="org.apache.hadoop" module="hadoop-rumen" matcher="exact" rev="3.3.4"/>
-		<override org="com.aliyun.oss" module="aliyun-sdk-oss" matcher="exact" rev="3.13.0"/>
-		<override org="org.junit.jupiter" module="junit-jupiter-api" matcher="exact" rev="5.5.1"/>
-		<override org="org.apache.hadoop" module="hadoop-client-api" matcher="exact" rev="3.3.4"/>
-		<override org="org.codehaus.woodstox" module="stax2-api" matcher="exact" rev="4.2.1"/>
-		<override org="com.microsoft.azure" module="azure-storage" matcher="exact" rev="7.0.1"/>
-		<override org="org.apache.ant" module="ant" matcher="exact" rev="1.10.11"/>
-		<override org="org.apache.kerby" module="kerb-core" matcher="exact" rev="1.0.1"/>
-		<override org="org.apache.hadoop" module="hadoop-hdfs-rbf" matcher="exact" rev="3.3.4"/>
-		<override org="org.jdom" module="jdom" matcher="exact" rev="1.1"/>
-		<override org="org.eclipse.jetty.websocket" module="javax-websocket-server-impl" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="org.eclipse.jdt" module="core" matcher="exact" rev="3.1.1"/>
-		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-grizzly2" matcher="exact" rev="1.19"/>
-		<override org="org.apache.hadoop" module="hadoop-aliyun" matcher="exact" rev="3.3.4"/>
-		<override org="io.netty" module="netty-transport" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.eclipse.jetty" module="jetty-servlet-tester" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="com.squareup.okhttp3" module="mockwebserver" matcher="exact" rev="4.9.3"/>
-		<override org="org.apache.hadoop" module="hadoop-archive-logs" matcher="exact" rev="3.3.4"/>
-		<override org="org.slf4j" module="slf4j-reload4j" matcher="exact" rev="1.7.36"/>
-		<override org="org.apache.ftpserver" module="ftplet-api" matcher="exact" rev="1.0.0"/>
-		<override org="org.apache.hadoop" module="hadoop-aws" matcher="exact" rev="3.3.4"/>
-		<override org="org.fusesource.leveldbjni" module="leveldbjni-all" matcher="exact" rev="1.8"/>
-		<override org="org.apache.hadoop" module="hadoop-client-minicluster" matcher="exact" rev="3.3.4"/>
-		<override org="com.sun.jersey" module="jersey-server" matcher="exact" rev="1.19"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
-		<override org="com.fasterxml.jackson.jaxrs" module="jackson-jaxrs-json-provider" matcher="exact" rev="2.12.7"/>
-		<override org="org.eclipse.jetty" module="jetty-webapp" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="io.netty" module="netty-buffer" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.21"/>
-		<override org="io.netty" module="netty-all" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.commons" module="commons-lang3" matcher="exact" rev="3.12.0"/>
-		<override org="org.wildfly.openssl" module="wildfly-openssl-java" matcher="exact" rev="1.0.7.Final"/>
-		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.4.43.v20210629"/>
-		<override org="org.apache.hadoop.thirdparty" module="hadoop-shaded-guava" matcher="exact" rev="1.1.1"/>
-		<override org="jdiff" module="jdiff" matcher="exact" rev="1.0.9"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-tests" matcher="exact" rev="3.3.4"/>
-		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.1.0"/>
-		<override org="org.jruby.jcodings" module="jcodings" matcher="exact" rev="1.0.13"/>
-		<override org="com.fasterxml.jackson.core" module="jackson-annotations" matcher="exact" rev="2.12.7"/>
-		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
-		<override org="com.sun.jersey.contribs" module="jersey-guice" matcher="exact" rev="1.19"/>
-		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.13"/>
-		<override org="org.codehaus.jackson" module="jackson-core-asl" matcher="exact" rev="1.9.13"/>
-		<override org="com.microsoft.sqlserver" module="mssql-jdbc" matcher="exact" rev="6.2.1.jre7"/>
-		<override org="org.junit.vintage" module="junit-vintage-engine" matcher="exact" rev="5.5.1"/>
-		<override org="org.apache.hadoop" module="hadoop-registry" matcher="exact" rev="3.3.4"/>
-		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.60"/>
+		<override org="com.squareup.okhttp3" module="okhttp" matcher="exact" rev="4.9.3"/>
+		<override org="com.squareup.okhttp3" module="okhttp" matcher="exact" rev="4.9.3"/>
 		<override org="org.jetbrains.kotlin" module="kotlin-stdlib" matcher="exact" rev="1.4.10"/>
-		<override org="net.minidev" module="json-smart" matcher="exact" rev="2.4.7"/>
-		<override org="org.apache.geronimo.specs" module="geronimo-jcache_1.0_spec" matcher="exact" rev="1.0-alpha-1"/>
-		<override org="org.apache.avro" module="avro" matcher="exact" rev="1.7.7"/>
-		<override org="org.apache.commons" module="commons-math3" matcher="exact" rev="3.1.1"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-common" matcher="exact" rev="3.3.4"/>
-		<override org="commons-net" module="commons-net" matcher="exact" rev="3.6"/>
-		<override org="org.glassfish.grizzly" module="grizzly-http-servlet" matcher="exact" rev="2.2.21"/>
-		<override org="org.apache.sshd" module="sshd-core" matcher="exact" rev="1.6.0"/>
-		<override org="org.threadly" module="threadly" matcher="exact" rev="4.9.0"/>
-		<override org="com.sun.jersey" module="jersey-json" matcher="exact" rev="1.19"/>
-		<override org="com.google.guava" module="guava" matcher="exact" rev="27.0-jre"/>
-		<override org="io.netty" module="netty-transport-native-epoll" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.hadoop" module="hadoop-minikdc" matcher="exact" rev="3.3.4"/>
-		<override org="org.ojalgo" module="ojalgo" matcher="exact" rev="43.0"/>
-		<override org="commons-logging" module="commons-logging-api" matcher="exact" rev="1.1"/>
-		<override org="javax.ws.rs" module="jsr311-api" matcher="exact" rev="1.1.1"/>
-		<override org="org.eclipse.jetty" module="jetty-util-ajax" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.jetbrains.kotlin" module="kotlin-stdlib" matcher="exact" rev="1.4.10"/>
+		<override org="org.jetbrains.kotlin" module="kotlin-stdlib-common" matcher="exact" rev="1.4.10"/>
+		<override org="com.squareup.okhttp3" module="mockwebserver" matcher="exact" rev="4.9.3"/>
+		<override org="com.squareup.okhttp3" module="mockwebserver" matcher="exact" rev="4.9.3"/>
+		<override org="jdiff" module="jdiff" matcher="exact" rev="1.0.9"/>
+		<override org="org.apache.hadoop.thirdparty" module="hadoop-shaded-protobuf_3_7" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.hadoop.thirdparty" module="hadoop-shaded-guava" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.hadoop" module="hadoop-assemblies" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-annotations" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-modules" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-api" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-check-invariants" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-check-test-invariants" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-integration-tests" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-runtime" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client-minicluster" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-common" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-common" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-common" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-auth" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-nfs" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-hdfs" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-hdfs-client" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-hdfs-rbf" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-app" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-common" matcher="exact" rev="3.3.4"/>
 		<override org="org.apache.hadoop" module="hadoop-yarn-api" matcher="exact" rev="3.3.4"/>
 		<override org="org.apache.hadoop" module="hadoop-yarn-client" matcher="exact" rev="3.3.4"/>
-		<override org="com.github.stefanbirkner" module="system-rules" matcher="exact" rev="1.18.0"/>
-		<override org="org.apache.curator" module="curator-client" matcher="exact" rev="4.2.0"/>
-		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-app" matcher="exact" rev="3.3.4"/>
-		<override org="org.wildfly.openssl" module="wildfly-openssl" matcher="exact" rev="1.0.7.Final"/>
-		<override org="com.fasterxml.jackson.core" module="jackson-core" matcher="exact" rev="2.12.7"/>
-		<override org="org.codehaus.jackson" module="jackson-jaxrs" matcher="exact" rev="1.9.13"/>
-		<override org="org.apache.hadoop" module="hadoop-auth" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-nodemanager" matcher="exact" rev="3.3.4"/>
-		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.2"/>
-		<override org="org.apache.hadoop" module="hadoop-cos" matcher="exact" rev="3.3.4"/>
-		<override org="io.netty" module="netty-transport-native-unix-common" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.hadoop" module="hadoop-extras" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-jobclient" matcher="exact" rev="3.3.4"/>
-		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.15"/>
-		<override org="org.codehaus.jackson" module="jackson-xc" matcher="exact" rev="1.9.13"/>
-		<override org="org.junit.platform" module="junit-platform-launcher" matcher="exact" rev="1.5.1"/>
-		<override org="jakarta.activation" module="jakarta.activation-api" matcher="exact" rev="1.2.1"/>
-		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="${hbase.version}"/>
-		<override org="com.zaxxer" module="HikariCP-java7" matcher="exact" rev="2.4.12"/>
-		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.3"/>
-		<override org="org.apache.hbase" module="hbase-common" matcher="exact" rev="${hbase.version}"/>
-		<override org="org.apache.hadoop" module="hadoop-client-modules" matcher="exact" rev="3.3.4"/>
-		<override org="org.objenesis" module="objenesis" matcher="exact" rev="2.6"/>
-		<override org="com.google.protobuf" module="protobuf-java" matcher="exact" rev="2.5.0"/>
-		<override org="org.junit.jupiter" module="junit-jupiter-engine" matcher="exact" rev="5.5.1"/>
-		<override org="org.codehaus.jettison" module="jettison" matcher="exact" rev="1.1"/>
-		<override org="org.apache.hadoop" module="hadoop-client-integration-tests" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hbase" module="hbase-client" matcher="exact" rev="${hbase.version}"/>
-		<override org="com.sun.jersey" module="jersey-client" matcher="exact" rev="1.19"/>
-		<override org="org.apache.kerby" module="kerb-simplekdc" matcher="exact" rev="1.0.1"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-applications-catalog-webapp" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.curator" module="curator-test" matcher="exact" rev="4.2.0"/>
-		<override org="org.jetbrains.kotlin" module="kotlin-stdlib-common" matcher="exact" rev="1.4.10"/>
-		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-core" matcher="exact" rev="1.19"/>
-		<override org="com.fasterxml.woodstox" module="woodstox-core" matcher="exact" rev="5.3.0"/>
-		<override org="org.apache.hadoop" module="hadoop-sls" matcher="exact" rev="3.3.4"/>
-		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.2.2"/>
-		<override org="org.apache.hadoop" module="hadoop-minicluster" matcher="exact" rev="3.3.4"/>
-		<override org="javax.servlet.jsp" module="jsp-api" matcher="exact" rev="2.1"/>
-		<override org="com.nimbusds" module="nimbus-jose-jwt" matcher="exact" rev="9.8.1"/>
-		<override org="io.dropwizard.metrics" module="metrics-core" matcher="exact" rev="3.2.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-web-proxy" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-kms" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-datajoin" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.commons" module="commons-text" matcher="exact" rev="1.4"/>
-		<override org="org.hsqldb" module="hsqldb" matcher="exact" rev="2.3.4"/>
-		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.10.19"/>
-		<override org="com.qcloud" module="cos_api-bundle" matcher="exact" rev="5.6.19"/>
-		<override org="com.fasterxml.jackson.module" module="jackson-module-jaxb-annotations" matcher="exact" rev="2.12.7"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.commons" module="commons-configuration2" matcher="exact" rev="2.1.1"/>
-		<override org="org.apache.hadoop" module="hadoop-archives" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.mina" module="mina-core" matcher="exact" rev="2.0.16"/>
-		<override org="io.netty" module="netty" matcher="exact" rev="3.10.6.Final"/>
-		<override org="org.apache.hadoop" module="hadoop-distcp" matcher="exact" rev="3.3.4"/>
-		<override org="com.sun.jersey" module="jersey-servlet" matcher="exact" rev="1.19"/>
-		<override org="org.apache.hadoop" module="hadoop-annotations" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.commons" module="commons-csv" matcher="exact" rev="1.0"/>
-		<override org="org.apache.hadoop" module="hadoop-mapreduce-examples" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-timeline-pluginstorage" matcher="exact" rev="3.3.4"/>
-		<override org="io.netty" module="netty-codec" matcher="exact" rev="4.1.77.Final"/>
-		<override org="io.swagger" module="swagger-annotations" matcher="exact" rev="1.5.4"/>
-		<override org="org.apache.hadoop" module="hadoop-client-check-invariants" matcher="exact" rev="3.3.4"/>
-		<override org="cglib" module="cglib" matcher="exact" rev="3.2.0"/>
-		<override org="com.cenqua.clover" module="clover" matcher="exact" rev="3.0.2"/>
-		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.12.7"/>
-		<override org="org.apache.hadoop" module="hadoop-client-runtime" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-applicationhistoryservice" matcher="exact" rev="3.3.4"/>
-		<override org="dnsjava" module="dnsjava" matcher="exact" rev="2.1.7"/>
-		<override org="org.yaml" module="snakeyaml" matcher="exact" rev="1.26"/>
-		<override org="org.apache.hadoop" module="hadoop-common" matcher="exact" rev="3.3.4"/>
-		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="5.2.0"/>
-		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-resourcemanager" matcher="exact" rev="3.3.4"/>
-		<override org="commons-cli" module="commons-cli" matcher="exact" rev="1.2"/>
-		<override org="io.netty" module="netty-codec-socks" matcher="exact" rev="4.1.77.Final"/>
-		<override org="org.apache.hadoop" module="hadoop-gridmix" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.ftpserver" module="ftpserver-deprecated" matcher="exact" rev="1.0.0-M2"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-services-core" matcher="exact" rev="3.3.4"/>
-		<override org="org.ow2.asm" module="asm" matcher="exact" rev="5.0.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-common" matcher="exact" rev="3.3.4"/>
-		<override org="org.hamcrest" module="hamcrest-library" matcher="exact" rev="1.3"/>
-		<override org="org.xerial.snappy" module="snappy-java" matcher="exact" rev="1.1.8.2"/>
 		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-core" matcher="exact" rev="3.3.4"/>
-		<override org="org.lz4" module="lz4-java" matcher="exact" rev="1.7.1"/>
-		<override org="org.apache.hadoop" module="hadoop-nfs" matcher="exact" rev="3.3.4"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server-router" matcher="exact" rev="3.3.4"/>
-		<override org="org.jline" module="jline" matcher="exact" rev="3.9.0"/>
-		<override org="commons-io" module="commons-io" matcher="exact" rev="2.8.0"/>
-		<override org="com.google.re2j" module="re2j" matcher="exact" rev="1.1"/>
-		<override org="org.apache.hadoop" module="hadoop-yarn-server" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-core" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-jobclient" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-jobclient" matcher="exact" rev="3.3.4"/>
 		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-shuffle" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-web-proxy" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-common" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-tests" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-common" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-registry" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-nodemanager" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-resourcemanager" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-applicationhistoryservice" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice-hbase-client" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice-hbase-common" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-applications-distributedshell" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-timeline-pluginstorage" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-router" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-services-core" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-services-api" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-applications-catalog-webapp" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-client-hs" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-mapreduce-examples" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-gridmix" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-streaming" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-archives" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-archive-logs" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-distcp" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-datajoin" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-rumen" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-extras" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-client" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-minicluster" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-minikdc" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-openstack" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-azure" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-azure-datalake" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-aws" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-aliyun" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-cos" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-kms" matcher="exact" rev="3.3.4"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="27.0-jre"/>
+		<override org="com.google.guava" module="guava" matcher="exact" rev="27.0-jre"/>
+		<override org="com.google.code.gson" module="gson" matcher="exact" rev="2.8.9"/>
+		<override org="commons-cli" module="commons-cli" matcher="exact" rev="1.2"/>
+		<override org="org.apache.commons" module="commons-math3" matcher="exact" rev="3.1.1"/>
+		<override org="org.apache.commons" module="commons-compress" matcher="exact" rev="1.21"/>
+		<override org="org.apache.commons" module="commons-csv" matcher="exact" rev="1.0"/>
+		<override org="org.apache.httpcomponents" module="httpclient" matcher="exact" rev="4.5.13"/>
+		<override org="org.apache.httpcomponents" module="httpcore" matcher="exact" rev="4.4.13"/>
+		<override org="commons-codec" module="commons-codec" matcher="exact" rev="1.15"/>
+		<override org="commons-net" module="commons-net" matcher="exact" rev="3.6"/>
+		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
+		<override org="javax.ws.rs" module="jsr311-api" matcher="exact" rev="1.1.1"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty" module="jetty-server" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty" module="jetty-util" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty" module="jetty-servlet" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty" module="jetty-webapp" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty" module="jetty-util-ajax" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty.websocket" module="javax-websocket-server-impl" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty.websocket" module="javax-websocket-server-impl" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty.websocket" module="javax-websocket-server-impl" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="org.eclipse.jetty.websocket" module="websocket-client" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="javax.servlet.jsp" module="jsp-api" matcher="exact" rev="2.1"/>
+		<override org="org.glassfish" module="javax.servlet" matcher="exact" rev="3.1"/>
+		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.1.0"/>
+		<override org="org.codehaus.plexus" module="plexus-component-annotations" matcher="exact" rev="1.5.5"/>
+		<override org="org.ow2.asm" module="asm" matcher="exact" rev="5.0.4"/>
+		<override org="org.ojalgo" module="ojalgo" matcher="exact" rev="43.0"/>
+		<override org="com.sun.jersey" module="jersey-core" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey" module="jersey-servlet" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey" module="jersey-json" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey" module="jersey-json" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey" module="jersey-server" matcher="exact" rev="1.19"/>
+		<override org="com.google.inject" module="guice" matcher="exact" rev="4.0"/>
+		<override org="cglib" module="cglib" matcher="exact" rev="3.2.0"/>
+		<override org="com.google.inject.extensions" module="guice-servlet" matcher="exact" rev="4.0"/>
+		<override org="com.sun.jersey.contribs" module="jersey-guice" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-core" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-core" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-core" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-grizzly2" matcher="exact" rev="1.19"/>
+		<override org="com.sun.jersey.jersey-test-framework" module="jersey-test-framework-grizzly2" matcher="exact" rev="1.19"/>
+		<override org="io.netty" module="netty" matcher="exact" rev="3.10.6.Final"/>
+		<override org="io.netty" module="netty-all" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-codec-socks" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-handler-proxy" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-resolver" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-handler" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-buffer" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-transport" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-common" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-transport-native-unix-common" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-transport-native-epoll" matcher="exact" rev="4.1.77.Final"/>
+		<override org="io.netty" module="netty-codec" matcher="exact" rev="4.1.77.Final"/>
+		<override org="commons-io" module="commons-io" matcher="exact" rev="2.8.0"/>
+		<override org="org.eclipse.jetty" module="jetty-servlet-tester" matcher="exact" rev="9.4.43.v20210629"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.3"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.3"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.3"/>
+		<override org="commons-logging" module="commons-logging" matcher="exact" rev="1.1.3"/>
+		<override org="commons-logging" module="commons-logging-api" matcher="exact" rev="1.1"/>
+		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
+		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
+		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
+		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
+		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
+		<override org="ch.qos.reload4j" module="reload4j" matcher="exact" rev="1.2.22"/>
+		<override org="com.amazonaws" module="aws-java-sdk-bundle" matcher="exact" rev="1.12.262"/>
+		<override org="com.amazonaws" module="aws-java-sdk-bundle" matcher="exact" rev="1.12.262"/>
+		<override org="org.apache.mina" module="mina-core" matcher="exact" rev="2.0.16"/>
+		<override org="org.apache.sshd" module="sshd-core" matcher="exact" rev="1.6.0"/>
+		<override org="org.apache.ftpserver" module="ftplet-api" matcher="exact" rev="1.0.0"/>
+		<override org="org.apache.ftpserver" module="ftpserver-core" matcher="exact" rev="1.0.0"/>
+		<override org="org.apache.ftpserver" module="ftpserver-deprecated" matcher="exact" rev="1.0.0-M2"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-api" matcher="exact" rev="5.5.1"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-api" matcher="exact" rev="5.5.1"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
+		<override org="junit" module="junit" matcher="exact" rev="4.13.2"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-engine" matcher="exact" rev="5.5.1"/>
+		<override org="org.junit.jupiter" module="junit-jupiter-engine" matcher="exact" rev="5.5.1"/>
+		<override org="org.junit.vintage" module="junit-vintage-engine" matcher="exact" rev="5.5.1"/>
+		<override org="org.junit.vintage" module="junit-vintage-engine" matcher="exact" rev="5.5.1"/>
+		<override org="org.junit.platform" module="junit-platform-launcher" matcher="exact" rev="1.5.1"/>
+		<override org="org.junit.platform" module="junit-platform-launcher" matcher="exact" rev="1.5.1"/>
+		<override org="com.github.stefanbirkner" module="system-rules" matcher="exact" rev="1.18.0"/>
+		<override org="com.github.stefanbirkner" module="system-rules" matcher="exact" rev="1.18.0"/>
+		<override org="com.github.stefanbirkner" module="system-rules" matcher="exact" rev="1.18.0"/>
+		<override org="commons-collections" module="commons-collections" matcher="exact" rev="3.2.2"/>
+		<override org="commons-beanutils" module="commons-beanutils" matcher="exact" rev="1.9.4"/>
+		<override org="org.apache.commons" module="commons-configuration2" matcher="exact" rev="2.1.1"/>
+		<override org="org.apache.commons" module="commons-configuration2" matcher="exact" rev="2.1.1"/>
+		<override org="org.apache.commons" module="commons-lang3" matcher="exact" rev="3.12.0"/>
+		<override org="org.apache.commons" module="commons-text" matcher="exact" rev="1.4"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.36"/>
+		<override org="org.slf4j" module="slf4j-reload4j" matcher="exact" rev="1.7.36"/>
+		<override org="org.slf4j" module="jul-to-slf4j" matcher="exact" rev="1.7.36"/>
+		<override org="org.eclipse.jdt" module="core" matcher="exact" rev="3.1.1"/>
+		<override org="org.codehaus.woodstox" module="stax2-api" matcher="exact" rev="4.2.1"/>
+		<override org="com.fasterxml.woodstox" module="woodstox-core" matcher="exact" rev="5.3.0"/>
+		<override org="org.codehaus.jackson" module="jackson-mapper-asl" matcher="exact" rev="1.9.13"/>
+		<override org="org.codehaus.jackson" module="jackson-core-asl" matcher="exact" rev="1.9.13"/>
+		<override org="org.codehaus.jackson" module="jackson-jaxrs" matcher="exact" rev="1.9.13"/>
+		<override org="org.codehaus.jackson" module="jackson-xc" matcher="exact" rev="1.9.13"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-core" matcher="exact" rev="2.12.7"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-databind" matcher="exact" rev="2.12.7"/>
+		<override org="com.fasterxml.jackson.core" module="jackson-annotations" matcher="exact" rev="2.12.7"/>
+		<override org="com.fasterxml.jackson.module" module="jackson-module-jaxb-annotations" matcher="exact" rev="2.12.7"/>
+		<override org="com.fasterxml.jackson.dataformat" module="jackson-dataformat-cbor" matcher="exact" rev="2.12.7"/>
+		<override org="org.mockito" module="mockito-core" matcher="exact" rev="2.28.2"/>
+		<override org="org.mockito" module="mockito-all" matcher="exact" rev="1.10.19"/>
+		<override org="org.objenesis" module="objenesis" matcher="exact" rev="2.6"/>
+		<override org="org.mock-server" module="mockserver-netty" matcher="exact" rev="5.10"/>
+		<override org="org.mock-server" module="mockserver-netty" matcher="exact" rev="5.10"/>
+		<override org="org.mock-server" module="mockserver-netty" matcher="exact" rev="5.10"/>
+		<override org="org.mock-server" module="mockserver-netty" matcher="exact" rev="5.10"/>
+		<override org="org.apache.avro" module="avro" matcher="exact" rev="1.7.7"/>
+		<override org="net.sf.kosmosfs" module="kfs" matcher="exact" rev="0.3"/>
+		<override org="org.apache.ant" module="ant" matcher="exact" rev="1.10.11"/>
+		<override org="com.google.re2j" module="re2j" matcher="exact" rev="1.1"/>
+		<override org="com.google.protobuf" module="protobuf-java" matcher="exact" rev="2.5.0"/>
+		<override org="commons-daemon" module="commons-daemon" matcher="exact" rev="1.0.13"/>
+		<override org="com.jcraft" module="jsch" matcher="exact" rev="0.1.55"/>
+		<override org="org.jdom" module="jdom" matcher="exact" rev="1.1"/>
+		<override org="com.googlecode.json-simple" module="json-simple" matcher="exact" rev="1.1.1"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.apache.zookeeper" module="zookeeper" matcher="exact" rev="3.5.6"/>
+		<override org="org.jline" module="jline" matcher="exact" rev="3.9.0"/>
+		<override org="org.hsqldb" module="hsqldb" matcher="exact" rev="2.3.4"/>
+		<override org="io.dropwizard.metrics" module="metrics-core" matcher="exact" rev="3.2.4"/>
+		<override org="org.apache.hadoop" module="hadoop-sls" matcher="exact" rev="3.3.4"/>
+		<override org="org.apache.hadoop" module="hadoop-cloud-storage" matcher="exact" rev="3.3.4"/>
+		<override org="com.google.code.findbugs" module="jsr305" matcher="exact" rev="3.0.2"/>
+		<override org="javax.xml.bind" module="jaxb-api" matcher="exact" rev="2.2.11"/>
+		<override org="org.codehaus.jettison" module="jettison" matcher="exact" rev="1.1"/>
+		<override org="org.codehaus.jettison" module="jettison" matcher="exact" rev="1.1"/>
+		<override org="com.sun.jersey" module="jersey-client" matcher="exact" rev="1.19"/>
+		<override org="org.glassfish.grizzly" module="grizzly-http-servlet" matcher="exact" rev="2.2.21"/>
+		<override org="org.glassfish.grizzly" module="grizzly-http" matcher="exact" rev="2.2.21"/>
+		<override org="org.glassfish.grizzly" module="grizzly-http-server" matcher="exact" rev="2.2.21"/>
+		<override org="org.fusesource.leveldbjni" module="leveldbjni-all" matcher="exact" rev="1.8"/>
+		<override org="com.microsoft.azure" module="azure-storage" matcher="exact" rev="7.0.1"/>
+		<override org="org.wildfly.openssl" module="wildfly-openssl" matcher="exact" rev="1.0.7.Final"/>
+		<override org="org.wildfly.openssl" module="wildfly-openssl-java" matcher="exact" rev="1.0.7.Final"/>
+		<override org="org.threadly" module="threadly" matcher="exact" rev="4.9.0"/>
+		<override org="com.aliyun.oss" module="aliyun-sdk-oss" matcher="exact" rev="3.13.0"/>
+		<override org="com.aliyun.oss" module="aliyun-sdk-oss" matcher="exact" rev="3.13.0"/>
+		<override org="com.aliyun.oss" module="aliyun-sdk-oss" matcher="exact" rev="3.13.0"/>
+		<override org="com.qcloud" module="cos_api-bundle" matcher="exact" rev="5.6.19"/>
+		<override org="org.apache.curator" module="curator-recipes" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-recipes" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-recipes" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-recipes" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-recipes" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-client" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-client" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-client" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-client" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-framework" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-framework" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-framework" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-framework" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-test" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-test" matcher="exact" rev="4.2.0"/>
+		<override org="org.apache.curator" module="curator-test" matcher="exact" rev="4.2.0"/>
+		<override org="org.bouncycastle" module="bcprov-jdk15on" matcher="exact" rev="1.60"/>
+		<override org="org.bouncycastle" module="bcpkix-jdk15on" matcher="exact" rev="1.60"/>
+		<override org="joda-time" module="joda-time" matcher="exact" rev="2.9.9"/>
+		<override org="com.nimbusds" module="nimbus-jose-jwt" matcher="exact" rev="9.8.1"/>
+		<override org="com.nimbusds" module="nimbus-jose-jwt" matcher="exact" rev="9.8.1"/>
+		<override org="com.nimbusds" module="nimbus-jose-jwt" matcher="exact" rev="9.8.1"/>
+		<override org="dnsjava" module="dnsjava" matcher="exact" rev="2.1.7"/>
+		<override org="net.minidev" module="json-smart" matcher="exact" rev="2.4.7"/>
+		<override org="org.skyscreamer" module="jsonassert" matcher="exact" rev="1.3.0"/>
+		<override org="org.apache.hbase" module="hbase-common" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-common" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-common" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-common" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-client" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-client" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-server" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-server" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-server" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-server" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.hbase" module="hbase-testing-util" matcher="exact" rev="1.4.8"/>
+		<override org="org.apache.kerby" module="kerb-simplekdc" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.kerby" module="kerb-core" matcher="exact" rev="1.0.1"/>
+		<override org="org.apache.geronimo.specs" module="geronimo-jcache_1.0_spec" matcher="exact" rev="1.0-alpha-1"/>
+		<override org="org.ehcache" module="ehcache" matcher="exact" rev="3.3.1"/>
+		<override org="com.zaxxer" module="HikariCP-java7" matcher="exact" rev="2.4.12"/>
+		<override org="com.microsoft.sqlserver" module="mssql-jdbc" matcher="exact" rev="6.2.1.jre7"/>
+		<override org="io.swagger" module="swagger-annotations" matcher="exact" rev="1.5.4"/>
+		<override org="com.fasterxml.jackson.jaxrs" module="jackson-jaxrs-json-provider" matcher="exact" rev="2.12.7"/>
+		<override org="org.yaml" module="snakeyaml" matcher="exact" rev="1.26"/>
+		<override org="org.hamcrest" module="hamcrest-library" matcher="exact" rev="1.3"/>
+		<override org="org.assertj" module="assertj-core" matcher="exact" rev="3.12.2"/>
+		<override org="org.assertj" module="assertj-core" matcher="exact" rev="3.12.2"/>
+		<override org="org.jruby.jcodings" module="jcodings" matcher="exact" rev="1.0.13"/>
+		<override org="jakarta.activation" module="jakarta.activation-api" matcher="exact" rev="1.2.1"/>
+		<override org="javax.annotation" module="javax.annotation-api" matcher="exact" rev="1.3.2"/>
+		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="5.2.0"/>
+		<override org="org.xerial.snappy" module="snappy-java" matcher="exact" rev="1.1.8.2"/>
+		<override org="org.lz4" module="lz4-java" matcher="exact" rev="1.7.1"/>
+		<override org="org.apache.hadoop" module="hadoop-yarn-server-timelineservice-hbase-server-1" matcher="exact" rev="3.3.4"/>
 	</dependencies>
 </ivy-module>

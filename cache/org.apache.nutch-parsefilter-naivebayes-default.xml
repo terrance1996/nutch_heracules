@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="parsefilter-naivebayes"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123010846"/>
+	<dependencies>
+		<module organisation="org.apache.lucene" name="lucene-analyzers-common">
+			<revision name="5.5.0" status="release" pubdate="20160220021633" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master, master(*), runtime(*), compile(*)" position="42">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2988" time="1187" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\ivy-5.5.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\ivy-5.5.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.5.0/lucene-analyzers-common-5.5.0.pom"/>
+				<caller organisation="org.apache.nutch" name="parsefilter-naivebayes" conf="default, master" rev="5.5.0" rev-constraint-default="5.5.0" rev-constraint-dynamic="5.5.0" callerrev="working@DESKTOP-JBPKLKC"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="4.6.1" rev-constraint-default="4.6.1" rev-constraint-dynamic="4.6.1" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="lucene-analyzers-common" type="jar" ext="jar" status="successful" details="" size="1576967" time="2784" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-analyzers-common\jars\lucene-analyzers-common-5.5.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-analyzers-common/5.5.0/lucene-analyzers-common-5.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.6.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="5.5.0"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="4.6.1" rev-constraint-default="4.6.1" rev-constraint-dynamic="4.6.1" callerrev="0.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.lucene" name="lucene-core">
+			<revision name="5.5.0" status="release" pubdate="20160220021751" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="41">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3071" time="1200" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-core\ivy-5.5.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-core\ivy-5.5.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.5.0/lucene-core-5.5.0.pom"/>
+				<caller organisation="org.apache.nutch" name="parsefilter-naivebayes" conf="default, master" rev="5.5.0" rev-constraint-default="5.5.0" rev-constraint-dynamic="5.5.0" callerrev="working@DESKTOP-JBPKLKC"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="4.6.1" rev-constraint-default="4.6.1" rev-constraint-dynamic="4.6.1" callerrev="0.9"/>
+				<caller organisation="org.apache.lucene" name="lucene-analyzers-common" conf="default, compile, runtime, master" rev="5.5.0" rev-constraint-default="5.5.0" rev-constraint-dynamic="5.5.0" callerrev="5.5.0"/>
+				<artifacts>
+					<artifact name="lucene-core" type="jar" ext="jar" status="successful" details="" size="2371277" time="3995" location="C:\Users\Administrator\.ivy2\cache\org.apache.lucene\lucene-core\jars\lucene-core-5.5.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/lucene/lucene-core/5.5.0/lucene-core-5.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.6.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="5.5.0"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="4.6.1" rev-constraint-default="4.6.1" rev-constraint-dynamic="4.6.1" callerrev="0.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.3" status="release" pubdate="20130516130523" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/proper/commons-logging/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10966" time="0" location="C:\Users\Administrator\.ivy2\cache\commons-logging\commons-logging\ivy-1.1.3.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-logging\commons-logging\ivy-1.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.pom"/>
+				<caller organisation="commons-digester" name="commons-digester" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1" callerrev="1.8"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils-core" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.1" callerrev="1.8.0"/>
+				<caller organisation="commons-el" name="commons-el" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.1.1" callerrev="1.6"/>
+				<caller organisation="commons-beanutils" name="commons-beanutils" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.0.3" callerrev="1.7.0"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.1.3" rev-constraint-default="1.1.3" rev-constraint-dynamic="1.0.3" callerrev="3.0.1"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="62050" time="0" location="C:\Users\Administrator\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-io" name="commons-io">
+			<revision name="2.4" status="release" pubdate="20120612152206" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/io/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="10166" time="1219" location="C:\Users\Administrator\.ivy2\cache\commons-io\commons-io\ivy-2.4.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-io\commons-io\ivy-2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.1" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="successful" details="" size="185140" time="1341" location="C:\Users\Administrator\.ivy2\cache\commons-io\commons-io\jars\commons-io-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.mahout" name="mahout-core">
+			<revision name="0.9" status="release" pubdate="20140128163348" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7192" time="1234" location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout\mahout-core\ivy-0.9.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout\mahout-core\ivy-0.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/mahout/mahout-core/0.9/mahout-core-0.9.pom"/>
+				<caller organisation="org.apache.nutch" name="parsefilter-naivebayes" conf="default, master" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="mahout-core" type="jar" ext="jar" status="successful" details="" size="1469563" time="2757" location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout\mahout-core\jars\mahout-core-0.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/mahout/mahout-core/0.9/mahout-core-0.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.hadoop" name="hadoop-core">
+			<revision name="1.2.1" status="release" pubdate="20130724134151" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<metadata-artifact status="successful" details="" size="4658" time="1222" location="C:\Users\Administrator\.ivy2\cache\org.apache.hadoop\hadoop-core\ivy-1.2.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.hadoop\hadoop-core\ivy-1.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="hadoop-core" type="jar" ext="jar" status="successful" details="" size="4203713" time="5288" location="C:\Users\Administrator\.ivy2\cache\org.apache.hadoop\hadoop-core\jars\hadoop-core-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-core/1.2.1/hadoop-core-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-el" name="commons-el">
+			<revision name="1.0" status="release" pubdate="20051108142050" resolver="maven2" artresolver="default" homepage="http://jakarta.apache.org/commons/el/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="40">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="4076" time="1223" location="C:\Users\Administrator\.ivy2\cache\commons-el\commons-el\ivy-1.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-el\commons-el\ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-el/commons-el/1.0/commons-el-1.0.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-el" type="jar" ext="jar" status="successful" details="" size="112341" time="1345" location="C:\Users\Administrator\.ivy2\cache\commons-el\commons-el\jars\commons-el-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-el/commons-el/1.0/commons-el-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-net" name="commons-net">
+			<revision name="1.4.1" status="release" pubdate="20051221042333" resolver="maven2" artresolver="default" homepage="http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="39">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="4850" time="1222" location="C:\Users\Administrator\.ivy2\cache\commons-net\commons-net\ivy-1.4.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-net\commons-net\ivy-1.4.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/1.4.1/commons-net-1.4.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.4.1" rev-constraint-default="1.4.1" rev-constraint-dynamic="1.4.1" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-net" type="jar" ext="jar" status="successful" details="" size="180792" time="1368" location="C:\Users\Administrator\.ivy2\cache\commons-net\commons-net\jars\commons-net-1.4.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/1.4.1/commons-net-1.4.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-configuration" name="commons-configuration">
+			<revision name="1.6" status="release" pubdate="20090204114444" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/${pom.artifactId.substring(8)}/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="33">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="13319" time="1223" location="C:\Users\Administrator\.ivy2\cache\commons-configuration\commons-configuration\ivy-1.6.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-configuration\commons-configuration\ivy-1.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.6" rev-constraint-default="1.6" rev-constraint-dynamic="1.6" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-configuration" type="jar" ext="jar" status="successful" details="" size="298829" time="1460" location="C:\Users\Administrator\.ivy2\cache\commons-configuration\commons-configuration\jars\commons-configuration-1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils-core">
+			<revision name="1.8.0" status="release" pubdate="20080831111344" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/beanutils/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="38">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1639" time="1179" location="C:\Users\Administrator\.ivy2\cache\commons-beanutils\commons-beanutils-core\ivy-1.8.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-beanutils\commons-beanutils-core\ivy-1.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.8.0" rev-constraint-default="1.8.0" rev-constraint-dynamic="1.8.0" callerrev="1.6"/>
+				<artifacts>
+					<artifact name="commons-beanutils-core" type="jar" ext="jar" status="successful" details="" size="206035" time="1422" location="C:\Users\Administrator\.ivy2\cache\commons-beanutils\commons-beanutils-core\jars\commons-beanutils-core-1.8.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-digester" name="commons-digester">
+			<revision name="1.8" status="release" pubdate="20061203103311" resolver="maven2" artresolver="default" homepage="http://jakarta.apache.org/commons/digester/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="36">
+				<license name="The Apache Software License, Version 2.0" url="/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="7004" time="1193" location="C:\Users\Administrator\.ivy2\cache\commons-digester\commons-digester\ivy-1.8.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-digester\commons-digester\ivy-1.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.6"/>
+				<artifacts>
+					<artifact name="commons-digester" type="jar" ext="jar" status="successful" details="" size="143602" time="1328" location="C:\Users\Administrator\.ivy2\cache\commons-digester\commons-digester\jars\commons-digester-1.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-digester/commons-digester/1.8/commons-digester-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-beanutils" name="commons-beanutils">
+			<revision name="1.7.0" status="release" pubdate="20051108142021" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="37">
+				<metadata-artifact status="successful" details="" size="357" time="1185" location="C:\Users\Administrator\.ivy2\cache\commons-beanutils\commons-beanutils\ivy-1.7.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-beanutils\commons-beanutils\ivy-1.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.pom"/>
+				<caller organisation="commons-digester" name="commons-digester" conf="compile, runtime" rev="1.7.0" rev-constraint-default="1.7.0" rev-constraint-dynamic="1.7.0" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="commons-beanutils" type="jar" ext="jar" status="successful" details="" size="188671" time="1388" location="C:\Users\Administrator\.ivy2\cache\commons-beanutils\commons-beanutils\jars\commons-beanutils-1.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.1" status="release" pubdate="20080414180924" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/collections/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="12505" time="1205" location="C:\Users\Administrator\.ivy2\cache\commons-collections\commons-collections\ivy-3.2.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-collections\commons-collections\ivy-3.2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="1.6"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="successful" details="" size="575389" time="1700" location="C:\Users\Administrator\.ivy2\cache\commons-collections\commons-collections\jars\commons-collections-3.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math">
+			<revision name="2.1" status="release" pubdate="20100327194801" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/math/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="32">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="10325" time="1219" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-math\ivy-2.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-math\ivy-2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math/2.1/commons-math-2.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-math" type="jar" ext="jar" status="successful" details="" size="832410" time="1922" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-math\jars\commons-math-2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math/2.1/commons-math-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.4" status="release" pubdate="20090809142217" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/codec/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="31">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="10494" time="1214" location="C:\Users\Administrator\.ivy2\cache\commons-codec\commons-codec\ivy-1.4.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-codec\commons-codec\ivy-1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.2.1"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.0.1"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="58160" time="1245" location="C:\Users\Administrator\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.4"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.2.1"/>
+				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-httpclient" name="commons-httpclient">
+			<revision name="3.0.1" status="release" pubdate="20060507133159" resolver="maven2" artresolver="default" homepage="http://jakarta.apache.org/commons/httpclient/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="29">
+				<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="8109" time="1207" location="C:\Users\Administrator\.ivy2\cache\commons-httpclient\commons-httpclient\ivy-3.0.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-httpclient\commons-httpclient\ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-httpclient" type="jar" ext="jar" status="successful" details="" size="279781" time="1427" location="C:\Users\Administrator\.ivy2\cache\commons-httpclient\commons-httpclient\jars\commons-httpclient-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-httpclient/commons-httpclient/3.0.1/commons-httpclient-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-server">
+			<revision name="1.8" status="release" pubdate="20110624053452" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="26">
+				<license name="CDDL 1.1" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="successful" details="" size="11476" time="1246" location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-server\ivy-1.8.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-server\ivy-1.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-server/1.8/jersey-server-1.8.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="jersey-server" type="bundle" ext="jar" status="successful" details="" size="694352" time="1993" location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-server\bundles\jersey-server-1.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-server/1.8/jersey-server-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="asm" name="asm">
+			<revision name="3.1" status="release" pubdate="20080120023126" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="27">
+				<metadata-artifact status="successful" details="" size="278" time="1791" location="C:\Users\Administrator\.ivy2\cache\asm\asm\ivy-3.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\asm\asm\ivy-3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-server" conf="compile, runtime" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="successful" details="" size="43033" time="1238" location="C:\Users\Administrator\.ivy2\cache\asm\asm\jars\asm-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/asm/asm/3.1/asm-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-json">
+			<revision name="1.8" status="release" pubdate="20110624053453" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<license name="CDDL 1.1" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="successful" details="" size="10506" time="1231" location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-json\ivy-1.8.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-json\ivy-1.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-json/1.8/jersey-json-1.8.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="jersey-json" type="bundle" ext="jar" status="successful" details="" size="147933" time="1358" location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-json\bundles\jersey-json-1.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-json/1.8/jersey-json-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-xc">
+			<revision name="1.7.1" status="release" pubdate="20110112204323" resolver="maven2" artresolver="default" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="25">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="GNU Lesser General Public License (LGPL), Version 2.1" url="http://www.fsf.org/licensing/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="1641" time="1211" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-xc\ivy-1.7.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-xc\ivy-1.7.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.7.1/jackson-xc-1.7.1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jackson-xc" type="jar" ext="jar" status="successful" details="" size="31723" time="1227" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-xc\jars\jackson-xc-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.7.1/jackson-xc-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-jaxrs">
+			<revision name="1.7.1" status="release" pubdate="20110112204314" resolver="maven2" artresolver="default" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<license name="GNU Lesser General Public License (LGPL), Version 2.1" url="http://www.fsf.org/licensing/licenses/lgpl.txt"/>
+				<metadata-artifact status="successful" details="" size="1637" time="1208" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-jaxrs\ivy-1.7.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-jaxrs\ivy-1.7.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.7.1/jackson-jaxrs-1.7.1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.7.1" rev-constraint-default="1.7.1" rev-constraint-dynamic="1.7.1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jackson-jaxrs" type="jar" ext="jar" status="successful" details="" size="17820" time="1204" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-jaxrs\jars\jackson-jaxrs-1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.7.1/jackson-jaxrs-1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.xml.bind" name="jaxb-impl">
+			<revision name="2.2.3-1" status="release" pubdate="20110118023154" resolver="maven2" artresolver="default" homepage="http://jaxb.java.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="20">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="2861" time="0" location="C:\Users\Administrator\.ivy2\cache\com.sun.xml.bind\jaxb-impl\ivy-2.2.3-1.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.sun.xml.bind\jaxb-impl\ivy-2.2.3-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="2.2.3-1" rev-constraint-default="2.2.3-1" rev-constraint-dynamic="2.2.3-1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jaxb-impl" type="jar" ext="jar" status="no" details="" size="890168" time="0" location="C:\Users\Administrator\.ivy2\cache\com.sun.xml.bind\jaxb-impl\jars\jaxb-impl-2.2.3-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.bind" name="jaxb-api">
+			<revision name="2.2.2" status="release" pubdate="20101212194445" resolver="maven2" artresolver="default" homepage="https://jaxb.dev.java.net/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="21">
+				<license name="CDDL 1.1" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="successful" details="" size="5570" time="1196" location="C:\Users\Administrator\.ivy2\cache\javax.xml.bind\jaxb-api\ivy-2.2.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\javax.xml.bind\jaxb-api\ivy-2.2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.pom"/>
+				<caller organisation="com.sun.xml.bind" name="jaxb-impl" conf="compile, runtime" rev="2.2.2" rev-constraint-default="2.2.2" rev-constraint-dynamic="2.2.2" callerrev="2.2.3-1"/>
+				<artifacts>
+					<artifact name="jaxb-api" type="jar" ext="jar" status="successful" details="" size="105134" time="1296" location="C:\Users\Administrator\.ivy2\cache\javax.xml.bind\jaxb-api\jars\jaxb-api-2.2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.activation" name="activation">
+			<revision name="1.1" status="release" pubdate="20060502164829" resolver="maven2" artresolver="default" homepage="http://java.sun.com/products/javabeans/jaf/index.jsp" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="23">
+				<license name="Common Development and Distribution License (CDDL) v1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="successful" details="" size="1058" time="1193" location="C:\Users\Administrator\.ivy2\cache\javax.activation\activation\ivy-1.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\javax.activation\activation\ivy-1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.pom"/>
+				<caller organisation="javax.xml.bind" name="jaxb-api" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="2.2.2"/>
+				<artifacts>
+					<artifact name="activation" type="jar" ext="jar" status="successful" details="" size="62983" time="1244" location="C:\Users\Administrator\.ivy2\cache\javax.activation\activation\jars\activation-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/activation/activation/1.1/activation-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.stream" name="stax-api">
+			<revision name="1.0-2" status="release" pubdate="20081004105903" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="22">
+				<license name="GNU General Public Library" url="http://www.gnu.org/licenses/gpl.txt"/>
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="http://www.sun.com/cddl/cddl.html"/>
+				<metadata-artifact status="successful" details="" size="962" time="1197" location="C:\Users\Administrator\.ivy2\cache\javax.xml.stream\stax-api\ivy-1.0-2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\javax.xml.stream\stax-api\ivy-1.0-2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.pom"/>
+				<caller organisation="javax.xml.bind" name="jaxb-api" conf="compile, runtime" rev="1.0-2" rev-constraint-default="1.0-2" rev-constraint-dynamic="1.0-2" callerrev="2.2.2"/>
+				<artifacts>
+					<artifact name="stax-api" type="jar" ext="jar" status="successful" details="" size="23346" time="1215" location="C:\Users\Administrator\.ivy2\cache\javax.xml.stream\stax-api\jars\stax-api-1.0-2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jettison" name="jettison">
+			<revision name="1.1" status="release" pubdate="20090420095050" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="18">
+				<metadata-artifact status="no" details="" size="2947" time="0" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jettison\jettison\ivy-1.1.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jettison\jettison\ivy-1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.pom"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jettison" type="bundle" ext="jar" status="no" details="" size="67758" time="0" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jettison\jettison\bundles\jettison-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun.jersey" name="jersey-core">
+			<revision name="1.8" status="release" pubdate="20110624053356" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
+				<license name="CDDL 1.1" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="successful" details="" size="10062" time="1203" location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-core\ivy-1.8.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-core\ivy-1.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.8/jersey-core-1.8.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.2.1"/>
+				<caller organisation="com.sun.jersey" name="jersey-server" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.8"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.8" rev-constraint-default="1.8" rev-constraint-dynamic="1.8" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jersey-core" type="bundle" ext="jar" status="successful" details="" size="458233" time="1689" location="C:\Users\Administrator\.ivy2\cache\com.sun.jersey\jersey-core\bundles\jersey-core-1.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.8/jersey-core-1.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-cli" name="commons-cli">
+			<revision name="1.2" status="release" pubdate="20090319130832" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/cli/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4936" time="0" location="C:\Users\Administrator\.ivy2\cache\commons-cli\commons-cli\ivy-1.2.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-cli\commons-cli\ivy-1.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.2.1"/>
+				<artifacts>
+					<artifact name="commons-cli" type="jar" ext="jar" status="no" details="" size="41123" time="0" location="C:\Users\Administrator\.ivy2\cache\commons-cli\commons-cli\jars\commons-cli-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.solr" name="solr-commons-csv">
+			<revision name="3.5.0" status="release" pubdate="20111125150706" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="13">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1465" time="1226" location="C:\Users\Administrator\.ivy2\cache\org.apache.solr\solr-commons-csv\ivy-3.5.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.solr\solr-commons-csv\ivy-3.5.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/solr/solr-commons-csv/3.5.0/solr-commons-csv-3.5.0.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="3.5.0" rev-constraint-default="3.5.0" rev-constraint-dynamic="3.5.0" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="solr-commons-csv" type="jar" ext="jar" status="successful" details="" size="27361" time="1320" location="C:\Users\Administrator\.ivy2\cache\org.apache.solr\solr-commons-csv\jars\solr-commons-csv-3.5.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/solr/solr-commons-csv/3.5.0/solr-commons-csv-3.5.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.mahout.commons" name="commons-cli">
+			<revision name="2.0-mahout" status="release" pubdate="20090402235314" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<metadata-artifact status="successful" details="" size="215" time="1212" location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout.commons\commons-cli\ivy-2.0-mahout.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout.commons\commons-cli\ivy-2.0-mahout.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/mahout/commons/commons-cli/2.0-mahout/commons-cli-2.0-mahout.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="2.0-mahout" rev-constraint-default="2.0-mahout" rev-constraint-dynamic="2.0-mahout" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="commons-cli" type="jar" ext="jar" status="successful" details="" size="91473" time="1304" location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout.commons\commons-cli\jars\commons-cli-2.0-mahout.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/mahout/commons/commons-cli/2.0-mahout/commons-cli-2.0-mahout.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.xstream" name="xstream">
+			<revision name="1.4.4" status="release" pubdate="20130119073030" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<license name="BSD style" url="http://xstream.codehaus.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="8585" time="1219" location="C:\Users\Administrator\.ivy2\cache\com.thoughtworks.xstream\xstream\ivy-1.4.4.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.thoughtworks.xstream\xstream\ivy-1.4.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.4/xstream-1.4.4.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="1.4.4" rev-constraint-default="1.4.4" rev-constraint-dynamic="1.4.4" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="xstream" type="jar" ext="jar" status="successful" details="" size="483453" time="1776" location="C:\Users\Administrator\.ivy2\cache\com.thoughtworks.xstream\xstream\jars\xstream-1.4.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/1.4.4/xstream-1.4.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-lang" name="commons-lang">
+			<revision name="2.4" status="release" pubdate="20080318224228" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/lang/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="35">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="13976" time="1199" location="C:\Users\Administrator\.ivy2\cache\commons-lang\commons-lang\ivy-2.4.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-lang\commons-lang\ivy-2.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.pom"/>
+				<caller organisation="commons-configuration" name="commons-configuration" conf="compile, runtime" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="1.6"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="successful" details="" size="261809" time="1418" location="C:\Users\Administrator\.ivy2\cache\commons-lang\commons-lang\jars\commons-lang-2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-lang/commons-lang/2.4/commons-lang-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xpp3" name="xpp3_min">
+			<revision name="1.1.4c" status="release" pubdate="20071201010642" resolver="maven2" artresolver="default" homepage="http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<license name="Indiana University Extreme! Lab Software License, vesion 1.1.1" url="http://www.extreme.indiana.edu/viewcvs/~checkout~/XPP3/java/LICENSE.txt"/>
+				<license name="Public Domain" url="http://creativecommons.org/licenses/publicdomain"/>
+				<metadata-artifact status="successful" details="" size="1610" time="1207" location="C:\Users\Administrator\.ivy2\cache\xpp3\xpp3_min\ivy-1.1.4c.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\xpp3\xpp3_min\ivy-1.1.4c.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom"/>
+				<caller organisation="com.thoughtworks.xstream" name="xstream" conf="compile, runtime" rev="1.1.4c" rev-constraint-default="1.1.4c" rev-constraint-dynamic="1.1.4c" callerrev="1.4.4"/>
+				<artifacts>
+					<artifact name="xpp3_min" type="jar" ext="jar" status="successful" details="" size="24956" time="1229" location="C:\Users\Administrator\.ivy2\cache\xpp3\xpp3_min\jars\xpp3_min-1.1.4c.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xmlpull" name="xmlpull">
+			<revision name="1.1.3.1" status="release" pubdate="20070319171831" resolver="maven2" artresolver="default" homepage="http://www.xmlpull.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<license name="Public Domain" url="http://www.xmlpull.org/v1/download/unpacked/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="386" time="1229" location="C:\Users\Administrator\.ivy2\cache\xmlpull\xmlpull\ivy-1.1.3.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\xmlpull\xmlpull\ivy-1.1.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom"/>
+				<caller organisation="com.thoughtworks.xstream" name="xstream" conf="compile, runtime" rev="1.1.3.1" rev-constraint-default="1.1.3.1" rev-constraint-dynamic="1.1.3.1" callerrev="1.4.4"/>
+				<artifacts>
+					<artifact name="xmlpull" type="jar" ext="jar" status="successful" details="" size="7188" time="1187" location="C:\Users\Administrator\.ivy2\cache\xmlpull\xmlpull\jars\xmlpull-1.1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="stax" name="stax-api">
+			<revision name="1.0.1" status="release" pubdate="20060831103914" resolver="maven2" artresolver="default" homepage="http://stax.codehaus.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1526" time="1210" location="C:\Users\Administrator\.ivy2\cache\stax\stax-api\ivy-1.0.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\stax\stax-api\ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom"/>
+				<caller organisation="org.codehaus.jettison" name="jettison" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.1"/>
+				<artifacts>
+					<artifact name="stax-api" type="jar" ext="jar" status="successful" details="" size="26514" time="1203" location="C:\Users\Administrator\.ivy2\cache\stax\stax-api\jars\stax-api-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.1" status="release" pubdate="20111114232705" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/lang/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="16711" time="1202" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="successful" details="" size="315805" time="1612" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.12" status="release" pubdate="20130129074727" resolver="maven2" artresolver="default" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1506" time="1208" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-mapper-asl\ivy-1.9.12.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-mapper-asl\ivy-1.9.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.pom"/>
+				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.8.8" callerrev="1.2.1"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.9.12" callerrev="0.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.7.1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="successful" details="" size="780385" time="2061" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-mapper-asl\jars\jackson-mapper-asl-1.9.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.12/jackson-mapper-asl-1.9.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.12" status="release" pubdate="20130129074708" resolver="maven2" artresolver="default" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1279" time="1274" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\ivy-1.9.12.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\ivy-1.9.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.pom"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-xc" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.9.12" callerrev="0.9"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.9.12" callerrev="1.9.12"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-jaxrs" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.7.1" callerrev="1.7.1"/>
+				<caller organisation="com.sun.jersey" name="jersey-json" conf="compile, runtime" rev="1.9.12" rev-constraint-default="1.9.12" rev-constraint-dynamic="1.7.1" callerrev="1.8"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="successful" details="" size="232245" time="1421" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.jackson\jackson-core-asl\jars\jackson-core-asl-1.9.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.12/jackson-core-asl-1.9.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.mahout" name="mahout-math">
+			<revision name="0.10.1" status="release" pubdate="20150530183820" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master, master(*), runtime(*), compile(*)" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="6031" time="1522" location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout\mahout-math\ivy-0.10.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout\mahout-math\ivy-0.10.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/mahout/mahout-math/0.10.1/mahout-math-0.10.1.pom"/>
+				<caller organisation="org.apache.nutch" name="parsefilter-naivebayes" conf="default, master" rev="0.10.1" rev-constraint-default="0.10.1" rev-constraint-dynamic="0.10.1" callerrev="working@DESKTOP-JBPKLKC"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<artifacts>
+					<artifact name="mahout-math" type="jar" ext="jar" status="successful" details="" size="1642249" time="2964" location="C:\Users\Administrator\.ivy2\cache\org.apache.mahout\mahout-math\jars\mahout-math-0.10.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/mahout/mahout-math/0.10.1/mahout-math-0.10.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="0.9" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, default" position="-1">
+				<evicted-by rev="0.10.1"/>
+				<caller organisation="org.apache.nutch" name="parsefilter-naivebayes" conf="default, master" rev="0.10.1" rev-constraint-default="0.10.1" rev-constraint-dynamic="0.10.1" callerrev="working@DESKTOP-JBPKLKC"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="0.9" rev-constraint-default="0.9" rev-constraint-dynamic="0.9" callerrev="0.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.tdunning" name="t-digest">
+			<revision name="3.1" status="release" pubdate="20150405180516" resolver="maven2" artresolver="default" homepage="https://github.com/tdunning/t-digest" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7384" time="1607" location="C:\Users\Administrator\.ivy2\cache\com.tdunning\t-digest\ivy-3.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.tdunning\t-digest\ivy-3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/tdunning/t-digest/3.1/t-digest-3.1.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-math" conf="default, compile, runtime, master" rev="3.1" rev-constraint-default="3.1" rev-constraint-dynamic="3.1" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="t-digest" type="jar" ext="jar" status="successful" details="" size="61298" time="1344" location="C:\Users\Administrator\.ivy2\cache\com.tdunning\t-digest\jars\t-digest-3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/tdunning/t-digest/3.1/t-digest-3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.12" status="release" pubdate="20150326135005" resolver="maven2" artresolver="default" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2661" time="1214" location="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.12.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.12.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.pom"/>
+				<caller organisation="org.apache.solr" name="solr-commons-csv" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.6.1" callerrev="3.5.0"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.9"/>
+				<caller organisation="org.apache.mahout" name="mahout-math" conf="default, compile, runtime, master" rev="1.7.12" rev-constraint-default="1.7.12" rev-constraint-dynamic="1.7.12" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="32127" time="1253" location="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.12"/>
+				<caller organisation="org.apache.solr" name="solr-commons-csv" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.6.1" callerrev="3.5.0"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="14.0.1" status="release" pubdate="20130314165719" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="5376" time="1215" location="C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\ivy-14.0.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\ivy-14.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-math" conf="default, compile, runtime, master" rev="14.0.1" rev-constraint-default="14.0.1" rev-constraint-dynamic="14.0.1" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2189117" time="3587" location="C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\bundles\guava-14.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math3">
+			<revision name="3.2" status="release" pubdate="20130402123128" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/proper/commons-math/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="17431" time="1237" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-math3\ivy-3.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-math3\ivy-3.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.pom"/>
+				<caller organisation="org.apache.mahout" name="mahout-core" conf="default, compile, runtime, master" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="0.9"/>
+				<caller organisation="org.apache.mahout" name="mahout-math" conf="default, compile, runtime, master" rev="3.2" rev-constraint-default="3.2" rev-constraint-dynamic="3.2" callerrev="0.10.1"/>
+				<artifacts>
+					<artifact name="commons-math3" type="jar" ext="jar" status="successful" details="" size="1692782" time="2931" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-math3\jars\commons-math3-3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

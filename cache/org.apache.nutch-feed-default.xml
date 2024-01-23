@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="feed"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123005337"/>
+	<dependencies>
+		<module organisation="com.rometools" name="rome">
+			<revision name="1.5.1" status="release" pubdate="20150630134259" resolver="maven2" artresolver="default" homepage="http://rometools.github.io/rome/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4854" time="1216" location="C:\Users\Administrator\.ivy2\cache\com.rometools\rome\ivy-1.5.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.rometools\rome\ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/rometools/rome/1.5.1/rome-1.5.1.pom"/>
+				<caller organisation="org.apache.nutch" name="feed" conf="default, master" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="rome" type="jar" ext="jar" status="successful" details="" size="242809" time="1445" location="C:\Users\Administrator\.ivy2\cache\com.rometools\rome\jars\rome-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/rometools/rome/1.5.1/rome-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404041248" resolver="maven2" artresolver="default" homepage="http://www.slf4j.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2689" time="1220" location="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.7.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="com.rometools" name="rome" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.5.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jdom" name="jdom">
+			<revision name="2.0.2" status="release" pubdate="20120608183821" resolver="maven2" artresolver="default" homepage="http://www.jdom.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="Similar to Apache License but with the acknowledgment clause removed" url="https://raw.github.com/hunterhacker/jdom/master/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="4597" time="1199" location="C:\Users\Administrator\.ivy2\cache\org.jdom\jdom\ivy-2.0.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jdom\jdom\ivy-2.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jdom/jdom/2.0.2/jdom-2.0.2.pom"/>
+				<caller organisation="com.rometools" name="rome" conf="default, compile, runtime, master" rev="2.0.2" rev-constraint-default="2.0.2" rev-constraint-dynamic="2.0.2" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="jdom" type="jar" ext="jar" status="successful" details="" size="295355" time="1471" location="C:\Users\Administrator\.ivy2\cache\org.jdom\jdom\jars\jdom-2.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jdom/jdom/2.0.2/jdom-2.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.rometools" name="rome-utils">
+			<revision name="1.5.1" status="release" pubdate="20150630124845" resolver="maven2" artresolver="default" homepage="http://rometools.github.io/rome-utils/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1867" time="1201" location="C:\Users\Administrator\.ivy2\cache\com.rometools\rome-utils\ivy-1.5.1.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.rometools\rome-utils\ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.pom"/>
+				<caller organisation="com.rometools" name="rome" conf="default, compile, runtime, master" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="rome-utils" type="jar" ext="jar" status="successful" details="" size="6812" time="1215" location="C:\Users\Administrator\.ivy2\cache\com.rometools\rome-utils\jars\rome-utils-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

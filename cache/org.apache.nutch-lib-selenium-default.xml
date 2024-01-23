@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="lib-selenium"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123011448"/>
+	<dependencies>
+		<module organisation="org.seleniumhq.selenium" name="selenium-java">
+			<revision name="3.141.5" status="release" pubdate="20181106035410" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4848" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-java\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-java\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/3.141.5/selenium-java-3.141.5.pom"/>
+				<caller organisation="org.apache.nutch" name="lib-selenium" conf="default, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="selenium-java" type="jar" ext="jar" status="no" details="" size="355" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-java\jars\selenium-java-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-java/3.141.5/selenium-java-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-support">
+			<revision name="3.141.5" status="release" pubdate="20181106034410" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3745" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-support\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-support\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/3.141.5/selenium-support-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-support" type="jar" ext="jar" status="no" details="" size="151087" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-support\jars\selenium-support-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-support/3.141.5/selenium-support-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-safari-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106035340" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3769" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/3.141.5/selenium-safari-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-safari-driver" type="jar" ext="jar" status="no" details="" size="15935" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-safari-driver\jars\selenium-safari-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-safari-driver/3.141.5/selenium-safari-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-opera-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106035155" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3765" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-opera-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-opera-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-opera-driver/3.141.5/selenium-opera-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-opera-driver" type="jar" ext="jar" status="no" details="" size="10798" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-opera-driver\jars\selenium-opera-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-opera-driver/3.141.5/selenium-opera-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-ie-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106034718" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="16">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3753" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/3.141.5/selenium-ie-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-ie-driver" type="jar" ext="jar" status="no" details="" size="17220" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-ie-driver\jars\selenium-ie-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-ie-driver/3.141.5/selenium-ie-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-firefox-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106034635" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3773" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/3.141.5/selenium-firefox-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-firefox-driver" type="jar" ext="jar" status="no" details="" size="810396" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-firefox-driver\jars\selenium-firefox-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-firefox-driver/3.141.5/selenium-firefox-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-edge-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106034553" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3761" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/3.141.5/selenium-edge-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-edge-driver" type="jar" ext="jar" status="no" details="" size="8033" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-edge-driver\jars\selenium-edge-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-edge-driver/3.141.5/selenium-edge-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-chrome-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106034525" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3769" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/3.141.5/selenium-chrome-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-chrome-driver" type="jar" ext="jar" status="no" details="" size="13741" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-chrome-driver\jars\selenium-chrome-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-chrome-driver/3.141.5/selenium-chrome-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-remote-driver">
+			<revision name="3.141.5" status="release" pubdate="20181106035322" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3608" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/3.141.5/selenium-remote-driver-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-remote-driver" type="jar" ext="jar" status="no" details="" size="333949" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-remote-driver\jars\selenium-remote-driver-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-remote-driver/3.141.5/selenium-remote-driver-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup.okhttp3" name="okhttp">
+			<revision name="3.11.0" status="release" pubdate="20180712204220" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7710" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp\ivy-3.11.0.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp\ivy-3.11.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="3.11.0" rev-constraint-default="3.11.0" rev-constraint-dynamic="3.11.0" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="okhttp" type="jar" ext="jar" status="no" details="" size="413639" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp\jars\okhttp-3.11.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup.okio" name="okio">
+			<revision name="1.14.0" status="release" pubdate="20180211182139" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="13">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="5467" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okio\okio\ivy-1.14.0.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.squareup.okio\okio\ivy-1.14.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okio/okio/1.14.0/okio-1.14.0.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="com.squareup.okhttp3" name="okhttp" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.11.0"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="1.14.0" rev-constraint-default="1.14.0" rev-constraint-dynamic="1.14.0" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="okio" type="jar" ext="jar" status="no" details="" size="85756" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okio\okio\jars\okio-1.14.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="25.0-jre" status="release" pubdate="20180425152855" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8637" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\ivy-25.0-jre.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\ivy-25.0-jre.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="25.0-jre" rev-constraint-default="25.0-jre" rev-constraint-dynamic="25.0-jre" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2738171" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.guava\guava\bundles\guava-25.0-jre.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.mojo" name="animal-sniffer-annotations">
+			<revision name="1.14" status="release" pubdate="20150225085330" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4700" time="0" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.mojo\animal-sniffer-annotations\ivy-1.14.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.codehaus.mojo\animal-sniffer-annotations\ivy-1.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="25.0-jre"/>
+				<artifacts>
+					<artifact name="animal-sniffer-annotations" type="jar" ext="jar" status="no" details="" size="3482" time="0" location="C:\Users\Administrator\.ivy2\cache\org.codehaus.mojo\animal-sniffer-annotations\jars\animal-sniffer-annotations-1.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.j2objc" name="j2objc-annotations">
+			<revision name="1.1" status="release" pubdate="20170118150659" resolver="maven2" artresolver="default" homepage="https://github.com/google/j2objc/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3286" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.j2objc\j2objc-annotations\ivy-1.1.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.google.j2objc\j2objc-annotations\ivy-1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="25.0-jre"/>
+				<artifacts>
+					<artifact name="j2objc-annotations" type="jar" ext="jar" status="no" details="" size="8782" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.j2objc\j2objc-annotations\jars\j2objc-annotations-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.errorprone" name="error_prone_annotations">
+			<revision name="2.1.3" status="release" pubdate="20171128140614" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4225" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.errorprone\error_prone_annotations\ivy-2.1.3.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.google.errorprone\error_prone_annotations\ivy-2.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="25.0-jre"/>
+				<artifacts>
+					<artifact name="error_prone_annotations" type="jar" ext="jar" status="no" details="" size="13704" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.errorprone\error_prone_annotations\jars\error_prone_annotations-2.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.checkerframework" name="checker-compat-qual">
+			<revision name="2.0.0" status="release" pubdate="20160502193856" resolver="maven2" artresolver="default" homepage="http://checkerframework.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="GNU General Public License, version 2 (GPL2), with the classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<license name="The MIT License" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2944" time="0" location="C:\Users\Administrator\.ivy2\cache\org.checkerframework\checker-compat-qual\ivy-2.0.0.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.checkerframework\checker-compat-qual\ivy-2.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="25.0-jre"/>
+				<artifacts>
+					<artifact name="checker-compat-qual" type="jar" ext="jar" status="no" details="" size="31547" time="0" location="C:\Users\Administrator\.ivy2\cache\org.checkerframework\checker-compat-qual\jars\checker-compat-qual-2.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="1.3.9" status="release" pubdate="20090824152822" resolver="maven2" artresolver="default" homepage="http://findbugs.sourceforge.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2421" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.code.findbugs\jsr305\ivy-1.3.9.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.google.code.findbugs\jsr305\ivy-1.3.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.3.9" rev-constraint-default="1.3.9" rev-constraint-dynamic="1.3.9" callerrev="25.0-jre"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="no" details="" size="33015" time="0" location="C:\Users\Administrator\.ivy2\cache\com.google.code.findbugs\jsr305\jars\jsr305-1.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-exec">
+			<revision name="1.3" status="release" pubdate="20141102162715" resolver="maven2" artresolver="default" homepage="http://commons.apache.org/proper/commons-exec/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="5">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11069" time="0" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-exec\ivy-1.3.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-exec\ivy-1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="commons-exec" type="jar" ext="jar" status="no" details="" size="54423" time="0" location="C:\Users\Administrator\.ivy2\cache\org.apache.commons\commons-exec\jars\commons-exec-1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.bytebuddy" name="byte-buddy">
+			<revision name="1.8.15" status="release" pubdate="20180726144927" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7203" time="0" location="C:\Users\Administrator\.ivy2\cache\net.bytebuddy\byte-buddy\ivy-1.8.15.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\net.bytebuddy\byte-buddy\ivy-1.8.15.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="1.8.15" rev-constraint-default="1.8.15" rev-constraint-dynamic="1.8.15" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="byte-buddy" type="jar" ext="jar" status="no" details="" size="2987269" time="0" location="C:\Users\Administrator\.ivy2\cache\net.bytebuddy\byte-buddy\jars\byte-buddy-1.8.15.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.seleniumhq.selenium" name="selenium-api">
+			<revision name="3.141.5" status="release" pubdate="20181106034252" resolver="maven2" artresolver="default" homepage="http://www.seleniumhq.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2687" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-api\ivy-3.141.5.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-api\ivy-3.141.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/3.141.5/selenium-api-3.141.5.pom"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-chrome-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-edge-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-ie-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-java" conf="default, compile, runtime, master" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-remote-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-opera-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-support" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-firefox-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<caller organisation="org.seleniumhq.selenium" name="selenium-safari-driver" conf="compile, runtime" rev="3.141.5" rev-constraint-default="3.141.5" rev-constraint-dynamic="3.141.5" callerrev="3.141.5"/>
+				<artifacts>
+					<artifact name="selenium-api" type="jar" ext="jar" status="no" details="" size="182069" time="0" location="C:\Users\Administrator\.ivy2\cache\org.seleniumhq.selenium\selenium-api\jars\selenium-api-3.141.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/seleniumhq/selenium/selenium-api/3.141.5/selenium-api-3.141.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

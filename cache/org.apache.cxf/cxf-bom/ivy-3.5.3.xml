@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.cxf"
+		module="cxf-bom"
+		revision="3.5.3"
+		status="release"
+		publication="20220624084720"
+	>
+		<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="">
+		Apache CXF Build of Materials POM
+		</description>
+		<m:properties__maven-owasp-plugin-version>6.5.3</m:properties__maven-owasp-plugin-version>
+		<m:properties__cxf.compiler.fork>false</m:properties__cxf.compiler.fork>
+		<m:properties__cxf.jdk.version>1.8</m:properties__cxf.jdk.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__cxf.build-utils.version>3.4.4</m:properties__cxf.build-utils.version>
+		<m:properties__site.deploy.url>scp://people.apache.org/www/cxf.apache.org/maven-site</m:properties__site.deploy.url>
+		<m:properties__cxf.xjc-utils.version>3.3.2</m:properties__cxf.xjc-utils.version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.cxf__cxf-bundle-compatible__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-bundle-compatible__version>
+		<m:dependency.management__org.apache.cxf__cxf-core__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-core__version>
+		<m:dependency.management__org.apache.cxf__cxf-distribution-javadoc__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-distribution-javadoc__version>
+		<m:dependency.management__org.apache.cxf__cxf-distribution-manifest__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-distribution-manifest__version>
+		<m:dependency.management__org.apache.cxf__cxf-integration-cdi__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-integration-cdi__version>
+		<m:dependency.management__org.apache.cxf__cxf-integration-tracing-brave__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-integration-tracing-brave__version>
+		<m:dependency.management__org.apache.cxf__cxf-integration-tracing-opentracing__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-integration-tracing-opentracing__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-bindings-coloc__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-bindings-coloc__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-bindings-corba__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-bindings-corba__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-bindings-object__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-bindings-object__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-bindings-soap__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-bindings-soap__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-bindings-xml__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-bindings-xml__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-databinding-aegis__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-databinding-aegis__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-databinding-jaxb__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-databinding-jaxb__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-databinding-jibx__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-databinding-jibx__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-databinding-sdo__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-databinding-sdo__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-features-clustering__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-features-clustering__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-features-logging__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-features-logging__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-features-metrics__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-features-metrics__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-features-throttling__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-features-throttling__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-frontend-jaxrs__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-frontend-jaxrs__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-frontend-jaxws__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-frontend-jaxws__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-frontend-js__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-frontend-js__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-frontend-simple__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-frontend-simple__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-javascript__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-javascript__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-management__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-management__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-management-web__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-management-web__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-client__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-client__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-sse__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-sse__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-providers__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-providers__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-search__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-search__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-rx2__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-rx2__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-rx3__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-extension-rx3__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-http-sci__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-http-sci__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-json-basic__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-json-basic__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-cors__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-cors__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-http-signature__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-http-signature__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-jose__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-jose__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-jose-jaxrs__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-jose-jaxrs__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-oauth2__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-oauth2__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-oauth2-saml__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-oauth2-saml__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-security-xml__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-security-xml__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-security-saml__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-security-saml__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-security-sso-oidc__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-security-sso-oidc__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-security-sso-saml__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-security-sso-saml__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-security-xml__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-security-xml__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description-swagger__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description-swagger__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description-openapi-v3__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description-openapi-v3__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description-microprofile-openapi__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-service-description-microprofile-openapi__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-rs-mp-client__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-rs-mp-client__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http-hc__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http-hc__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http-hc5__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http-hc5__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http-jetty__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http-jetty__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http-netty-client__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http-netty-client__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http-netty-server__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http-netty-server__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-http-undertow__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-http-undertow__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-jms__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-jms__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-local__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-local__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-udp__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-udp__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-transports-websocket__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-transports-websocket__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-wsdl__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-wsdl__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-addr__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-addr__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-eventing__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-eventing__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-mex__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-mex__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-policy__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-policy__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-rm__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-rm__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-transfer__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-transfer__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-security__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-security__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-ws-security-oauth2__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-ws-security-oauth2__version>
+		<m:dependency.management__org.apache.cxf__cxf-rt-security__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-rt-security__version>
+		<m:dependency.management__org.apache.cxf__cxf-spring-boot-autoconfigure__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-spring-boot-autoconfigure__version>
+		<m:dependency.management__org.apache.cxf__cxf-spring-boot-starter-jaxrs__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-spring-boot-starter-jaxrs__version>
+		<m:dependency.management__org.apache.cxf__cxf-spring-boot-starter-jaxws__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-spring-boot-starter-jaxws__version>
+		<m:dependency.management__org.apache.cxf__cxf-testutils__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-testutils__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-common__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-common__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-corba__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-corba__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-java2ws__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-java2ws__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-misctools__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-misctools__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-validator__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-validator__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-wadlto-jaxrs__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-wadlto-jaxrs__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-wsdlto-core__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-wsdlto-core__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-wsdlto-frontend-javascript__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-wsdlto-frontend-javascript__version>
+		<m:dependency.management__org.apache.cxf__cxf-tools-wsdlto-frontend-jaxws__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-tools-wsdlto-frontend-jaxws__version>
+		<m:dependency.management__org.apache.cxf__cxf-wsdl-validator-plugin__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-wsdl-validator-plugin__version>
+		<m:dependency.management__org.apache.cxf__cxf-codegen-plugin__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-codegen-plugin__version>
+		<m:dependency.management__org.apache.cxf__cxf-java2ws-plugin__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-java2ws-plugin__version>
+		<m:dependency.management__org.apache.cxf__cxf-wadl2java-plugin__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-wadl2java-plugin__version>
+		<m:dependency.management__org.apache.cxf__cxf-java2swagger-plugin__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-java2swagger-plugin__version>
+		<m:dependency.management__org.apache.cxf__cxf-corbatools-maven-plugin__version>3.5.3</m:dependency.management__org.apache.cxf__cxf-corbatools-maven-plugin__version>
+		<m:dependency.management__org.apache.cxf.archetype__cxf-jaxws-javafirst__version>3.5.3</m:dependency.management__org.apache.cxf.archetype__cxf-jaxws-javafirst__version>
+		<m:dependency.management__org.apache.cxf.archetype__cxf-jaxrs-service__version>3.5.3</m:dependency.management__org.apache.cxf.archetype__cxf-jaxrs-service__version>
+		<m:dependency.management__org.apache.cxf.archetype__cxf-jaxws-wsdlfirst__version>3.5.3</m:dependency.management__org.apache.cxf.archetype__cxf-jaxws-wsdlfirst__version>
+		<m:dependency.management__org.apache.cxf.benchmark__cxf-benchmark-base__version>3.5.3</m:dependency.management__org.apache.cxf.benchmark__cxf-benchmark-base__version>
+		<m:dependency.management__org.apache.cxf.benchmark__cxf-benchmark-soapdoclit__version>3.5.3</m:dependency.management__org.apache.cxf.benchmark__cxf-benchmark-soapdoclit__version>
+		<m:dependency.management__org.apache.cxf.karaf__apache-cxf__version>3.5.3</m:dependency.management__org.apache.cxf.karaf__apache-cxf__version>
+		<m:dependency.management__org.apache.cxf.karaf__cxf-karaf-commands__version>3.5.3</m:dependency.management__org.apache.cxf.karaf__cxf-karaf-commands__version>
+		<m:dependency.management__org.apache.cxf.services.sts__cxf-services-sts-core__version>3.5.3</m:dependency.management__org.apache.cxf.services.sts__cxf-services-sts-core__version>
+		<m:dependency.management__org.apache.cxf.services.sts__cxf-services-sts-war__version>3.5.3</m:dependency.management__org.apache.cxf.services.sts__cxf-services-sts-war__version>
+		<m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-ws-discovery-api__version>3.5.3</m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-ws-discovery-api__version>
+		<m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-ws-discovery-service__version>3.5.3</m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-ws-discovery-service__version>
+		<m:dependency.management__org.apache.cxf.services.wsn__cxf-services-wsn-api__version>3.5.3</m:dependency.management__org.apache.cxf.services.wsn__cxf-services-wsn-api__version>
+		<m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-wsn-core__version>3.5.3</m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-wsn-core__version>
+		<m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-wsn-osgi__version>3.5.3</m:dependency.management__org.apache.cxf.services.ws-discovery__cxf-services-wsn-osgi__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-client__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-client__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-common__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-common__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-features__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-features__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-osgi__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-osgi__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-service__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-service__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-x509-handlers__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-x509-handlers__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-x509-repo-ldap__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-x509-repo-ldap__version>
+		<m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-war__version>3.5.3</m:dependency.management__org.apache.cxf.services.xkms__cxf-services-xkms-war__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

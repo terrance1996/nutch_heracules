@@ -1,0 +1,390 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- We use SonaType for publishing artefacts. Parent POM makes things easier here. -->
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
+    <!-- Project info. -->
+    <groupId>com.github.vsonnier</groupId>
+    <artifactId>hppcrt-parent</artifactId>
+    <version>0.7.5</version>
+    <packaging>pom</packaging>
+
+    <name>HPPC-RT (parent POM)</name>
+    <description>Parent POM for HPPC-RT projects (High Performance Primitive Collections Realtime)</description>
+
+    <!-- Extended project info. -->
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/vsonnier/hppcrt/issues</url>
+    </issueManagement>
+
+    <mailingLists>
+        <mailingList>
+            <name>Announcements and bug reports mailing list</name>
+            <subscribe>java-high-performance-primitive-collections+subscribe@googlegroups.com</subscribe>
+            <unsubscribe>java-high-performance-primitive-collections+unsubscribe@googlegroups.com</unsubscribe>
+            <post>java-high-performance-primitive-collections@googlegroups.com</post>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <url>git@github.com:vsonnier/hppcrt.git</url>
+        <connection>scm:git:git@github.com:vsonnier/hppcrt.git</connection>
+        <developerConnection>scm:git:git@github.com:vsonnier/hppcrt.git</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>vincent.sonnier</id>
+            <name>Vincent Sonnier</name>
+            <email>vsonnier@gmail.com</email>
+            <url>https://github.com/vsonnier/hppcrt</url>
+        </developer>
+    </developers>
+
+    <!-- Global properties. -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Because of Retrolambda, the project as a whole requires Java 8, while the final Jar is still Java 1.5 compatible -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        
+        <!-- Retrolambda will generate a 1.5 bytecode -->
+        <lib.bytecode.level>1.5</lib.bytecode.level>
+        <!-- Lib must only contain JDK 1.5 API, checked by animal-sniffer -->
+        <lib.jdk.level>java15</lib.jdk.level>
+		
+        <version.retrolambda>2.5.1</version.retrolambda>
+
+        <version.guava>22.0</version.guava>
+
+        <version.junit>4.12</version.junit>
+
+        <version.maven-antrun-plugin>1.8</version.maven-antrun-plugin>
+        <version.ant>1.10.1</version.ant>
+
+        <version.antlr>4.7</version.antlr>
+
+        <version.randomizedtesting>2.5.2</version.randomizedtesting>
+
+        <version.maven-clean-plugin>3.0.0</version.maven-clean-plugin>
+        <version.maven-compiler-plugin>3.6.1</version.maven-compiler-plugin>
+        <version.maven-dependency-plugin>3.0.1</version.maven-dependency-plugin>
+        <version.maven-deploy-plugin>2.8.2</version.maven-deploy-plugin>
+        <version.maven-eclipse-plugin>2.10</version.maven-eclipse-plugin>
+
+        <version.maven-install-plugin>2.5.2</version.maven-install-plugin>
+        <version.maven-jar-plugin>3.0.2</version.maven-jar-plugin>
+        <version.maven-shade-plugin>3.0.0</version.maven-shade-plugin>  
+        <version.maven-resources-plugin>3.0.2</version.maven-resources-plugin>
+        <version.maven-surefire-plugin>2.20</version.maven-surefire-plugin>
+
+        <version.maven-enforcer-plugin>1.4.1</version.maven-enforcer-plugin>
+        <version.maven-javadoc-plugin>2.10.4</version.maven-javadoc-plugin>
+        <version.maven-source-plugin>3.0.1</version.maven-source-plugin>
+
+        <version.build-helper-maven-plugin>3.0.0</version.build-helper-maven-plugin>
+        <version.animal-sniffer-maven-plugin>1.15</version.animal-sniffer-maven-plugin>
+
+        <version.maven-bundle-plugin>3.3.0</version.maven-bundle-plugin>
+
+        <version.maven.api>3.3.3</version.maven.api>
+
+        <!-- Never deploy automatically -->
+        <skip.deployment>true</skip.deployment>
+		
+    </properties>
+
+    <prerequisites>
+        <maven>[${version.maven.api},)</maven>
+    </prerequisites>
+
+    <modules>
+        <module>hppcrt-template-processor</module>
+        <module>hppcrt</module>
+        <module>hppcrt-benchmarks</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${version.guava}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${version.junit}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.carrotsearch.randomizedtesting</groupId>
+                <artifactId>randomizedtesting-runner</artifactId>
+                <version>${version.randomizedtesting}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>${version.ant}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.antlr</groupId>
+                    <artifactId>antlr4-maven-plugin</artifactId>
+                    <version>${version.antlr}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${version.maven-clean-plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${version.maven-compiler-plugin}</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <compilerArgs>
+                            <arg>-Xlint</arg>
+                        </compilerArgs>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-eclipse-plugin</artifactId>
+                    <version>${version.maven-eclipse-plugin}</version>
+                    <configuration>
+                        <downloadSources>true</downloadSources>
+                        <downloadJavadocs>false</downloadJavadocs>
+                        <buildOutputDirectory>${project.build.directory}/eclipse</buildOutputDirectory>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${version.maven-install-plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>${version.maven-jar-plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${version.maven-javadoc-plugin}</version>
+                    <configuration>
+                        <detectJavaApiLink>false</detectJavaApiLink>
+                        <detectLinks>false</detectLinks>
+                        <detectOfflineLinks>false</detectOfflineLinks>
+                        <quiet>false</quiet>
+                        <show>protected</show>
+                        <sourceFileExcludes>
+                            <exclude>**/KType*</exclude>
+                            <exclude>**/*KType*</exclude>
+                            <exclude>**/VType*</exclude>
+                            <exclude>**/*VType*</exclude>
+                            <exclude>**/Intrinsics*</exclude>
+                        </sourceFileExcludes>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-shade-plugin</artifactId>
+                    <version>${version.maven-shade-plugin}</version>
+                </plugin> 
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${version.maven-resources-plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${version.maven-source-plugin}</version>
+                    <configuration>
+                        <excludes>
+                            <exclude>**/KType*</exclude>
+                            <exclude>**/*KType*</exclude>
+                            <exclude>**/VType*</exclude>
+                            <exclude>**/*VType*</exclude>
+                            <exclude>**/Intrinsics*</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+
+                <!-- this configuration neutralize Surefire so that Randomizedtesting runs the tests instead -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${version.maven-surefire-plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>default-test</id>
+                            <phase>none</phase>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <!-- Run all tests (template-processor, lib) with Randomizedtesting, instead of Surefire, but create a similar output -->
+                <plugin>
+                    <groupId>com.carrotsearch.randomizedtesting</groupId>
+                    <artifactId>junit4-maven-plugin</artifactId>
+                    <version>${version.randomizedtesting}</version>
+                    <executions>
+                        <execution>
+                            <id>junit4-processor-tests</id>
+                            <goals>
+                                <goal>junit4</goal>
+                            </goals>
+                            <configuration>
+                                <includes>
+                                    <include>**/*Test.*</include>
+                                </includes>
+                                <excludes>
+                                    <exclude>**/*$*</exclude>
+                                    <exclude>**/Abstract*</exclude>
+                                </excludes>
+
+                                <parallelism>auto</parallelism>
+                                <maxMemory>512m</maxMemory>
+
+                                <!-- Attach a simple listener. -->
+                                <listeners>
+                                    <report-text showThrowable="false" 
+											 showStackTraces="false" 
+											 showOutput="onError"
+											 showStatusOk="false"
+											 showStatusError="false"
+											 showStatusFailure="false"
+											 showStatusIgnored="false"
+											 showSuiteSummary="true" />
+
+                                    <report-json file="${project.build.directory}/surefire-reports/test-results.html" />
+                                    <report-ant-xml dir="${project.build.directory}/surefire-reports/" mavenExtensions="true" />
+                                </listeners>
+
+                                <assertions>
+                                    <enable package="com.carrotsearch"/>
+                                </assertions>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${version.maven-dependency-plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>${version.build-helper-maven-plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>animal-sniffer-maven-plugin</artifactId>
+                    <version>${version.animal-sniffer-maven-plugin}</version>
+                </plugin>
+
+                <!-- Use Retrolamda to translate source classes only (not tests classes) into lib.bytecode.level bytecode -->
+                <plugin>
+                    <groupId>net.orfjackal.retrolambda</groupId>
+                    <artifactId>retrolambda-maven-plugin</artifactId>
+                    <version>${version.retrolambda}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${version.maven-antrun-plugin}</version>
+                </plugin>   
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${version.maven-deploy-plugin}</version>
+                <configuration>
+                    <skip>${skip.deployment}</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${version.maven-enforcer-plugin}</version>
+                <inherited>false</inherited>
+                <executions>
+                    <execution>
+                        <id>enforce-environment</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[${version.maven.api},)</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin> 
+            <!-- Use maven-bundle-plugin to generate an OSGi bundle -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${version.maven-bundle-plugin}</version>
+                <extensions>true</extensions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>eclipse</id>
+            <build>
+                <defaultGoal>eclipse:eclipse</defaultGoal>
+            </build>
+        </profile>
+    </profiles>
+</project>
+

@@ -1,0 +1,280 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.vsonnier</groupId>
+        <artifactId>hppcrt-parent</artifactId>
+        <version>0.7.5</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <!-- Project info. -->
+    <groupId>com.github.vsonnier</groupId>
+    <artifactId>hppcrt</artifactId>
+    <version>0.7.5</version>
+    <!-- We are indeed building an OSGi bundle at the end by injecting the correct Manifest while building with the Maven Jar plugin -->
+    <packaging>jar</packaging>
+
+    <name>HPPC-RT Collections</name>
+    <description>High Performance Primitive Collections Realtime
+ (fork of HPPC from Carrotsearch)
+  Fundamental data structures (maps, sets, lists, queues, heaps, sorts) generated for
+  combinations of object and primitive types to conserve JVM memory and speed
+  up execution. The Realtime fork intends to extend the existing collections, by tweaking to remove any dynamic allocations at runtime,
+  and to obtain low variance execution times whatever the input nature. 
+    </description>
+
+    <!-- Dependencies. -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version.junit}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.carrotsearch.randomizedtesting</groupId>
+            <artifactId>randomizedtesting-runner</artifactId>
+            <version>${version.randomizedtesting}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Build tuning. -->
+    <build>
+        <defaultGoal>install</defaultGoal>
+        <plugins>
+          
+            <!-- Generate sources for objects/primitives from template. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>generate.sources</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <fork>true</fork>
+                            <meminitial>256m</meminitial>
+                            <maxmem>512m</maxmem>
+                            <target>
+                                <!-- Pass the full plugin classpath to the Ant script through the Ant property template_prcessor_classpath -->
+                                <!-- so that TemplateProcessor could find all the classes it needs -->
+                                <property name="template_prcessor_classpath" refid="maven.plugin.classpath" />
+                                <ant antfile="${basedir}/build.xml" />
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.vsonnier</groupId>
+                        <artifactId>hppcrt-template-processor</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                    <!-- force AntRun to use the specified Ant -->
+                    <dependency>
+                        <groupId>org.apache.ant</groupId>
+                        <artifactId>ant</artifactId>
+                        <version>${version.ant}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <!-- Add generated source locations. -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.basedir}/src/main/templates</source>
+                                <source>${project.build.directory}/generated-sources/main/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>add-test-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.basedir}/src/test/templates</source>
+                                <source>${project.build.directory}/generated-sources/test/java</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+           
+
+            <!-- Use Retrolamda to translate source classes only (not tests classes) into lib.bytecode.level bytecode -->
+            <plugin>
+                <groupId>net.orfjackal.retrolambda</groupId>
+                <artifactId>retrolambda-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>retrolambda-classes</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>process-main</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <target>${lib.bytecode.level}</target>
+                    <defaultMethods>false</defaultMethods>
+                </configuration>
+            </plugin>
+            
+             <!-- Project in general is Java 8 level while the final lib is still JDK 1.5 on api side. -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>animal-sniffer-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>check-java-api</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <signature>
+                                <groupId>org.codehaus.mojo.signature
+                                </groupId>
+                                <artifactId>${lib.jdk.level}</artifactId>
+                                <version>1.0</version>
+                            </signature>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Run tests with Randomizedtesting, instead of Surefire, but create a similar output -->
+            <plugin>
+                <groupId>com.carrotsearch.randomizedtesting</groupId>
+                <artifactId>junit4-maven-plugin</artifactId>
+            </plugin>
+            
+             <!-- Add Manifest OSGIs info to the future Jar -->
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <executions>
+                    <!-- HPPCRT-48: Prepare OSGI data to be included by the regular maven-jar-plugin, DO NOT use the bundle goal ! -->
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Build main artifact --> 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>default-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <!-- HPPCRT-48: Must "manually" add OSGI manifest to a regular Jar data, because bundle packaging apparently cannot filter class-wise -->  
+                            <archive>  
+                                <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                            </archive> 
+                            <excludes>
+                              <exclude>**/KType*</exclude>
+                              <exclude>**/*KType*</exclude>
+                              <exclude>**/VType*</exclude>
+                              <exclude>**/*VType*</exclude>
+                              <exclude>**/Intrinsics*</exclude>
+                             </excludes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            
+            <!-- Build source jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+     
+            <!-- Build Javadoc jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <configuration>
+                            <encoding>${project.build.sourceEncoding}</encoding>
+                            <windowtitle>HPPC-RT v${project.version} API Documentation</windowtitle>
+                            <doctitle>HPPC-RT v${project.version} API Documentation</doctitle>
+                            <header>
+                                <![CDATA[<div id='header'><a class='logo' target='_top' href='https://github.com/vsonnier/hppcrt'></a>High Performance Primitive Collections Realtime(HPPC-RT) v${project.version} <br>API Documentation</div>]]>
+                            </header>
+                            <failOnError>false</failOnError>
+                            <docfilessubdirs>true</docfilessubdirs>
+                            <use>false</use>
+                            <noindex>false</noindex>
+                            <notree>false</notree>
+                            <groups>
+                                <group>
+                                    <title>HPPC-RT</title>
+                                    <packages>com.carrotsearch.hppcrt*</packages>
+                                </group>
+                            </groups>
+                        </configuration>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>quick</id>
+            <properties>
+                <skipTests>true</skipTests> 
+            </properties>
+        </profile>
+        <profile>
+            <id>quicknodoc</id>
+            <properties>
+                <skipTests>true</skipTests>
+                <maven.javadoc.skip>true</maven.javadoc.skip>
+            </properties>
+        </profile>
+    </profiles>
+</project>

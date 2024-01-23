@@ -6,6 +6,8 @@
 		status="release"
 		publication="20210630040858"
 	>
+		<license name="Apache Software License - Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0" />
+		<license name="Eclipse Public License - Version 1.0" url="https://www.eclipse.org/org/documents/epl-v10.php" />
 		<description homepage="">
 		The core jetty server artifact.
 		</description>
@@ -104,7 +106,7 @@
 		<m:dependency.management__io.grpc__grpc-core__version>1.33.1</m:dependency.management__io.grpc__grpc-core__version>
 		<m:dependency.management__org.apache.ant__ant__version>1.10.9</m:dependency.management__org.apache.ant__ant__version>
 		<m:dependency.management__org.apache.ant__ant-launcher__version>1.10.9</m:dependency.management__org.apache.ant__ant-launcher__version>
-		<m:maven.plugins>null__maven-enforcer-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|com.mycila__license-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.eclipse.jetty.toolchain__jetty-version-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.1|null__maven-enforcer-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|com.mycila__license-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.eclipse.jetty.toolchain__jetty-version-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.1|org.apache.maven.plugins__maven-jar-plugin__null</m:maven.plugins>
+		<m:maven.plugins>null__maven-enforcer-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|com.mycila__license-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.eclipse.jetty.toolchain__jetty-version-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.1|null__maven-compiler-plugin__null|null__maven-enforcer-plugin__null|org.jacoco__jacoco-maven-plugin__null|org.apache.maven.plugins__maven-release-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|com.mycila__license-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.eclipse.jetty.toolchain__jetty-version-maven-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__3.1.1|null__maven-compiler-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null</m:maven.plugins>
 	</info>
 	<configurations>
 		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
@@ -112,7 +114,7 @@
 		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
 		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
 		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
-		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
 		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
 		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
 		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
@@ -125,54 +127,52 @@
 	</publications>
 	<dependencies>
 		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.1.0" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
-		<dependency org="org.eclipse.jetty" name="jetty-http" rev="9.4.43.v20210629" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="org.eclipse.jetty" name="jetty-http" rev="9.4.43.v20210629" force="true" conf="compile->compile(*),master(*);runtime->runtime(*);test->runtime(*),master(*)">
+			<artifact name="jetty-http" type="jar" ext="jar" conf="test" m:classifier="tests"/>
+		</dependency>
 		<dependency org="org.eclipse.jetty" name="jetty-io" rev="9.4.43.v20210629" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-xml" rev="9.4.43.v20210629" force="true" conf="test->runtime(*),master(*)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-jmx" rev="9.4.43.v20210629" force="true" conf="optional->compile(*),master(*)"/>
 		<dependency org="org.eclipse.jetty.toolchain" name="jetty-test-helper" rev="5.5" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="org.eclipse.jetty" name="jetty-http" rev="9.4.43.v20210629" force="true" conf="test->runtime(*),master(*)">
-			<artifact name="jetty-http" type="jar" ext="jar" conf="" m:classifier="tests"/>
-		</dependency>
 		<dependency org="org.eclipse.jetty" name="jetty-util-ajax" rev="9.4.43.v20210629" force="true" conf="test->runtime(*),master(*)"/>
-		<dependency org="org.eclipse.jetty.toolchain" name="jetty-test-helper" rev="5.5" force="true" conf="test->runtime(*),master(*)"/>
 		<dependency org="org.junit.jupiter" name="junit-jupiter" rev="5.7.0" force="true" conf="test->runtime(*),master(*)"/>
 		<override org="javax.servlet" module="javax.servlet-api" matcher="exact" rev="3.1.0"/>
-		<override org="org.testcontainers" module="junit-jupiter" matcher="exact" rev="1.15.1"/>
-		<override org="org.apache.maven" module="maven-artifact" matcher="exact" rev="3.6.3"/>
-		<override org="com.github.jnr" module="jnr-unixsocket" matcher="exact" rev="0.38.3"/>
-		<override org="org.apache.taglibs" module="taglibs-standard-spec" matcher="exact" rev="1.2.5"/>
-		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="5.6.0"/>
-		<override org="org.ow2.asm" module="asm-commons" matcher="exact" rev="9.1"/>
-		<override org="org.ow2.asm" module="asm-analysis" matcher="exact" rev="9.1"/>
-		<override org="org.slf4j" module="jcl104-over-slf4j" matcher="exact" rev="1.7.30"/>
-		<override org="org.apache.ant" module="ant" matcher="exact" rev="1.10.9"/>
-		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.3.0"/>
-		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="3.6.3"/>
-		<override org="javax.annotation" module="javax.annotation-api" matcher="exact" rev="1.3.2"/>
-		<override org="org.apache.maven.plugin-tools" module="maven-plugin-annotations" matcher="exact" rev="3.6.0"/>
-		<override org="org.eclipse.jetty.orbit" module="javax.security.auth.message" matcher="exact" rev="1.0.0.v201108011116"/>
-		<override org="org.apache.maven" module="maven-core" matcher="exact" rev="3.6.3"/>
-		<override org="org.eclipse.jetty.orbit" module="javax.activation" matcher="exact" rev="1.1.0.v201105071233"/>
-		<override org="org.eclipse.jetty.orbit" module="javax.mail.glassfish" matcher="exact" rev="1.4.1.v201005082020"/>
-		<override org="org.codehaus.plexus" module="plexus-component-annotations" matcher="exact" rev="2.1.0"/>
-		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.30"/>
-		<override org="org.junit.jupiter" module="junit-jupiter" matcher="exact" rev="5.7.0"/>
-		<override org="org.ow2.asm" module="asm" matcher="exact" rev="9.1"/>
-		<override org="org.testcontainers" module="testcontainers" matcher="exact" rev="1.15.1"/>
 		<override org="javax.websocket" module="javax.websocket-api" matcher="exact" rev="1.0"/>
+		<override org="javax.websocket" module="javax.websocket-client-api" matcher="exact" rev="1.0"/>
+		<override org="javax.annotation" module="javax.annotation-api" matcher="exact" rev="1.3.2"/>
+		<override org="org.ow2.asm" module="asm" matcher="exact" rev="9.1"/>
+		<override org="org.ow2.asm" module="asm-commons" matcher="exact" rev="9.1"/>
+		<override org="org.ow2.asm" module="asm-tree" matcher="exact" rev="9.1"/>
+		<override org="org.ow2.asm" module="asm-analysis" matcher="exact" rev="9.1"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.security.auth.message" matcher="exact" rev="1.0.0.v201108011116"/>
+		<override org="org.eclipse.jetty.toolchain" module="jetty-schemas" matcher="exact" rev="3.1.2"/>
 		<override org="org.mortbay.jasper" module="apache-jsp" matcher="exact" rev="8.5.54"/>
 		<override org="org.apache.taglibs" module="taglibs-standard-impl" matcher="exact" rev="1.2.5"/>
-		<override org="org.eclipse.jetty.toolchain" module="jetty-test-helper" matcher="exact" rev="5.5"/>
-		<override org="org.eclipse.jetty.toolchain" module="jetty-schemas" matcher="exact" rev="3.1.2"/>
-		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.30"/>
-		<override org="io.grpc" module="grpc-core" matcher="exact" rev="1.33.1"/>
+		<override org="org.apache.taglibs" module="taglibs-standard-spec" matcher="exact" rev="1.2.5"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.activation" matcher="exact" rev="1.1.0.v201105071233"/>
+		<override org="org.eclipse.jetty.orbit" module="javax.mail.glassfish" matcher="exact" rev="1.4.1.v201005082020"/>
 		<override org="javax.transaction" module="javax.transaction-api" matcher="exact" rev="1.3"/>
+		<override org="org.codehaus.plexus" module="plexus-component-annotations" matcher="exact" rev="2.1.0"/>
+		<override org="org.codehaus.plexus" module="plexus-utils" matcher="exact" rev="3.3.0"/>
+		<override org="org.apache.maven" module="maven-plugin-api" matcher="exact" rev="3.6.3"/>
+		<override org="org.apache.maven" module="maven-artifact" matcher="exact" rev="3.6.3"/>
+		<override org="org.apache.maven" module="maven-core" matcher="exact" rev="3.6.3"/>
 		<override org="org.apache.maven.plugin-tools" module="maven-plugin-tools-api" matcher="exact" rev="3.6.0"/>
-		<override org="org.slf4j" module="log4j-over-slf4j" matcher="exact" rev="1.7.30"/>
+		<override org="org.apache.maven.plugin-tools" module="maven-plugin-annotations" matcher="exact" rev="3.6.0"/>
+		<override org="org.junit.jupiter" module="junit-jupiter" matcher="exact" rev="5.7.0"/>
+		<override org="org.testcontainers" module="testcontainers" matcher="exact" rev="1.15.1"/>
+		<override org="org.testcontainers" module="junit-jupiter" matcher="exact" rev="1.15.1"/>
+		<override org="net.java.dev.jna" module="jna" matcher="exact" rev="5.6.0"/>
+		<override org="org.eclipse.jetty.toolchain" module="jetty-test-helper" matcher="exact" rev="5.5"/>
 		<override org="org.eclipse.jetty.toolchain" module="jetty-perf-helper" matcher="exact" rev="1.0.6"/>
-		<override org="org.apache.ant" module="ant-launcher" matcher="exact" rev="1.10.9"/>
-		<override org="org.ow2.asm" module="asm-tree" matcher="exact" rev="9.1"/>
+		<override org="org.slf4j" module="jcl104-over-slf4j" matcher="exact" rev="1.7.30"/>
+		<override org="org.slf4j" module="log4j-over-slf4j" matcher="exact" rev="1.7.30"/>
+		<override org="org.slf4j" module="slf4j-api" matcher="exact" rev="1.7.30"/>
+		<override org="org.slf4j" module="slf4j-simple" matcher="exact" rev="1.7.30"/>
 		<override org="org.jboss.logging" module="jboss-logging" matcher="exact" rev="3.4.1.Final"/>
-		<override org="javax.websocket" module="javax.websocket-client-api" matcher="exact" rev="1.0"/>
+		<override org="com.github.jnr" module="jnr-unixsocket" matcher="exact" rev="0.38.3"/>
+		<override org="io.grpc" module="grpc-core" matcher="exact" rev="1.33.1"/>
+		<override org="org.apache.ant" module="ant" matcher="exact" rev="1.10.9"/>
+		<override org="org.apache.ant" module="ant-launcher" matcher="exact" rev="1.10.9"/>
 	</dependencies>
 </ivy-module>

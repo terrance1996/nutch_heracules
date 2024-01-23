@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.httpcomponents"
+		module="httpcomponents-core"
+		revision="4.4.15"
+		status="release"
+		publication="20211203003258"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://hc.apache.org/httpcomponents-core-ga">
+		Apache HttpComponents Core is a library of components for building HTTP enabled services
+		</description>
+		<m:properties__conscrypt.version>2.2.1</m:properties__conscrypt.version>
+		<m:properties__api.comparison.version>4.4</m:properties__api.comparison.version>
+		<m:properties__maven.compiler.target>1.6</m:properties__maven.compiler.target>
+		<m:properties__commons-logging.version>1.2</m:properties__commons-logging.version>
+		<m:properties__maven.compiler.source>1.6</m:properties__maven.compiler.source>
+		<m:properties__maven.compiler.showDeprecation>false</m:properties__maven.compiler.showDeprecation>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:properties__mockito.version>1.10.19</m:properties__mockito.version>
+		<m:properties__hc.stylecheck.version>1</m:properties__hc.stylecheck.version>
+		<m:properties__maven.compiler.optimize>true</m:properties__maven.compiler.optimize>
+		<m:properties__hc.jacoco.version>0.8.1</m:properties__hc.jacoco.version>
+		<m:properties__hc.surefire.version>2.22.1</m:properties__hc.surefire.version>
+		<m:properties__hc.animal-sniffer.signature.version>1.0</m:properties__hc.animal-sniffer.signature.version>
+		<m:properties__implementation.build>${scmBranch}@r${buildNumber}; ${maven.build.timestamp}</m:properties__implementation.build>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__hc.clirr.version>2.8</m:properties__hc.clirr.version>
+		<m:properties__hc.animal-sniffer.version>1.16</m:properties__hc.animal-sniffer.version>
+		<m:properties__hc.jxr.version>3.0.0</m:properties__hc.jxr.version>
+		<m:properties__hc.checkstyle.version>2.17</m:properties__hc.checkstyle.version>
+		<m:properties__minSeverity>info</m:properties__minSeverity>
+		<m:properties__hc.site.url>scp://people.apache.org/www/hc.apache.org/</m:properties__hc.site.url>
+		<m:properties__hc.coveralls.version>4.3.0</m:properties__hc.coveralls.version>
+		<m:properties__hc.coveralls.timestampFormat>EpochMillis</m:properties__hc.coveralls.timestampFormat>
+		<m:properties__hc.rat.version>0.12</m:properties__hc.rat.version>
+		<m:properties__maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</m:properties__maven.build.timestamp.format>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__hc.project-info.version>3.0.0</m:properties__hc.project-info.version>
+		<m:properties__hc.cobertura.version>2.7</m:properties__hc.cobertura.version>
+		<m:properties__hc.surefire-report.version>2.22.0</m:properties__hc.surefire-report.version>
+		<m:properties__hc.javadoc.version>3.0.1</m:properties__hc.javadoc.version>
+		<m:properties__animal-sniffer.signature>java${javaTarget.majorVersion}${javaTarget.minorVersion}</m:properties__animal-sniffer.signature>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__surefire.version>2.22.0</m:properties__surefire.version>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>https://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__arguments/>
+		<m:properties__assembly.tarLongFileMode>posix</m:properties__assembly.tarLongFileMode>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-jar-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__3.0.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.16|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-enforcer-plugin__null|org.apache.maven.plugins__maven-site-plugin__null|org.apache.rat__apache-rat-plugin__null|null__maven-jar-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__3.0.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.16|null__maven-jar-plugin__null|null__maven-source-plugin__null|null__maven-javadoc-plugin__null|null__maven-site-plugin__null|com.agilejava.docbkx__docbkx-maven-plugin__null|null__maven-resources-plugin__null|org.apache.maven.plugins__maven-checkstyle-plugin__null|org.codehaus.mojo__clirr-maven-plugin__null|org.apache.rat__apache-rat-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.conscrypt__conscrypt-openjdk-uber__version>2.2.1</m:dependency.management__org.conscrypt__conscrypt-openjdk-uber__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.mockito__mockito-core__version>1.10.19</m:dependency.management__org.mockito__mockito-core__version>
+		<m:dependency.management__org.mockito__mockito-core__scope>test</m:dependency.management__org.mockito__mockito-core__scope>
+		<m:dependency.management__commons-logging__commons-logging__version>1.2</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__commons-logging__commons-logging__scope>test</m:dependency.management__commons-logging__commons-logging__scope>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

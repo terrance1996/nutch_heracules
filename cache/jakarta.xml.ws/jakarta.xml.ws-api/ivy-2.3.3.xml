@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="jakarta.xml.ws"
+		module="jakarta.xml.ws-api"
+		revision="2.3.3"
+		status="release"
+		publication="20200127020255"
+	>
+		<license name="Eclipse Distribution License - v 1.0" url="http://www.eclipse.org/org/documents/edl-v10.php" />
+		<description homepage="https://github.com/eclipse-ee4j/jax-ws-api">
+		Jakarta XML Web Services API
+		</description>
+		<m:properties__spotbugs.version>3.1.12.2</m:properties__spotbugs.version>
+		<m:properties__copyright.templatefile>${project.basedir}/copyright.txt</m:properties__copyright.templatefile>
+		<m:properties__legal.doc.source>${project.basedir}/..</m:properties__legal.doc.source>
+		<m:properties__api.package>javax.xml.ws</m:properties__api.package>
+		<m:properties__spotbugs.threshold>Low</m:properties__spotbugs.threshold>
+		<m:properties__soap-api.version>1.4.2</m:properties__soap-api.version>
+		<m:properties__extension.name>jakarta.xml.ws</m:properties__extension.name>
+		<m:properties__non.final>false</m:properties__non.final>
+		<m:properties__jaxb-api.version>2.3.3</m:properties__jaxb-api.version>
+		<m:properties__spotbugs.skip>false</m:properties__spotbugs.skip>
+		<m:properties__spec.version>2.3</m:properties__spec.version>
+		<m:properties__jws-api.version>2.1.0</m:properties__jws-api.version>
+		<m:properties__copyright.ignoreyear>false</m:properties__copyright.ignoreyear>
+		<m:properties__copyright.exclude>${project.basedir}/copyright-exclude</m:properties__copyright.exclude>
+		<m:properties__copyright.scmonly>true</m:properties__copyright.scmonly>
+		<m:properties__old.spec.version>2.2</m:properties__old.spec.version>
+		<m:properties__copyright.update>false</m:properties__copyright.update>
+		<m:properties__spotbugs.exclude>${project.basedir}/exclude.xml</m:properties__spotbugs.exclude>
+		<m:properties__release.spec.feedback>jaxws-dev@eclipse.org</m:properties__release.spec.feedback>
+		<m:properties__release.arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__sonatypeOssDistMgmtStagingUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/staging/</m:properties__sonatypeOssDistMgmtStagingUrl>
+		<m:properties__sonatypeOssDistMgmtNexusUrl>https://jakarta.oss.sonatype.org/</m:properties__sonatypeOssDistMgmtNexusUrl>
+		<m:properties__sonatypeOssDistMgmtReleasesUrl>${sonatypeOssDistMgmtNexusUrl}service/local/staging/deploy/maven2/</m:properties__sonatypeOssDistMgmtReleasesUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__null|com.github.spotbugs__spotbugs-maven-plugin__null|org.glassfish.copyright__glassfish-copyright-maven-plugin__null|org.codehaus.mojo__buildnumber-maven-plugin__null|org.codehaus.mojo__build-helper-maven-plugin__null|org.apache.maven.plugins__maven-compiler-plugin__null|org.glassfish.build__spec-version-maven-plugin__null|org.apache.felix__maven-bundle-plugin__null|org.apache.maven.plugins__maven-jar-plugin__null|org.apache.maven.plugins__maven-source-plugin__null|org.apache.maven.plugins__maven-javadoc-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="jakarta.xml.ws-api" type="jar" ext="jar" conf="master"/>
+		<artifact name="jakarta.xml.ws-api" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="jakarta.xml.ws-api" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="jakarta.xml.bind" name="jakarta.xml.bind-api" rev="2.3.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="jakarta.xml.soap" name="jakarta.xml.soap-api" rev="1.4.2" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="jakarta.jws" name="jakarta.jws-api" rev="2.1.0" force="true" conf="runtime->compile(*),runtime(*),master(*)"/>
+	</dependencies>
+</ivy-module>

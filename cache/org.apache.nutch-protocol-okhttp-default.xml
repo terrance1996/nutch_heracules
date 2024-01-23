@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="protocol-okhttp"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123011430"/>
+	<dependencies>
+		<module organisation="com.squareup.okhttp3" name="okhttp-brotli">
+			<revision name="4.9.3" status="release" pubdate="20211121171624" resolver="maven2" artresolver="default" homepage="https://square.github.io/okhttp/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1999" time="1187" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp-brotli\ivy-4.9.3.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp-brotli\ivy-4.9.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp-brotli/4.9.3/okhttp-brotli-4.9.3.pom"/>
+				<caller organisation="org.apache.nutch" name="protocol-okhttp" conf="default, master" rev="4.9.3" rev-constraint-default="4.9.3" rev-constraint-dynamic="4.9.3" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="okhttp-brotli" type="jar" ext="jar" status="successful" details="" size="2660" time="1209" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp-brotli\jars\okhttp-brotli-4.9.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp-brotli/4.9.3/okhttp-brotli-4.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jetbrains.kotlin" name="kotlin-stdlib-jdk8">
+			<revision name="1.4.10" status="release" pubdate="20200903121909" resolver="maven2" artresolver="default" homepage="https://kotlinlang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1997" time="1183" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-jdk8\ivy-1.4.10.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-jdk8\ivy-1.4.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10.pom"/>
+				<caller organisation="com.squareup.okhttp3" name="okhttp-brotli" conf="default, compile, runtime, master" rev="1.4.10" rev-constraint-default="1.4.10" rev-constraint-dynamic="1.4.10" callerrev="4.9.3"/>
+				<artifacts>
+					<artifact name="kotlin-stdlib-jdk8" type="jar" ext="jar" status="successful" details="" size="16230" time="1193" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-jdk8\jars\kotlin-stdlib-jdk8-1.4.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.10/kotlin-stdlib-jdk8-1.4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jetbrains.kotlin" name="kotlin-stdlib-jdk7">
+			<revision name="1.4.10" status="release" pubdate="20200903121858" resolver="maven2" artresolver="default" homepage="https://kotlinlang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1805" time="1185" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-jdk7\ivy-1.4.10.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-jdk7\ivy-1.4.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10.pom"/>
+				<caller organisation="org.jetbrains.kotlin" name="kotlin-stdlib-jdk8" conf="compile, runtime" rev="1.4.10" rev-constraint-default="1.4.10" rev-constraint-dynamic="1.4.10" callerrev="1.4.10"/>
+				<artifacts>
+					<artifact name="kotlin-stdlib-jdk7" type="jar" ext="jar" status="successful" details="" size="3985" time="1181" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-jdk7\jars\kotlin-stdlib-jdk7-1.4.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.10/kotlin-stdlib-jdk7-1.4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.brotli" name="dec">
+			<revision name="0.1.2" status="release" pubdate="20170507102233" resolver="maven2" artresolver="default" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="6">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3389" time="0" location="C:\Users\Administrator\.ivy2\cache\org.brotli\dec\ivy-0.1.2.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.brotli\dec\ivy-0.1.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/brotli/dec/0.1.2/dec-0.1.2.pom"/>
+				<caller organisation="com.squareup.okhttp3" name="okhttp-brotli" conf="default, compile, runtime, master" rev="0.1.2" rev-constraint-default="0.1.2" rev-constraint-dynamic="0.1.2" callerrev="4.9.3"/>
+				<artifacts>
+					<artifact name="dec" type="jar" ext="jar" status="no" details="" size="98115" time="0" location="C:\Users\Administrator\.ivy2\cache\org.brotli\dec\jars\dec-0.1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/brotli/dec/0.1.2/dec-0.1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup.okhttp3" name="okhttp">
+			<revision name="4.9.3" status="release" pubdate="20211121171611" resolver="maven2" artresolver="default" homepage="https://square.github.io/okhttp/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), runtime, compile(*), master" position="0">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2941" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp\ivy-4.9.3.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp\ivy-4.9.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/4.9.3/okhttp-4.9.3.pom"/>
+				<caller organisation="org.apache.nutch" name="protocol-okhttp" conf="default, master" rev="4.9.3" rev-constraint-default="4.9.3" rev-constraint-dynamic="4.9.3" callerrev="working@DESKTOP-JBPKLKC"/>
+				<caller organisation="com.squareup.okhttp3" name="okhttp-brotli" conf="default, compile, runtime, master" rev="4.9.3" rev-constraint-default="4.9.3" rev-constraint-dynamic="4.9.3" callerrev="4.9.3"/>
+				<artifacts>
+					<artifact name="okhttp" type="jar" ext="jar" status="no" details="" size="792081" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okhttp3\okhttp\jars\okhttp-4.9.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/squareup/okhttp3/okhttp/4.9.3/okhttp-4.9.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jetbrains.kotlin" name="kotlin-stdlib">
+			<revision name="1.4.10" status="release" pubdate="20200903121847" resolver="maven2" artresolver="default" homepage="https://kotlinlang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="2">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3216" time="0" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib\ivy-1.4.10.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib\ivy-1.4.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10.pom"/>
+				<caller organisation="org.jetbrains.kotlin" name="kotlin-stdlib-jdk7" conf="compile, runtime" rev="1.4.10" rev-constraint-default="1.4.10" rev-constraint-dynamic="1.4.10" callerrev="1.4.10"/>
+				<caller organisation="com.squareup.okhttp3" name="okhttp" conf="default, compile, runtime, master" rev="1.4.10" rev-constraint-default="1.4.10" rev-constraint-dynamic="1.4.10" callerrev="4.9.3"/>
+				<caller organisation="com.squareup.okio" name="okio" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="2.8.0"/>
+				<caller organisation="org.jetbrains.kotlin" name="kotlin-stdlib-jdk8" conf="compile, runtime" rev="1.4.10" rev-constraint-default="1.4.10" rev-constraint-dynamic="1.4.10" callerrev="1.4.10"/>
+				<artifacts>
+					<artifact name="kotlin-stdlib" type="jar" ext="jar" status="no" details="" size="1487085" time="0" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib\jars\kotlin-stdlib-1.4.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.4.10/kotlin-stdlib-1.4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.4.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), runtime(*), compile(*)" position="-1">
+				<evicted-by rev="1.4.10"/>
+				<caller organisation="com.squareup.okio" name="okio" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="2.8.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jetbrains" name="annotations">
+			<revision name="13.0" status="release" pubdate="20131217041043" resolver="maven2" artresolver="default" homepage="http://www.jetbrains.org" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4930" time="1196" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains\annotations\ivy-13.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jetbrains\annotations\ivy-13.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom"/>
+				<caller organisation="org.jetbrains.kotlin" name="kotlin-stdlib" conf="compile, runtime" rev="13.0" rev-constraint-default="13.0" rev-constraint-dynamic="13.0" callerrev="1.4.10"/>
+				<artifacts>
+					<artifact name="annotations" type="jar" ext="jar" status="successful" details="" size="17536" time="1199" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains\annotations\jars\annotations-13.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jetbrains.kotlin" name="kotlin-stdlib-common">
+			<revision name="1.4.10" status="release" pubdate="20200903121853" resolver="maven2" artresolver="default" homepage="https://kotlinlang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="3">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2945" time="0" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-common\ivy-1.4.10.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-common\ivy-1.4.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.10/kotlin-stdlib-common-1.4.10.pom"/>
+				<caller organisation="org.jetbrains.kotlin" name="kotlin-stdlib" conf="compile, runtime" rev="1.4.10" rev-constraint-default="1.4.10" rev-constraint-dynamic="1.4.10" callerrev="1.4.10"/>
+				<caller organisation="com.squareup.okio" name="okio" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="2.8.0"/>
+				<artifacts>
+					<artifact name="kotlin-stdlib-common" type="jar" ext="jar" status="no" details="" size="191211" time="0" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-common\jars\kotlin-stdlib-common-1.4.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.10/kotlin-stdlib-common-1.4.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.4.0" status="release" pubdate="20200813112132" resolver="maven2" artresolver="default" evicted="latest-revision" evicted-reason="" homepage="https://kotlinlang.org/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<license name="The Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1604" time="1180" location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-common\ivy-1.4.0.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\org.jetbrains.kotlin\kotlin-stdlib-common\ivy-1.4.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.0/kotlin-stdlib-common-1.4.0.pom"/>
+				<evicted-by rev="1.4.10"/>
+				<caller organisation="com.squareup.okio" name="okio" conf="compile, runtime" rev="1.4.0" rev-constraint-default="1.4.0" rev-constraint-dynamic="1.4.0" callerrev="2.8.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.squareup.okio" name="okio">
+			<revision name="2.8.0" status="release" pubdate="20200817180904" resolver="maven2" artresolver="default" homepage="https://github.com/square/okio/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2918" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okio\okio\ivy-2.8.0.xml" searched="false" original-local-location="C:\Users\Administrator\.ivy2\cache\com.squareup.okio\okio\ivy-2.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/squareup/okio/okio/2.8.0/okio-2.8.0.pom"/>
+				<caller organisation="com.squareup.okhttp3" name="okhttp" conf="default, compile, runtime, master" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="4.9.3"/>
+				<artifacts>
+					<artifact name="okio" type="jar" ext="jar" status="no" details="" size="243179" time="0" location="C:\Users\Administrator\.ivy2\cache\com.squareup.okio\okio\jars\okio-2.8.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/squareup/okio/okio/2.8.0/okio-2.8.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

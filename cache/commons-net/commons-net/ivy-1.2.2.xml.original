@@ -1,0 +1,6 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>commons-net</groupId>
+  <artifactId>commons-net</artifactId>
+  <version>1.2.2</version>
+</project>

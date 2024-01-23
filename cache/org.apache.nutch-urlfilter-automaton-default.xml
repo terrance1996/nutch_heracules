@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="urlfilter-automaton"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123011529"/>
+	<dependencies>
+		<module organisation="dk.brics" name="automaton">
+			<revision name="1.12-4" status="release" pubdate="20220103032936" resolver="maven2" artresolver="default" homepage="http://www.brics.dk/automaton" downloaded="true" searched="true" default="false" conf="default, compile, runtime, master" position="0">
+				<license name="BSD" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="4778" time="1202" location="C:\Users\Administrator\.ivy2\cache\dk.brics\automaton\ivy-1.12-4.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\dk.brics\automaton\ivy-1.12-4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/dk/brics/automaton/1.12-4/automaton-1.12-4.pom"/>
+				<caller organisation="org.apache.nutch" name="urlfilter-automaton" conf="default, master" rev="1.12-4" rev-constraint-default="1.12-4" rev-constraint-dynamic="1.12-4" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="automaton" type="jar" ext="jar" status="successful" details="" size="209561" time="1372" location="C:\Users\Administrator\.ivy2\cache\dk.brics\automaton\jars\automaton-1.12-4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/dk/brics/automaton/1.12-4/automaton-1.12-4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

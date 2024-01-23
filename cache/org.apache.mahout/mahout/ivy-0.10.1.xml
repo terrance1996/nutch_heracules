@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.apache.mahout"
+		module="mahout"
+		revision="0.10.1"
+		status="release"
+		publication="20150530183746"
+	>
+		<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt" />
+		<description homepage="http://mahout.apache.org">
+		Mahout&apos;s goal is to build scalable machine learning libraries. With scalable we mean: Scalable to
+    reasonably large data sets. Our core algorithms for clustering, classification and batch based collaborative
+    filtering are implemented on top of Apache Hadoop using the map/reduce paradigm. However we do not restrict
+    contributions to Hadoop based implementations: Contributions that run on a single node or on a non-Hadoop
+    cluster are welcome as well. The core libraries are highly optimized to allow for good performance also for
+    non-distributed algorithms. Scalable to support your business case. Mahout is distributed under a commercially
+    friendly Apache Software license. Scalable community. The goal of Mahout is to build a vibrant, responsive,
+    diverse community to facilitate discussions not only on the project itself but also on potential use cases. Come
+    to the mailing lists to find out more. Currently Mahout supports mainly four use cases: Recommendation mining
+    takes users&apos; behavior and from that tries to find items users might like. Clustering takes e.g. text documents
+    and groups them into groups of topically related documents. Classification learns from existing categorized
+    documents what documents of a specific category look like and is able to assign unlabelled documents to the
+    (hopefully) correct category. Frequent itemset mining takes a set of item groups (terms in a query session,
+    shopping cart content) and identifies, which individual items usually appear together.
+		</description>
+		<m:properties__maven.compiler.source>1.7</m:properties__maven.compiler.source>
+		<m:properties__mfindbugs.version>2.5.2</m:properties__mfindbugs.version>
+		<m:properties__msurefire.version>2.18.1</m:properties__msurefire.version>
+		<m:properties__mcheckstyle.version>2.10</m:properties__mcheckstyle.version>
+		<m:properties__hbase.version>1.0.0</m:properties__hbase.version>
+		<m:properties__mjavadoc.version>2.9.1</m:properties__mjavadoc.version>
+		<m:properties__maven.compiler.target>1.7</m:properties__maven.compiler.target>
+		<m:properties__spark.version>1.2.2</m:properties__spark.version>
+		<m:properties__maven.clover.multiproject>true</m:properties__maven.clover.multiproject>
+		<m:properties__slf4j.version>1.7.12</m:properties__slf4j.version>
+		<m:properties__scala.compat.version>2.10</m:properties__scala.compat.version>
+		<m:properties__lucene.version>4.6.1</m:properties__lucene.version>
+		<m:properties__h2o.version>0.1.25</m:properties__h2o.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__mpmd.version>3.0.1</m:properties__mpmd.version>
+		<m:properties__mscala.version>3.2.0</m:properties__mscala.version>
+		<m:properties__skipTests>false</m:properties__skipTests>
+		<m:properties__scala.version>2.10.4</m:properties__scala.version>
+		<m:properties__hadoop.classifier>hadoop2</m:properties__hadoop.classifier>
+		<m:properties__hadoop.version>2.4.1</m:properties__hadoop.version>
+		<m:properties__distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</m:properties__distMgmtSnapshotsUrl>
+		<m:properties__gpg.useagent>true</m:properties__gpg.useagent>
+		<m:properties__distMgmtSnapshotsName>Apache Development Snapshot Repository</m:properties__distMgmtSnapshotsName>
+		<m:properties__arguments/>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__sourceReleaseAssemblyDescriptor>source-release</m:properties__sourceReleaseAssemblyDescriptor>
+		<m:properties__organization.logo>http://www.apache.org/images/asf_logo_wide.gif</m:properties__organization.logo>
+		<m:maven.plugins>org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-remote-resources-plugin__null|org.apache.maven.plugins__maven-surefire-plugin__null|com.atlassian.maven.plugins__maven-clover2-plugin__3.1.12|org.apache.maven.plugins__maven-checkstyle-plugin__2.10|org.apache.maven.plugins__maven-pmd-plugin__3.0.1|org.codehaus.mojo__findbugs-maven-plugin__2.5.2|org.apache.rat__apache-rat-plugin__null|net.alchim31.maven__scala-maven-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.mahout__mahout-hdfs__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-hdfs__version>
+		<m:dependency.management__org.apache.mahout__mahout-hdfs__scope>test</m:dependency.management__org.apache.mahout__mahout-hdfs__scope>
+		<m:dependency.management__org.apache.mahout__mahout-mr__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-mr__version>
+		<m:dependency.management__org.apache.mahout__mahout-mr__scope>test</m:dependency.management__org.apache.mahout__mahout-mr__scope>
+		<m:dependency.management__org.apache.mahout__mahout-math__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-math__version>
+		<m:dependency.management__org.apache.mahout__mahout-integration__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-integration__version>
+		<m:dependency.management__org.apache.mahout__mahout-buildtools__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-buildtools__version>
+		<m:dependency.management__org.apache.mahout__mahout-examples__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-examples__version>
+		<m:dependency.management__org.apache.mahout__mahout-math-scala_2.10__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-math-scala_2.10__version>
+		<m:dependency.management__org.apache.mahout__mahout-spark_2.10__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-spark_2.10__version>
+		<m:dependency.management__org.apache.mahout__mahout-spark-shell_2.10__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-spark-shell_2.10__version>
+		<m:dependency.management__org.apache.mahout__mahout-h2o_2.10__version>0.10.1</m:dependency.management__org.apache.mahout__mahout-h2o_2.10__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__version>2.4.1</m:dependency.management__org.apache.hadoop__hadoop-client__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_0>net.sf.kosmosfs__kfs</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_0>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_1>org.mortbay.jetty__jetty</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_1>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_2>org.mortbay.jetty__jetty-util</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_2>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_3>hsqldb__hsqldb</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_3>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_4>junit__junit</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_4>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_5>oro__oro</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_5>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_6>org.mortbay.jetty__jsp-2.1</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_6>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_7>org.mortbay.jetty__jsp-api-2.1</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_7>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_8>org.mortbay.jetty__servlet-api-2.5</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_8>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_9>tomcat__jasper-runtime</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_9>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_10>tomcat__jasper-compiler</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_10>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_11>xmlenc__xmlenc</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_11>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_12>net.java.dev.jets3t__jets3t</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_12>
+		<m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_13>org.eclipse.jdt__core</m:dependency.management__org.apache.hadoop__hadoop-client__exclusion_13>
+		<m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>4.6.1</m:dependency.management__org.apache.lucene__lucene-analyzers-common__version>
+		<m:dependency.management__org.apache.lucene__lucene-core__version>4.6.1</m:dependency.management__org.apache.lucene__lucene-core__version>
+		<m:dependency.management__org.apache.lucene__lucene-benchmark__version>4.6.1</m:dependency.management__org.apache.lucene__lucene-benchmark__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__junit__junit__scope>test</m:dependency.management__junit__junit__scope>
+		<m:dependency.management__org.hamcrest__hamcrest-all__version>1.3</m:dependency.management__org.hamcrest__hamcrest-all__version>
+		<m:dependency.management__org.hamcrest__hamcrest-all__scope>test</m:dependency.management__org.hamcrest__hamcrest-all__scope>
+		<m:dependency.management__org.easymock__easymock__version>3.2</m:dependency.management__org.easymock__easymock__version>
+		<m:dependency.management__org.easymock__easymock__scope>test</m:dependency.management__org.easymock__easymock__scope>
+		<m:dependency.management__com.carrotsearch.randomizedtesting__randomizedtesting-runner__version>2.0.15</m:dependency.management__com.carrotsearch.randomizedtesting__randomizedtesting-runner__version>
+		<m:dependency.management__com.carrotsearch.randomizedtesting__randomizedtesting-runner__scope>test</m:dependency.management__com.carrotsearch.randomizedtesting__randomizedtesting-runner__scope>
+		<m:dependency.management__org.apache.lucene__lucene-test-framework__version>4.6.1</m:dependency.management__org.apache.lucene__lucene-test-framework__version>
+		<m:dependency.management__org.apache.lucene__lucene-test-framework__scope>test</m:dependency.management__org.apache.lucene__lucene-test-framework__scope>
+		<m:dependency.management__org.scalatest__scalatest_2.10__version>2.2.4</m:dependency.management__org.scalatest__scalatest_2.10__version>
+		<m:dependency.management__org.scalatest__scalatest_2.10__scope>test</m:dependency.management__org.scalatest__scalatest_2.10__scope>
+		<m:dependency.management__org.codehaus.jackson__jackson-core-asl__version>1.9.12</m:dependency.management__org.codehaus.jackson__jackson-core-asl__version>
+		<m:dependency.management__org.codehaus.jackson__jackson-mapper-asl__version>1.9.12</m:dependency.management__org.codehaus.jackson__jackson-mapper-asl__version>
+		<m:dependency.management__commons-cli__commons-cli__version>1.2</m:dependency.management__commons-cli__commons-cli__version>
+		<m:dependency.management__commons-dbcp__commons-dbcp__version>1.4</m:dependency.management__commons-dbcp__commons-dbcp__version>
+		<m:dependency.management__commons-pool__commons-pool__version>1.6</m:dependency.management__commons-pool__commons-pool__version>
+		<m:dependency.management__commons-io__commons-io__version>2.4</m:dependency.management__commons-io__commons-io__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.12</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-jcl__version>1.7.12</m:dependency.management__org.slf4j__slf4j-jcl__version>
+		<m:dependency.management__org.slf4j__slf4j-jcl__scope>test</m:dependency.management__org.slf4j__slf4j-jcl__scope>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__version>1.7.12</m:dependency.management__org.slf4j__jcl-over-slf4j__version>
+		<m:dependency.management__org.slf4j__jcl-over-slf4j__scope>test</m:dependency.management__org.slf4j__jcl-over-slf4j__scope>
+		<m:dependency.management__org.slf4j__slf4j-log4j12__version>1.7.12</m:dependency.management__org.slf4j__slf4j-log4j12__version>
+		<m:dependency.management__commons-logging__commons-logging__version>1.1.3</m:dependency.management__commons-logging__commons-logging__version>
+		<m:dependency.management__log4j__log4j__version>1.2.17</m:dependency.management__log4j__log4j__version>
+		<m:dependency.management__commons-lang__commons-lang__version>2.6</m:dependency.management__commons-lang__commons-lang__version>
+		<m:dependency.management__org.apache.commons__commons-lang3__version>3.1</m:dependency.management__org.apache.commons__commons-lang3__version>
+		<m:dependency.management__org.apache.commons__commons-math3__version>3.2</m:dependency.management__org.apache.commons__commons-math3__version>
+		<m:dependency.management__com.thoughtworks.xstream__xstream__version>1.4.4</m:dependency.management__com.thoughtworks.xstream__xstream__version>
+		<m:dependency.management__com.google.guava__guava__version>14.0.1</m:dependency.management__com.google.guava__guava__version>
+		<m:dependency.management__org.apache.mahout.commons__commons-cli__version>2.0-mahout</m:dependency.management__org.apache.mahout.commons__commons-cli__version>
+		<m:dependency.management__org.apache.hbase__hbase-client__version>1.0.0</m:dependency.management__org.apache.hbase__hbase-client__version>
+		<m:dependency.management__org.apache.hbase__hbase-client__exclusion_0>org.slf4j__slf4j-log4j12</m:dependency.management__org.apache.hbase__hbase-client__exclusion_0>
+		<m:dependency.management__org.apache.hbase__hbase-client__exclusion_1>log4j__log4j</m:dependency.management__org.apache.hbase__hbase-client__exclusion_1>
+		<m:dependency.management__javax.servlet__servlet-api__version>2.5</m:dependency.management__javax.servlet__servlet-api__version>
+		<m:dependency.management__javax.servlet__servlet-api__scope>provided</m:dependency.management__javax.servlet__servlet-api__scope>
+		<m:dependency.management__org.apache.hadoop__hadoop-common__version>2.4.1</m:dependency.management__org.apache.hadoop__hadoop-common__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-auth__version>2.4.1</m:dependency.management__org.apache.hadoop__hadoop-auth__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__version>2.4.1</m:dependency.management__org.apache.hadoop__hadoop-mapreduce-client-core__version>
+		<m:dependency.management__org.apache.hadoop__hadoop-yarn-common__version>2.4.1</m:dependency.management__org.apache.hadoop__hadoop-yarn-common__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

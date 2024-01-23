@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.semarglproject</groupId>
+    <artifactId>semargl-parent</artifactId>
+    <version>0.7</version>
+    <packaging>pom</packaging>
+
+    <name>Semargl: Parent Aggregator</name>
+    <url>http://semarglproject.org</url>
+    <description>
+        Semargl is a modular framework for crawling linked data from structured documents.
+        The main goal of project is to provide lightweight and performant tool without excess dependencies.
+    </description>
+    <inceptionYear>2012</inceptionYear>
+
+    <developers>
+        <developer>
+            <name>Lev Khomich</name>
+            <email>levkhomich@gmail.com</email>
+            <url>http://levkhomich.ru</url>
+        </developer>
+        <developer>
+            <name>Peter Ansell</name>
+            <email>p_ansell@yahoo.com</email>
+            <url>https://github.com/ansell</url>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache Public License 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git@github.com:semarglproject/semargl.git</connection>
+        <developerConnection>scm:git:git@github.com:semarglproject/semargl.git</developerConnection>
+        <url>https://github.com/semarglproject/semargl.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/semarglproject/semargl/issues</url>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Compiler -->
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+
+        <!-- Plugins -->
+        <version.clean.plugin>3.0.0</version.clean.plugin>
+        <version.resources.plugin>3.0.1</version.resources.plugin>
+        <version.compiler.plugin>3.5.1</version.compiler.plugin>
+        <version.deploy.plugin>2.8.2</version.deploy.plugin>
+        <version.install.plugin>2.5.2</version.install.plugin>
+        <version.site.plugin>3.5.1</version.site.plugin>
+        <version.jar.plugin>3.0.2</version.jar.plugin>
+        <version.dependency.plugin>2.10</version.dependency.plugin>
+        <version.license.plugin>3.0</version.license.plugin>
+        <version.checkstyle.plugin>2.10</version.checkstyle.plugin>
+        <version.surefire.plugin>2.19.1</version.surefire.plugin>
+        <version.source.plugin>3.0.1</version.source.plugin>
+        <version.release.plugin>2.5.3</version.release.plugin>
+        <version.javadoc.plugin>2.10.4</version.javadoc.plugin>
+        <version.gpg.plugin>1.6</version.gpg.plugin>
+        <version.enforcer.plugin>1.4.1</version.enforcer.plugin>
+        <version.coveralls.plugin>4.2.0</version.coveralls.plugin>
+        <version.cobertura.plugin>2.7</version.cobertura.plugin>
+
+        <!-- External dependencies -->
+        <version.testng>6.8.8</version.testng>
+        <version.apache.commons.io>2.4</version.apache.commons.io>
+        <version.apache.httpclient>4.5.2</version.apache.httpclient>
+        <version.apache.httpcore>4.4.4</version.apache.httpcore>
+        <version.clerezza.core>0.12-incubating</version.clerezza.core>
+        <version.clerezza.simple.storage>0.7-incubating</version.clerezza.simple.storage>
+        <version.clerezza.jena.serializer>0.9-incubating</version.clerezza.jena.serializer>
+        <version.clerezza.jena.parser>0.10-incubating</version.clerezza.jena.parser>
+        <version.clerezza.jena.sparql>0.5-incubating</version.clerezza.jena.sparql>
+        <version.jackson>2.8.4</version.jackson>
+        <version.jena>2.11.1</version.jena>
+        <version.junit>4.12</version.junit>
+        <version.rdf4j>2.1.3</version.rdf4j>
+        <version.sesame>2.8.11</version.sesame>
+        <version.slf4j>1.6.4</version.slf4j>
+
+        <!-- Checkstyle configuration -->
+        <linkXRef>false</linkXRef>
+    </properties>
+
+    <prerequisites>
+        <maven>3.0.5</maven>
+    </prerequisites>
+
+    <modules>
+        <module>core</module>
+        <module>rdf</module>
+        <module>rdfa</module>
+        <module>jsonld</module>
+        <module>integration</module>
+    </modules>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${version.clean.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${version.resources.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${version.compiler.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${version.deploy.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>${version.install.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>${version.site.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${version.jar.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${version.surefire.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${version.enforcer.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${version.source.plugin}</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>${version.coveralls.plugin}</version>
+            </plugin>
+
+        </plugins>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>${version.release.plugin}</version>
+                    <configuration>
+                        <mavenExecutorId>forked-path</mavenExecutorId>
+                        <useReleaseProfile>false</useReleaseProfile>
+                        <arguments>-Prelease</arguments>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>${version.license.plugin}</version>
+                    <inherited>false</inherited>
+                    <configuration>
+                        <basedir>${project.basedir}</basedir>
+                        <header>${project.basedir}/checkstyle/LICENSE_HEADER</header>
+                        <properties>
+                            <owner>Lev Khomich</owner>
+                            <year>2012-2013</year>
+                        </properties>
+                        <quiet>false</quiet>
+                        <failIfMissing>true</failIfMissing>
+                        <aggregate>true</aggregate>
+                        <strictCheck>true</strictCheck>
+                        <excludes>
+                            <exclude>**/.*/**</exclude>
+                            <exclude>**/checkstyle/**/*</exclude>
+                            <exclude>**/resources/**/*</exclude>
+                            <exclude>**/maven-repo/**/*</exclude>
+                            <exclude>**/LICENSE*</exclude>
+                            <exclude>**/NOTICE</exclude>
+                            <exclude>**/RELEASE_NOTES.md</exclude>
+                            <exclude>**/README.md</exclude>
+                            <exclude>**/pom.xml</exclude>
+                            <exclude>**/testng.xml</exclude>
+                        </excludes>
+                        <useDefaultExcludes>true</useDefaultExcludes>
+                        <useDefaultMapping>true</useDefaultMapping>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>check-headers</id>
+                            <phase>process-sources</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <id>enforce</id>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                            <configuration>
+                                <rules>
+                                    <requireMavenVersion>
+                                        <version>2.0.6</version>
+                                    </requireMavenVersion>
+                                    <DependencyConvergence />
+                                    <requirePluginVersions>
+                                        <banLatest>true</banLatest>
+                                        <banRelease>true</banRelease>
+                                        <banSnapshots>true</banSnapshots>
+                                        <phases>clean,deploy</phases>
+                                    </requirePluginVersions>
+                                </rules>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>${version.checkstyle.plugin}</version>
+                    <configuration>
+                        <logViolationsToConsole>true</logViolationsToConsole>
+                        <consoleOutput>true</consoleOutput>
+                        <failsOnError>true</failsOnError>
+                        <useFile />
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>check-style-sources</id>
+                            <phase>process-sources</phase>
+                            <configuration>
+                                <configLocation>${project.basedir}/checkstyle/checkstyle-src.xml</configLocation>
+                            </configuration>
+                            <goals>
+                                <goal>checkstyle</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>check-style-other</id>
+                            <phase>process-sources</phase>
+                            <configuration>
+                                <configLocation>${project.basedir}/checkstyle/checkstyle-other.xml</configLocation>
+                                <includes>**/*</includes>
+                                <excludes>
+                                    **/*.java,**/test/resources/**/*,**/target/**/*,**/maven-repo/**/*,
+                                    **/release.properties,**/.settings,**/.classpath,**/.project
+                                </excludes>
+                                <sourceDirectory>.</sourceDirectory>
+                            </configuration>
+                            <goals>
+                                <goal>checkstyle</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${version.dependency.plugin}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>cobertura-maven-plugin</artifactId>
+                    <version>${version.cobertura.plugin}</version>
+                    <configuration>
+                        <format>xml</format>
+                        <maxmem>256m</maxmem>
+                        <aggregate>true</aggregate>
+                    </configuration>
+                </plugin>
+
+                <!-- This plugin's configuration is used in m2e only. -->
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>
+                                            org.apache.maven.plugins
+                                        </groupId>
+                                        <artifactId>
+                                            maven-checkstyle-plugin
+                                        </artifactId>
+                                        <versionRange>[2.5,)</versionRange>
+                                        <goals>
+                                            <goal>checkstyle</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <ignore />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- TestNG -->
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${version.testng}</version>
+            </dependency>
+
+            <!-- JUnit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${version.junit}</version>
+            </dependency>
+
+            <!-- Apache Clerezza -->
+            <dependency>
+                <groupId>org.apache.clerezza</groupId>
+                <artifactId>rdf.core</artifactId>
+                <version>${version.clerezza.core}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.clerezza</groupId>
+                <artifactId>rdf.simple.storage</artifactId>
+                <version>${version.clerezza.simple.storage}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.clerezza</groupId>
+                <artifactId>rdf.jena.serializer</artifactId>
+                <version>${version.clerezza.jena.serializer}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.clerezza</groupId>
+                <artifactId>rdf.jena.parser</artifactId>
+                <version>${version.clerezza.jena.parser}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.clerezza</groupId>
+                <artifactId>rdf.jena.sparql</artifactId>
+                <version>${version.clerezza.jena.sparql}</version>
+            </dependency>
+
+            <!-- Apache Jena -->
+            <dependency>
+                <groupId>org.apache.jena</groupId>
+                <artifactId>jena-core</artifactId>
+                <version>${version.jena}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.jena</groupId>
+                <artifactId>jena-arq</artifactId>
+                <version>${version.jena}</version>
+            </dependency>
+            <dependency>
+                <groupId>xml-apis</groupId>
+                <artifactId>xml-apis</artifactId>
+                <version>1.4.01</version>
+            </dependency>
+            <dependency>
+                <groupId>xml-security</groupId>
+                <artifactId>xmlsec</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xercesImpl</artifactId>
+                <version>2.11.0</version>
+            </dependency>
+            <dependency>
+                <groupId>xalan</groupId>
+                <artifactId>xalan</artifactId>
+                <version>2.7.1</version>
+            </dependency>
+
+            <!-- OpenRDF Sesame -->
+            <dependency>
+                <groupId>org.openrdf.sesame</groupId>
+                <artifactId>sesame-rio-api</artifactId>
+                <version>${version.sesame}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openrdf.sesame</groupId>
+                <artifactId>sesame-rio-compliance</artifactId>
+                <version>${version.sesame}</version>
+            </dependency>
+
+            <!-- Eclipse RDF4J -->
+            <dependency>
+                <groupId>org.eclipse.rdf4j</groupId>
+                <artifactId>rdf4j-rio-api</artifactId>
+                <version>${version.rdf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.rdf4j</groupId>
+                <artifactId>rdf4j-rio-compliance</artifactId>
+                <version>${version.rdf4j}</version>
+            </dependency>
+
+            <!-- Apache Commons -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${version.apache.commons.io}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.10</version>
+            </dependency>
+
+            <!-- Apache HttpComponents -->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${version.apache.httpclient}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient-cache</artifactId>
+                <version>${version.apache.httpclient}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient-osgi</artifactId>
+                <version>${version.apache.httpclient}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${version.apache.httpcore}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore-osgi</artifactId>
+                <version>${version.apache.httpcore}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore-nio</artifactId>
+                <version>${version.apache.httpcore}</version>
+            </dependency>
+
+            <!-- Jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${version.jackson}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${version.jackson}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${version.jackson}</version>
+            </dependency>
+
+            <!-- SLF4j logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${version.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${version.slf4j}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Nexus Release Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>sonatype-oss-release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${version.source.plugin}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                                <configuration>
+                                    <archive>
+                                        <manifest>
+                                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                        </manifest>
+                                        <manifestEntries>
+                                            <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
+                                            <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
+                                        </manifestEntries>
+                                    </archive>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>${version.javadoc.plugin}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                                <configuration>
+                                    <quiet>true</quiet>
+                                    <archive>
+                                        <manifest>
+                                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                        </manifest>
+                                        <manifestEntries>
+                                            <X-Compile-Source-JDK>${maven.compiler.source}</X-Compile-Source-JDK>
+                                            <X-Compile-Target-JDK>${maven.compiler.target}</X-Compile-Target-JDK>
+                                        </manifestEntries>
+                                    </archive>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>${version.gpg.plugin}</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

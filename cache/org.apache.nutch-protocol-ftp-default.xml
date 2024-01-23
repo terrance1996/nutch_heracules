@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="org.apache.nutch"
+		module="protocol-ftp"
+		revision="working@DESKTOP-JBPKLKC"
+
+		conf="default"
+		confs="default"
+		date="20240123011408"/>
+	<dependencies>
+		<module organisation="commons-net" name="commons-net">
+			<revision name="1.2.2" status="release" pubdate="20051108143246" resolver="maven2" artresolver="default" homepage="" downloaded="true" searched="true" default="false" conf="master" position="0">
+				<metadata-artifact status="successful" details="" size="156" time="1341" location="C:\Users\Administrator\.ivy2\cache\commons-net\commons-net\ivy-1.2.2.xml" searched="true" original-local-location="C:\Users\Administrator\.ivy2\cache\commons-net\commons-net\ivy-1.2.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/1.2.2/commons-net-1.2.2.pom"/>
+				<caller organisation="org.apache.nutch" name="protocol-ftp" conf="default, master" rev="1.2.2" rev-constraint-default="1.2.2" rev-constraint-dynamic="1.2.2" callerrev="working@DESKTOP-JBPKLKC"/>
+				<artifacts>
+					<artifact name="commons-net" type="jar" ext="jar" status="successful" details="" size="153280" time="1434" location="C:\Users\Administrator\.ivy2\cache\commons-net\commons-net\jars\commons-net-1.2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/1.2.2/commons-net-1.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

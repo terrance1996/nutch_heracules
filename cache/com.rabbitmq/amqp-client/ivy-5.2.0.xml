@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="com.rabbitmq"
+		module="amqp-client"
+		revision="5.2.0"
+		status="release"
+		publication="20180312085753"
+	>
+		<license name="ASL 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html" />
+		<license name="GPL v2" url="http://www.gnu.org/licenses/gpl-2.0.txt" />
+		<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.txt" />
+		<description homepage="http://www.rabbitmq.com">
+		The RabbitMQ Java client library allows Java applications to interface with RabbitMQ.
+		</description>
+		<m:properties__test-broker.A.node_port>5672</m:properties__test-broker.A.node_port>
+		<m:properties__maven.source.plugin.version>3.0.1</m:properties__maven.source.plugin.version>
+		<m:properties__test-keystore.password>bunnies</m:properties__test-keystore.password>
+		<m:properties__maven.bundle.plugin.version>3.2.0</m:properties__maven.bundle.plugin.version>
+		<m:properties__groovy-scripts.dir>${basedir}/src/main/scripts</m:properties__groovy-scripts.dir>
+		<m:properties__maven.javadoc.plugin.version>3.0.0</m:properties__maven.javadoc.plugin.version>
+		<m:properties__test-keystore.ca>${project.build.directory}/ca.keystore</m:properties__test-keystore.ca>
+		<m:properties__rabbitmq.dir>${deps.dir}/rabbit</m:properties__rabbitmq.dir>
+		<m:properties__gpg.keyname>6026DFCA</m:properties__gpg.keyname>
+		<m:properties__maven.resources.plugin.version>3.0.2</m:properties__maven.resources.plugin.version>
+		<m:properties__groovy.all.version>2.4.8</m:properties__groovy.all.version>
+		<m:properties__slf4j.version>1.7.25</m:properties__slf4j.version>
+		<m:properties__maven.release.plugin.version>2.5.3</m:properties__maven.release.plugin.version>
+		<m:properties__maven.compiler.plugin.version>3.6.1</m:properties__maven.compiler.plugin.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__codegen.dir>${deps.dir}/rabbitmq_codegen</m:properties__codegen.dir>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:properties__groovy.maven.plugin.version>2.0</m:properties__groovy.maven.plugin.version>
+		<m:properties__test-broker.A.config_file>${project.build.directory}/test-classes/${test-broker.A.nodename}</m:properties__test-broker.A.config_file>
+		<m:properties__logback.version>1.2.3</m:properties__logback.version>
+		<m:properties__micrometer.version>1.0.0</m:properties__micrometer.version>
+		<m:properties__maven.gpg.plugin.version>1.6</m:properties__maven.gpg.plugin.version>
+		<m:properties__make.bin>make</m:properties__make.bin>
+		<m:properties__test-broker.B.nodename>hare@localhost</m:properties__test-broker.B.nodename>
+		<m:properties__test-broker.B.config_file>${project.build.directory}/test-classes/${test-broker.B.nodename}</m:properties__test-broker.B.config_file>
+		<m:properties__build.helper.maven-plugin.version>1.12</m:properties__build.helper.maven-plugin.version>
+		<m:properties__maven.failsafe.plugin.version>2.19.1</m:properties__maven.failsafe.plugin.version>
+		<m:properties__keytool.maven.plugin.version>1.5</m:properties__keytool.maven.plugin.version>
+		<m:properties__test-broker.B.node_port>5673</m:properties__test-broker.B.node_port>
+		<m:properties__commons-cli.version>1.1</m:properties__commons-cli.version>
+		<m:properties__maven.jar.plugin.version>3.0.2</m:properties__maven.jar.plugin.version>
+		<m:properties__metrics.version>3.2.4</m:properties__metrics.version>
+		<m:properties__mockito.version>2.10.0</m:properties__mockito.version>
+		<m:properties__project.reporting.outputEncoding>UTF-8</m:properties__project.reporting.outputEncoding>
+		<m:properties__deps.dir>${basedir}/deps</m:properties__deps.dir>
+		<m:properties__test-broker.A.nodename>rabbit@localhost</m:properties__test-broker.A.nodename>
+		<m:properties__awaitility.version>3.0.0</m:properties__awaitility.version>
+		<m:properties__versions.maven.plugin.version>2.3</m:properties__versions.maven.plugin.version>
+		<m:properties__maven.surefire.plugin.version>2.19.1</m:properties__maven.surefire.plugin.version>
+		<m:properties__codegen.spec_version>0.9.1</m:properties__codegen.spec_version>
+		<m:properties__rabbitmqctl.bin>${rabbitmq.dir}/scripts/rabbitmqctl</m:properties__rabbitmqctl.bin>
+		<m:properties__test-keystore.empty>${project.build.directory}/empty.keystore</m:properties__test-keystore.empty>
+		<m:properties__javadoc.opts>-Xdoclint:none</m:properties__javadoc.opts>
+		<m:maven.plugins>org.apache.maven.plugins__maven-resources-plugin__3.0.2|org.codehaus.gmaven__groovy-maven-plugin__2.0|org.codehaus.mojo__build-helper-maven-plugin__1.12|null__maven-compiler-plugin__3.6.1|org.apache.maven.plugins__maven-surefire-plugin__2.19.1|org.codehaus.mojo__keytool-maven-plugin__1.5|org.apache.maven.plugins__maven-jar-plugin__3.0.2|org.apache.felix__maven-bundle-plugin__3.2.0|org.codehaus.mojo__versions-maven-plugin__2.3|org.apache.maven.plugins__maven-release-plugin__2.5.3|org.apache.maven.plugins__maven-source-plugin__3.0.1|org.apache.maven.plugins__maven-javadoc-plugin__3.0.0|org.codehaus.gmaven__groovy-maven-plugin__2.0|org.codehaus.mojo__keytool-maven-plugin__1.5|org.apache.maven.plugins__maven-failsafe-plugin__2.19.1</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="amqp-client" type="jar" ext="jar" conf="master"/>
+		<artifact name="amqp-client" type="source" ext="jar" conf="sources" m:classifier="sources"/>
+		<artifact name="amqp-client" type="javadoc" ext="jar" conf="javadoc" m:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.7.25" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)"/>
+		<dependency org="io.dropwizard.metrics" name="metrics-core" rev="3.2.4" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="io.micrometer" name="micrometer-core" rev="1.0.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="commons-cli" name="commons-cli" rev="1.1" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.12" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="1.2.3" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.awaitility" name="awaitility" rev="3.0.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.mockito" name="mockito-core" rev="2.10.0" force="true" conf="test->runtime(*),master(*)"/>
+		<dependency org="org.hamcrest" name="hamcrest-library" rev="1.3" force="true" conf="test->runtime(*),master(*)"/>
+	</dependencies>
+</ivy-module>

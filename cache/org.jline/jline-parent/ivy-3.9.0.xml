@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="org.jline"
+		module="jline-parent"
+		revision="3.9.0"
+		status="release"
+		publication="20180717120613"
+	>
+		<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php" />
+		<description homepage="">
+		JLine
+		</description>
+		<m:properties__sshd.version>1.4.0</m:properties__sshd.version>
+		<m:properties__maven.compiler.source>1.8</m:properties__maven.compiler.source>
+		<m:properties__gogo.jline.version>1.1.0</m:properties__gogo.jline.version>
+		<m:properties__gogo.runtime.version>1.1.0</m:properties__gogo.runtime.version>
+		<m:properties__easymock.version>3.3.1</m:properties__easymock.version>
+		<m:properties__surefire.argLine/>
+		<m:properties__maven.compiler.target>1.8</m:properties__maven.compiler.target>
+		<m:properties__slf4j.version>1.7.21</m:properties__slf4j.version>
+		<m:properties__findbugs.version>3.0.2</m:properties__findbugs.version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__jansi.version>1.17.1</m:properties__jansi.version>
+		<m:properties__junit.version>4.12</m:properties__junit.version>
+		<m:properties__juniversalchardet.version>1.0.3</m:properties__juniversalchardet.version>
+		<m:properties__jna.version>4.2.2</m:properties__jna.version>
+		<m:properties__javadocOptions>-html4</m:properties__javadocOptions>
+		<m:properties__arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:maven.plugins>org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.maven.plugins__maven-enforcer-plugin__1.2|org.apache.felix__maven-bundle-plugin__3.5.0|org.apache.maven.plugins__maven-compiler-plugin__3.7.0|org.apache.maven.plugins__maven-jar-plugin__3.1.0|org.apache.maven.plugins__maven-surefire-plugin__2.21.0|org.apache.maven.plugins__maven-source-plugin__3.0.1|org.apache.maven.plugins__maven-javadoc-plugin__3.0.0|org.apache.maven.plugins__maven-release-plugin__2.5.3|org.apache.maven.plugins__maven-compiler-plugin__3.6.0</m:maven.plugins>
+		<m:dependency.management__org.jline__jline-terminal__version>3.9.0</m:dependency.management__org.jline__jline-terminal__version>
+		<m:dependency.management__org.jline__jline-terminal-jansi__version>3.9.0</m:dependency.management__org.jline__jline-terminal-jansi__version>
+		<m:dependency.management__org.jline__jline-terminal-jna__version>3.9.0</m:dependency.management__org.jline__jline-terminal-jna__version>
+		<m:dependency.management__org.jline__jline-reader__version>3.9.0</m:dependency.management__org.jline__jline-reader__version>
+		<m:dependency.management__org.jline__jline-builtins__version>3.9.0</m:dependency.management__org.jline__jline-builtins__version>
+		<m:dependency.management__org.jline__jline-remote-ssh__version>3.9.0</m:dependency.management__org.jline__jline-remote-ssh__version>
+		<m:dependency.management__org.jline__jline-remote-telnet__version>3.9.0</m:dependency.management__org.jline__jline-remote-telnet__version>
+		<m:dependency.management__org.jline__jline__version>3.9.0</m:dependency.management__org.jline__jline__version>
+		<m:dependency.management__org.jline__jline-style__version>3.9.0</m:dependency.management__org.jline__jline-style__version>
+		<m:dependency.management__org.fusesource.jansi__jansi__version>1.17.1</m:dependency.management__org.fusesource.jansi__jansi__version>
+		<m:dependency.management__net.java.dev.jna__jna__version>4.2.2</m:dependency.management__net.java.dev.jna__jna__version>
+		<m:dependency.management__com.googlecode.juniversalchardet__juniversalchardet__version>1.0.3</m:dependency.management__com.googlecode.juniversalchardet__juniversalchardet__version>
+		<m:dependency.management__org.apache.sshd__sshd-core__version>1.4.0</m:dependency.management__org.apache.sshd__sshd-core__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.gogo.runtime__version>1.1.0</m:dependency.management__org.apache.felix__org.apache.felix.gogo.runtime__version>
+		<m:dependency.management__org.apache.felix__org.apache.felix.gogo.jline__version>1.1.0</m:dependency.management__org.apache.felix__org.apache.felix.gogo.jline__version>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.7.21</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__org.slf4j__slf4j-jdk14__version>1.7.21</m:dependency.management__org.slf4j__slf4j-jdk14__version>
+		<m:dependency.management__org.easymock__easymock__version>3.3.1</m:dependency.management__org.easymock__easymock__version>
+		<m:dependency.management__junit__junit__version>4.12</m:dependency.management__junit__junit__version>
+		<m:dependency.management__com.google.code.findbugs__jsr305__version>3.0.2</m:dependency.management__com.google.code.findbugs__jsr305__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>

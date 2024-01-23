@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+	<info organisation="jakarta.xml.bind"
+		module="jakarta.xml.bind-api-parent"
+		revision="2.3.3"
+		status="release"
+		publication="20200127013530"
+	>
+		<license name="Eclipse Distribution License - v 1.0" url="http://www.eclipse.org/org/documents/edl-v10.php" />
+		<description homepage="https://github.com/eclipse-ee4j/jaxb-api">
+		Jakarta XML Binding API
+		</description>
+		<m:properties__spotbugs.version>3.1.12.1</m:properties__spotbugs.version>
+		<m:properties__copyright.templatefile>${config.dir}/edl-copyright.txt</m:properties__copyright.templatefile>
+		<m:properties__impl.version>3</m:properties__impl.version>
+		<m:properties__api.package>javax.xml.bind</m:properties__api.package>
+		<m:properties__spotbugs.threshold>Low</m:properties__spotbugs.threshold>
+		<m:properties__activation.version>1.2.2</m:properties__activation.version>
+		<m:properties__vendor.name>Eclipse Foundation</m:properties__vendor.name>
+		<m:properties__extension.name>jakarta.xml.bind</m:properties__extension.name>
+		<m:properties__spotbugs.skip>false</m:properties__spotbugs.skip>
+		<m:properties__spec.version>2.3</m:properties__spec.version>
+		<m:properties__copyright.ignoreyear>false</m:properties__copyright.ignoreyear>
+		<m:properties__copyright.exclude>${config.dir}/copyright-exclude</m:properties__copyright.exclude>
+		<m:properties__copyright.scmonly>true</m:properties__copyright.scmonly>
+		<m:properties__release.spec.date>Jul 2017</m:properties__release.spec.date>
+		<m:properties__copyright.update>false</m:properties__copyright.update>
+		<m:properties__spotbugs.exclude>${project.basedir}/exclude.xml</m:properties__spotbugs.exclude>
+		<m:properties__release.spec.feedback>jaxb-dev@eclipse.org</m:properties__release.spec.feedback>
+		<m:properties__config.dir>${project.basedir}/etc/config</m:properties__config.dir>
+		<m:properties__release.arguments/>
+		<m:properties__sonatypeOssDistMgmtSnapshotsUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/snapshots/</m:properties__sonatypeOssDistMgmtSnapshotsUrl>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:properties__sonatypeOssDistMgmtStagingUrl>${sonatypeOssDistMgmtNexusUrl}content/repositories/staging/</m:properties__sonatypeOssDistMgmtStagingUrl>
+		<m:properties__sonatypeOssDistMgmtNexusUrl>https://jakarta.oss.sonatype.org/</m:properties__sonatypeOssDistMgmtNexusUrl>
+		<m:properties__sonatypeOssDistMgmtReleasesUrl>${sonatypeOssDistMgmtNexusUrl}service/local/staging/deploy/maven2/</m:properties__sonatypeOssDistMgmtReleasesUrl>
+		<m:dependency.management__jakarta.activation__jakarta.activation-api__version>1.2.2</m:dependency.management__jakarta.activation__jakarta.activation-api__version>
+		<m:maven.plugins>org.apache.maven.plugins__maven-compiler-plugin__null|org.glassfish.copyright__glassfish-copyright-maven-plugin__null|org.apache.maven.plugins__maven-source-plugin__null</m:maven.plugins>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="public" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+	</publications>
+</ivy-module>
